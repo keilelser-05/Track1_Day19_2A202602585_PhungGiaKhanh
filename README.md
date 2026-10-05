@@ -217,7 +217,7 @@ luỹ và đà học giảm dần.
 | PN2 | `Bùi Hải Nam` → learner `2A202602872` (khoá 4 AI Thực Chiến) | Có **nhiều kênh hỗ trợ** và **chủ động dùng** (search, hỏi bạn, hỏi lab coach) |
 | PN3 | `Chử Trần Phương Nam` → learner nữ (track chuyên sâu AI Thực Chiến) | **Ngại** nên không hỏi ai; ~10 phút/thuật ngữ; khi được hỏi trước thì **"Wow, được giải thoát rồi!"** |
 
-> [Note Khánh](note/notes_khanh.md) có thông tin đã điền nhưng còn mâu thuẫn giữa tiêu đề, người phỏng vấn và dòng trạng thái. Chưa dùng làm evidence cho barrier/consequence; cần người ghi xác nhận.
+> [Note Khánh cũ](note/notes_khanh.md) còn mâu thuẫn metadata. Đã bổ sung [note mới của Khánh — P01](note/notes_khanh_day17.md) vào Chặng 1 theo xác nhận người nộp. Nguồn mới có thể trùng PN1; chưa tính thêm người độc lập, chưa xác nhận tên người trả lời.
 
 ### 5.3. Solution Parking Lot ⚙️
 
@@ -248,7 +248,7 @@ Bảng evidence và giới hạn được ghi tại [Three-Option Design Sheet](
 - Không nói cả ba đều có sự kiện cụ thể “hôm qua”: mức neo vào sự kiện khác nhau.
 - Được giảng viên hỏi trước tại lớp code không chứng minh đồng ý để AI theo dõi/chia sẻ.
 - Cảm xúc PN1 có câu hỏi dẫn dắt theo note đính kèm; cần nghe lại trước khi dùng làm evidence.
-- Note cá nhân Khánh còn thiếu và mâu thuẫn metadata.
+- Đã bổ sung P01 từ [note mới của Khánh](note/notes_khanh_day17.md), có mốc bản ghi và giới hạn. Nội dung có thể trùng PN1; không đếm hai lần. Note cá nhân cũ còn mâu thuẫn metadata.
 
 **Giả thuyết tiếp tục (chưa phải finding):**
 

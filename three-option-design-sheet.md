@@ -11,6 +11,9 @@
 | PN1 — [lượt Thành](note/notes_phanduythanh.md) | Nhắc buổi học chiều hôm trước; không tìm được nội dung trên slide; gặp thuật ngữ tiếng Anh. Không kể cách xử lý tiếp. | Có thể khó xác định chỗ vướng; chưa biết do nội dung, cách tìm hay cách hỏi phỏng vấn. |
 | PN2 — [lượt Bùi Hải Nam](note/notes_phuongnam.md) | Kể việc tìm trên mạng, hỏi bạn hoặc lab coach; tiếp tục tìm hiểu đến khi thấy ổn. | Có người chủ động tìm hỗ trợ. Làm yếu giả định mọi học viên đều im lặng hoặc không biết hỏi ai. |
 | PN3 — [lượt Chử Trần Phương Nam](note/note_chutranphuongnam.md) | Kể gặp thuật ngữ RAG; hỏi AI rồi tra Google nếu chưa rõ; ước lượng khoảng 10 phút/thuật ngữ; nói ngại hỏi người khác. Kể cảm giác nhẹ nhõm khi giảng viên hỏi trước trong lớp code. | Có dấu hiệu rào cản ngại hỏi. Được hỏi trước không đồng nghĩa đồng ý bị AI theo dõi hoặc chia sẻ dữ liệu. |
+| PN-K — [nguồn Khánh bổ sung](note/notes_khanh_day17.md), P01 | 00:17–00:31: nhắc buổi học chiều hôm trước. 00:49–01:00: có nhắc phần chưa hiểu và không tìm được nội dung trên slide. 01:08–01:12: nhắc thuật ngữ nhưng chưa nhận dạng chắc loại nào. | Có thể khó tìm/diễn đạt chỗ vướng. Chưa biết cách tự xử lý, thời gian, hậu quả hoặc người hỗ trợ có biết không. Bản chép tự động chưa nghe lại. |
+
+**Nguồn Khánh:** theo yêu cầu của người nộp, đã bổ sung P01 vào bảng. Đây là nguồn bổ sung, **chưa tính thành người thứ tư độc lập**: cùng `VinUniversity.m4a` và nội dung tương tự PN1. Chưa khẳng định P01 là Lê Anh Duy, Lê Thanh Tình hoặc AE06. Nhóm cần đối chiếu người phỏng vấn/người trả lời trước khi đếm số người.
 
 ### 1.1. Thảo luận nhanh — tổng hợp từ notes
 
@@ -38,7 +41,7 @@ Câu trên là **giả thuyết để thiết kế và kiểm tra**, không ph�
 
 ### 1.3. Evidence ban đầu hỗ trợ giả thuyết
 
-- **PN1:** note ghi người tham gia không tìm được nội dung trên slide. Hỗ trợ dấu hiệu khó xác định chỗ vướng, chưa chứng minh người hỗ trợ không biết.
+- **PN1 / PN-K (có thể cùng bản ghi):** note ghi người tham gia không tìm được nội dung trên slide. Hỗ trợ dấu hiệu khó xác định chỗ vướng, chưa chứng minh người hỗ trợ không biết.
 - **PN3:** note ghi tra AI rồi Google, ước lượng khoảng 10 phút/thuật ngữ và ngại hỏi người khác. Hỗ trợ một phần barrier và chi phí tự xử lý; thời gian là tự ước lượng, không phải phép đo.
 - **PN2 — evidence chống lại:** người tham gia chủ động hỏi bạn/coach. Giữ chi tiết này để A/B/C không mặc định mọi người đều cần được phát hiện hoặc nhắc trước.
 
@@ -54,9 +57,9 @@ Câu trên là **giả thuyết để thiết kế và kiểm tra**, không ph�
 
 - Tổng hợp từ notes đã cung cấp; chưa nghe lại bản ghi hoặc xác minh từng câu trích.
 - PN1 có câu hỏi dẫn dắt về cảm xúc theo note đính kèm; không dùng cảm xúc làm bằng chứng độc lập về tụt lại.
-- [Note Khánh](note/notes_khanh.md) còn thiếu và mâu thuẫn metadata; chưa dùng để hỗ trợ barrier/consequence.
+- [Note Khánh cũ](note/notes_khanh.md) còn mâu thuẫn metadata. [Nguồn mới của Khánh](note/notes_khanh_day17.md) được đưa vào bảng với giới hạn bản chép; chưa dùng để khẳng định barrier/consequence hoặc tăng số người độc lập.
 - File `notes_phuongnam.md` ghi người phỏng vấn là Bùi Hải Nam. Dẫn theo nội dung file, giữ nguyên tên file và chờ người ghi xác nhận.
-- Đây là ba nguồn practice Day 17, không phải ba feedback prototype Day 18.
+- Các notes là nguồn practice Day 17, không phải feedback prototype Day 18. PN-K chưa được xác nhận độc lập với PN1; không nhân đôi observation hoặc tăng độ mạnh bằng chứng.
 
 **Gate 1 — kiểm tra nội dung đã hoàn thiện:**
 

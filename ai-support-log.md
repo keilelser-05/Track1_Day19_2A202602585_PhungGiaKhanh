@@ -53,3 +53,7 @@ Người nộp yêu cầu điều chỉnh repo: Phùng Gia Khánh. Người ph�
 ### Bổ sung — hoàn thiện Chặng 1 theo yêu cầu người nộp
 
 ChatGPT/Codex hỗ trợ điền bốn câu thảo luận từ notes sẵn có, lập bảng năm thành phần của giả thuyết, tách evidence hỗ trợ/trái giả thuyết và ghi các điều chưa chứng minh. Không tạo lời kể hoặc số đo mới; 10 phút/thuật ngữ được giữ là ước lượng người tham gia theo PN3. Checklist Gate 1 chỉ xác nhận đủ nội dung tài liệu, không xác nhận đã nghe bản ghi, review nhóm hay coach chấm pass. Chưa viết đóng góp/reflection cá nhân.
+
+### Bổ sung nguồn Khánh — 05/10/2026
+
+Theo yêu cầu người nộp, lưu nguyên nội dung `note(3).md` vào `note/notes_khanh_day17.md`, thêm lời dẫn về attribution và khả năng trùng nguồn, rồi bổ sung PN-K/P01 vào Chặng 1. Không gán tên thật, không tạo quote hoặc hành vi mới. Do tên bản ghi và nội dung tương tự PN1, chưa tính đây là một người độc lập thêm. AI chưa nghe lại bản ghi; metadata và consent còn cần người ghi xác nhận.
