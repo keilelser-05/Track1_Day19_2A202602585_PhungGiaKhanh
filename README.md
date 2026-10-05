@@ -16,6 +16,24 @@ Tài liệu này gộp hai phần: **đề bài** (làm gì, luật chơi, gate)
 
 ---
 
+## Trạng thái thực tế — cập nhật 05/10/2026
+
+Repo giữ tên Day19 theo URL người nộp cung cấp; đề/README ghi Lab18. Chưa đổi tên repo, cần đối chiếu tên buổi với lớp.
+
+| Phần | Trạng thái | File làm việc |
+| --- | --- | --- |
+| Chặng 1 | Tổng hợp notes, có giới hạn và evidence trái giả thuyết; chờ review | [Design sheet](three-option-design-sheet.md) |
+| Chặng 2–3 | Có bản nháp A/B/C và bảng Human–AI; chưa chốt/phân công | [Design sheet](three-option-design-sheet.md) |
+| Chặng 4 | Chưa có prototype hoặc link chạy được | [Prototype link](prototype-link.md) |
+| Chặng 5 | Có task và 5 mục quan sát đề xuất | [Test prompt](test/test-prompt.md) |
+| Chặng 6 | Chưa có feedback test prototype | [Feedback note](prototype-feedback-note.md), [synthesis](group-feedback-synthesis.md) |
+
+**Bản nháp thực hiện hiện tại nằm ở các file liên kết trên.** Các bảng trống/nháp trong phần hướng dẫn bên dưới không phải kết quả đã hoàn thành.
+Không dùng ba note phỏng vấn Day 17 thay cho ba feedback test A/B/C.
+Phân công, đóng góp và reflection cá nhân do người thực hiện tự ghi.
+
+---
+
 ## 0. Thông tin bài nộp
 
 | Mục | Nội dung |
@@ -39,7 +57,7 @@ Tài liệu này gộp hai phần: **đề bài** (làm gì, luật chơi, gate)
 | 3 | `2A202602585` | `Phùng Gia Khánh` | Phản biện guide | ✍️ chốt ở Chặng 2 |
 | 4 | `2A202602930` | `Phan Duy Thanh` | Bản ghi & nộp bài | ✍️ chốt ở Chặng 2 |
 
-> Nhóm có **4 thành viên** trong khi A/B/C chỉ có ba option — nên một option sẽ do **2 người cùng phụ trách**. Phân công chốt ở Chặng 2 và ghi vào cột trên.
+> Danh sách trên là nhóm Day 17 gồm 4 người. Đề hôm nay yêu cầu 3 người: cần xác nhận nhóm/phân công với coach. Chưa tự loại thành viên hoặc coi phương án hai người cùng phụ trách là ngoại lệ đã được cho phép.
 >
 > **Dù phụ trách option nào, mỗi người vẫn phải test cả A/B/C.** Không ai chỉ mang option mình làm đi test.
 
@@ -154,7 +172,7 @@ Mọi trường hợp có ứng dụng công cụ AI trong quá trình làm bài
 
 ## 5. Đầu vào từ Day 17 (carry-over)
 
-⚙️ Toàn bộ mục này lấy từ [Lab17 · Day17-Track1-H3201](/d:/Code/AITHUCCHIEN/Labs/Lab17/Day17-Track1-H3201). Đặt cạnh nhau trước khi bắt đầu Chặng 1.
+Đầu vào Day 17 được lưu tại [note/](note/). Đây là ghi chép được cung cấp; bản cập nhật này chưa nghe lại bản ghi để xác nhận từng chi tiết.
 
 - Hypothesis Problem của nhóm → §5.1
 - Ba Practice Notes (một note từ mỗi thành viên) → §5.2
@@ -184,7 +202,7 @@ luỹ và đà học giảm dần.
 | Barrier | Không ai ở vai trò hỗ trợ biết họ đang mắc ở đâu **và** bản thân họ cũng không chủ động lên tiếng |
 | Consequence | Lỗ hổng kiến thức tích luỹ, đà học giảm dần |
 
-**Hai cách giải thích cạnh tranh ĐÃ ĐIỀU TRA ở Day 17:**
+**Hai giả thuyết được xem xét qua lượt luyện Day 17 — chưa xác thực:**
 
 | | Pain Hypothesis | Trạng thái sau Day 17 |
 | --- | --- | --- |
@@ -199,7 +217,7 @@ luỹ và đà học giảm dần.
 | PN2 | `Bùi Hải Nam` → learner `2A202602872` (khoá 4 AI Thực Chiến) | Có **nhiều kênh hỗ trợ** và **chủ động dùng** (search, hỏi bạn, hỏi lab coach) |
 | PN3 | `Chử Trần Phương Nam` → learner nữ (track chuyên sâu AI Thực Chiến) | **Ngại** nên không hỏi ai; ~10 phút/thuật ngữ; khi được hỏi trước thì **"Wow, được giải thoát rồi!"** |
 
-> Có thêm một note ở dạng **template rỗng** (`notes_khanh.md` — chưa có cuộc phỏng vấn, không phải dữ liệu thật). Không dùng nó làm evidence.
+> [Note Khánh](note/notes_khanh.md) có thông tin đã điền nhưng còn mâu thuẫn giữa tiêu đề, người phỏng vấn và dòng trạng thái. Chưa dùng làm evidence cho barrier/consequence; cần người ghi xác nhận.
 
 ### 5.3. Solution Parking Lot ⚙️
 
@@ -212,7 +230,7 @@ luỹ và đà học giảm dần.
 | 5 | **Digest theo slide, không theo người**: thống kê tín hiệu đơn giản (slide bị xem lại nhiều nhất, tỉ lệ đổi đáp án) gửi mentor — **cảnh báo nội dung khó, không gắn cờ học viên** | AI |
 | 6 | **Support Queue đúng như directive**: AI suy đoán **từng learner** đang kẹt ở đâu và xếp mức ưu tiên cho giảng viên | AI |
 
-> **CHECKPOINT 1 (Day 17):** qua khi lần theo được đủ chuỗi Solution → Change → Actor → Situation & Job → Pain → Evidence; có hai cách giải thích cạnh tranh; và nói rõ điều gì có thể làm giả thuyết được chọn trở nên sai. ✅ Đã qua.
+> **CHECKPOINT 1 (Day 17):** qua khi lần theo được đủ chuỗi Solution → Change → Actor → Situation & Job → Pain → Evidence; có hai cách giải thích cạnh tranh; và nói rõ điều gì có thể làm giả thuyết được chọn trở nên sai. Chưa xác nhận trạng thái chấm; nhóm tự đối chiếu.
 
 ### 5.4. Conversation Guide — chỉ để tham khảo context ⚙️
 
@@ -220,66 +238,25 @@ Day 18 **không** tiếp tục problem interview. Không mang Big 3 Questions v�
 
 ---
 
-## 6. Chặng 1 — Tổng hợp evidence · 15 phút
+## 6. Chặng 1 — Evidence Snapshot cập nhật
 
-### 1. Evidence huddle
+Bảng evidence và giới hạn được ghi tại [Three-Option Design Sheet](three-option-design-sheet.md#1-chặng-1--evidence-snapshot).
 
-Đặt ba Practice Notes cạnh nhau. Nếu dùng Evidence Pack, đọc các snippet như **ba nguồn riêng**; không biến chúng thành findings thật.
+- PN1: khó tìm nội dung trên slide; chưa có chuỗi xử lý hoặc hậu quả cụ thể.
+- PN2: chủ động search, hỏi bạn và coach; làm yếu giả định mọi learner đều im lặng.
+- PN3: kể hỏi AI rồi tra Google, ước lượng 10 phút/thuật ngữ và ngại hỏi người khác.
+- Không nói cả ba đều có sự kiện cụ thể “hôm qua”: mức neo vào sự kiện khác nhau.
+- Được giảng viên hỏi trước tại lớp code không chứng minh đồng ý để AI theo dõi/chia sẻ.
+- Cảm xúc PN1 có câu hỏi dẫn dắt theo note đính kèm; cần nghe lại trước khi dùng làm evidence.
+- Note cá nhân Khánh còn thiếu và mâu thuẫn metadata.
 
-⚙️ Bảng dưới đã điền sẵn từ Day 17 — đọc lại, đối chiếu bản ghi gốc, sửa nếu thấy sai:
+**Giả thuyết tiếp tục (chưa phải finding):**
 
-| Practice Note | User đã thực sự làm/nói gì? | Điều nhóm đang diễn giải |
-| ------------- | --------------------------- | ------------------------ |
-| **PN1** — Thành → Lê Thanh Tình | Làm đến một phần thì không hiểu nhưng **không xác định được nội dung trên slide**; gặp thuật ngữ tiếng Anh; *"Nói chung là em không tìm được cái nội dung ở đấy luôn."*; cảm giác **buồn**, **lo lắng** khi thấy mình tụt lại. Không kể workaround nào. | Learner có thể **khó chỉ ra chính xác điểm nghẽn** — nhưng đây mới là suy đoán từ một lần kể, chưa biết do cách trình bày, vốn từ hay nguyên nhân khác |
-| **PN2** — Nam → learner `2A202602872` | Buổi học gần nhất **là hôm qua**; một số định nghĩa trong video/slide **chưa rõ**, đọc vẫn chưa hiểu; workaround: **tự search mạng, hỏi bạn xung quanh, hỏi lab coach**, tiếp tục tìm hiểu đến khi thấy ổn; *"Thường là mình tự đi chủ động đi tìm các anh lab coach... chứ các anh cũng không hỏi tình hình của mình mấy."* | Learner **có nhiều kênh hỗ trợ và chủ động dùng được** → làm yếu giả định "không ai biết mình đang kẹt". Chưa rõ các kênh đó có luôn hiệu quả không. |
-| **PN3** — Nam (Chử Trần Phương Nam) → learner nữ, track chuyên sâu | Thuật ngữ chuyên sâu (ví dụ `RAG`) **không nhớ định nghĩa** nên phải dừng tra cứu; workaround: **hỏi AI trước → Google search** nếu AI chưa chuẩn; **~10 phút/thuật ngữ**; *"Mình nghĩ là không tại mình cũng hơi ngại"*; quiz **mật độ dày, tốc độ nhanh** thì *"ôi trời ơi không nhớ nó là gì luôn"*; khi được coach chủ động hỏi thăm: *"Wow, được giải thoát rồi!"* | **Pain B có evidence trực tiếp** (chi phí xã hội khi lên tiếng). Phản ứng tích cực khi được hỏi trước **chống lại** giả định "learner không muốn bị chú ý". |
+Khi **tự học một phần nội dung khó trên VLearn**, **học viên** gặp khó khăn trong việc **gỡ chỗ vướng để học tiếp** vì **người hỗ trợ chưa biết họ đang mắc ở đâu và họ chưa chủ động lên tiếng**, dẫn đến **tự xử lý tốn thời gian hoặc bỏ qua phần chưa hiểu**.
 
-**Thảo luận nhanh** ✍️ — trả lời bằng chữ của nhóm, không copy:
-
-- **Situation / behavior / workaround nào xuất hiện nhiều hơn một lần?**
-  → Cả ba note đều có mốc "buổi học gần nhất là hôm qua"; cả ba đều gặp **thuật ngữ / định nghĩa chưa rõ trong slide**; workaround lặp lại là **tự xoay** (search / hỏi AI / hỏi bạn).
-- **Evidence nào mâu thuẫn hoặc làm nhóm bất ngờ?**
-  → PN2 cho thấy learner **chủ động hỏi được** (làm yếu Pain A). PN3 cho thấy learner **ngại nên không hỏi dù kênh có sẵn** (ủng hộ Pain B), nhưng lại **rất nhẹ nhõm khi được hỏi trước** (chống lại "không muốn bị theo dõi"). Hai note này kéo về hai hướng khác nhau.
-- **Điều gì vẫn chỉ là suy đoán của nhóm?**
-  → Hậu quả học tập **cụ thể** (điểm, deadline, phải học lại) chưa ai kể; tần suất "mắc mà không ai biết" chưa đo được; "không xác định được chỗ vướng" là đặc điểm chung hay chỉ do cách kể ở một lượt.
-- **Hypothesis Problem nào đủ cụ thể để dùng làm điểm xuất phát hôm nay?**
-  → Bản ở §5.1. Giữ nguyên để A/B/C cùng giải một problem.
-
-### 2. Chốt Hypothesis Problem
-
-**Hypothesis Problem nhóm tiếp tục:** ⚙️
-
-```text
-Khi tự học một phần nội dung khó trên VLearn một mình, learner thường mắc lại khá lâu nhưng xử lý
-âm thầm — bằng workaround tốn thời gian hoặc bỏ qua phần đó — vì không ai ở vai trò hỗ trợ biết được
-họ đang mắc ở đâu, và bản thân họ cũng không chủ động lên tiếng. Hậu quả là lỗ hổng kiến thức tích
-luỹ và đà học giảm dần.
-```
-
-**Evidence ban đầu hỗ trợ giả thuyết:** ⚙️
-
-```text
-- Cả ba lượt đều kể được một sự kiện cụ thể trong tuần ("hôm qua"), không phải "thường thì mình hay bị".
-- Cả ba đều gặp barrier tại đúng một loại nội dung: thuật ngữ / định nghĩa chưa rõ trong slide.
-- Có workaround lặp lại và tốn thời gian (PN3: ~10 phút cho một thuật ngữ).
-- Có consequence: PN1 (buồn, lo lắng, thấy tụt lại), PN3 (quiz nhanh thì không kịp nhớ).
-- PN3 nói thẳng barrier "ngại" → tức đã biết mình mắc mà vẫn không lên tiếng.
-```
-
-**Điều vẫn chưa được chứng minh:** ⚙️
-
-```text
-- Pain A (visibility gap) chưa có evidence đủ mạnh; PN2 còn đi ngược lại.
-- Chưa có hậu quả học tập định lượng được (điểm, deadline, học lại).
-- Chưa biết tần suất "mắc mà không ai biết" trên nhiều learner.
-- Ba feedback chỉ từ ba người, phần lớn là learner trong cùng môi trường AI Thực Chiến.
-```
-
-> 🧪 **Nháp đề xuất:** nhóm có thể giữ nguyên câu chữ §5.1 nhưng ghi rõ trong README rằng **trọng số điều tra đã dịch từ A sang B** — tức barrier "ngại/không chủ động lên tiếng" là barrier được evidence ủng hộ hơn, còn "không ai biết" là barrier nền. Nhóm tự quyết định có sửa câu chữ hay không; nếu sửa, **sửa ở cả ba option như nhau**.
-
-**GATE 1 — Evidence continuity** ✅
-
-> Nhóm qua gate khi Hypothesis Problem có đủ **user, situation, job, barrier và consequence**; đồng thời chỉ ra được **ít nhất một observation Day 17** và **một điều vẫn chưa biết**.
+Evidence hỗ trợ một phần: PN1 và PN3. Evidence trái giả thuyết: PN2.
+Chưa chứng minh tần suất, việc bỏ qua bài, hậu quả học tập, nhận biết của người hỗ trợ và chấp nhận phân tích hành vi.
+Chưa đánh dấu Gate 1 hoàn thành trước khi nhóm review.
 
 ---
 

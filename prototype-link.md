@@ -1,55 +1,35 @@
-# Prototype Link — A/B/C dùng chung của nhóm
+# Prototype Link — H3201 · Case C
 
-> **Nhóm:** H3201 · **Track 1** · **Case C — AI Support Radar**
-> Đầu ra của **Chặng 4 — Build ba micro-prototype** (GATE 4).
-> Nếu prototype là file trong repo, ghi đường dẫn tương đối; nếu là link ngoài (Figma/Framer/Netlify/…), ghi URL và đảm bảo **người ngoài nhóm mở được**.
+> Trạng thái: **chưa build / chưa có link chạy được**. Bản nháp cơ chế: [Design sheet](three-option-design-sheet.md).
+> Người nộp: Phùng Gia Khánh — 2A202602585. Chưa chốt phân công.
 
----
+| Option | Cơ chế dự kiến | Người phụ trách | Link | Trạng thái |
+| --- | --- | --- | --- | --- |
+| A | User tự chọn và viết; AI chỉ định dạng khi được yêu cầu | Chưa chốt | Chưa có | Chưa build |
+| B | User bắt đầu trao đổi; AI hỏi làm rõ và soạn nháp | Chưa chốt | Chưa có | Chưa build |
+| C | AI gợi ý từ tín hiệu được cho phép; user kiểm tra | Chưa chốt | Chưa có | Chưa build |
 
-## 1. Link ba option
+## Phạm vi đề xuất
 
-| Option | Cơ chế (1 câu) | Người phụ trách | Link / đường dẫn | Trạng thái | Đã test mở trên máy khác? |
-| --- | --- | --- | --- | --- | --- |
-| **A** | User-led / No-inference | ✍️ | ✍️ | ⬜ chưa · ⬜ đang build · ⬜ test-ready | ⬜ |
-| **B** | User + AI co-create | ✍️ | ✍️ | ⬜ chưa · ⬜ đang build · ⬜ test-ready | ⬜ |
-| **C** | AI initiate, Human review | ✍️ | ✍️ | ⬜ chưa · ⬜ đang build · ⬜ test-ready | ⬜ |
+- 3 trạng thái mỗi option: context chung → tương tác → xem trước/kết quả quyết định.
+- Cùng slide RAG, quiz, dữ liệu giả lập, task và components.
+- Có sửa, hủy, tự viết và reset; không tự gửi yêu cầu.
+- Không cần API/model thật. Không dùng thông tin học viên thật làm fixture.
+- Annotation về kỳ vọng và điều cần quan sát đặt ngoài frame tester.
+- [Task test đề xuất](test/test-prompt.md).
 
-**Kho context/content dùng chung (~70%):** ✍️ *(đường dẫn tới thư mục `shared/`, file content, fixture, component chung)*
+## QA — chỉ đánh dấu sau khi kiểm tra thật
 
----
-
-## 2. Cách mở & quay về điểm xuất phát (reset path)
-
-> Tester phải tự mở được, tự làm hết task, và **quay về được context ban đầu** mà không cần nhóm giải thích.
-
-| Option | Cách mở (1–3 bước) | Reset path | Thời gian mở mục tiêu |
+| Hạng mục | A | B | C |
 | --- | --- | --- | --- |
-| **A** | | | ≤ 15 giây |
-| **B** | | | ≤ 15 giây |
-| **C** | | | ≤ 15 giây |
+| Người ngoài mở được | Chưa kiểm | Chưa kiểm | Chưa kiểm |
+| Tự thực hiện cùng task | Chưa kiểm | Chưa kiểm | Chưa kiểm |
+| Reset về context | Chưa kiểm | Chưa kiểm | Chưa kiểm |
+| Hiểu giới hạn/căn cứ của AI | Chưa kiểm | Chưa kiểm | Chưa kiểm |
+| Sửa hoặc từ chối khi AI sai | Chưa kiểm | Chưa kiểm | Chưa kiểm |
+| Độ hoàn thiện tương đương | Chưa kiểm | Chưa kiểm | Chưa kiểm |
 
----
-
-## 3. Phạm vi micro-prototype
-
-- [ ] Mỗi option chỉ gồm **2–3 trạng thái** quanh **một** critical interaction
-- [ ] Không build full product, không gọi API/model thật nếu không cần thiết
-- [ ] Cả ba dùng chung context screen, content và visual components
-- [ ] Không cần người của nhóm ngồi cạnh narrate
-- [ ] Có nút/luồng reset rõ ràng
-
----
-
-## 4. QA trước khi mang đi test (10–15 phút cuối sprint)
-
-Mỗi người thử option do **người khác** build, rồi cả nhóm chuẩn hoá A/B/C.
-
-| # | Hạng mục kiểm | A | B | C | Người kiểm |
-| - | ------------- | - | - | - | ---------- |
-| 1 | Mở được trên máy người khác | ⬜ | ⬜ | ⬜ | |
-| 2 | Chạy đủ task end-to-end | ⬜ | ⬜ | ⬜ | |
-| 3 | Reset về context ban đầu OK | ⬜ | ⬜ | ⬜ | |
-| 4 | Không lộ tên/ý đồ của option cho tester | ⬜ | ⬜ | ⬜ | |
-| 5 | Ba option trông cùng "độ hoàn thiện" (không có option nào nhỉnh hơn rõ rệt) | ⬜ | ⬜ | ⬜ | |
-
-**Ghi chú lỗi phát hiện khi QA:** ✍️
+- [ ] Điền link thật và các bước mở/reset cho từng option.
+- [ ] Người không build thử từng option.
+- [ ] Ghi lỗi và người kiểm.
+- [ ] Đạt Gate 4 trước khi test ngoài nhóm.

@@ -1,6 +1,7 @@
 # Interview Record — Lượt Phùng Gia Khánh làm người phỏng vấn
 
-> Chưa có cuộc phỏng vấn. Đây là mẫu ghi chép, không phải dữ liệu thật. Chỉ điền sau khi phỏng vấn người ngoài nhóm; không dùng câu trả lời của thành viên nhóm hoặc nội dung AI tạo.
+> Trạng thái cần xác nhận: file có metadata và một phần ghi chép, nhưng bản cũ ghi “Chưa có cuộc phỏng vấn”. Tiêu đề ghi Khánh làm người phỏng vấn trong khi bảng ghi Lê Anh Duy. Giữ nguyên nội dung bên dưới để người ghi đối chiếu; không tự đảo vai hoặc bổ sung lời kể.
+> Chưa dùng note này làm evidence cho barrier/consequence. Cột mốc bản ghi ở dòng đầu chứa mục tiêu thay vì timestamp; liên kết recording-link.md chưa được cung cấp.
 
 | Thông tin | Nội dung |
 | --- | --- |

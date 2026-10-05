@@ -37,3 +37,15 @@ Mọi nội dung gắn nhãn 🧪 là nháp và phải được nhóm tự rà l
 - [ ] Không có quote / observation nào do AI sinh
 - [ ] Phần đóng góp cá nhân và reflection do người tự viết 🚫
 - [ ] Người phụ trách từng mục đã ghi rõ
+
+## Cập nhật 05/10/2026 — ChatGPT/Codex
+
+| Phạm vi hỗ trợ | Đã thực hiện | Giới hạn / việc cần người xác nhận |
+| --- | --- | --- |
+| Rà repo và notes | Đối chiếu đề với README và các note; tách evidence hỗ trợ/trái giả thuyết | Chưa nghe bản ghi, chưa xác nhận metadata; không tạo quote hoặc observation mới |
+| Chặng 1 | Tóm tắt nguồn, thêm liên kết, sửa các khẳng định quá mức | Nhóm cần review; chưa xác nhận gate đạt |
+| Chặng 2–3 | Đề xuất A tự chọn, B đối thoại, C gợi ý chủ động; contract và quyền kiểm soát | Nháp AI, chưa là quyết định nhóm hoặc phân công thật |
+| Chặng 5 | Soạn task chung, câu facilitation và 5 mục quan sát | Chưa có test thực tế |
+| Tài liệu/trạng thái | Ghi rõ chưa có prototype, feedback hoặc synthesis | Không viết thay đóng góp cá nhân/reflection; không ghi “nhóm đã tự sửa” nếu chưa xảy ra |
+
+Người nộp yêu cầu điều chỉnh repo: Phùng Gia Khánh. Người phụ trách review nhóm: chưa xác nhận.
