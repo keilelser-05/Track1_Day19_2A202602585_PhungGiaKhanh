@@ -2,7 +2,7 @@
 
 > Người nộp: Phùng Gia Khánh — 2A202602585.
 > Cập nhật 05/10/2026. Evidence được tóm tắt từ notes hiện có, chưa đối chiếu bản ghi.
-> Chặng 2 đã hoàn thiện nội dung thiết kế với AI hỗ trợ; chờ nhóm review/phân công. Chặng 3 còn là bản nháp.
+> Chặng 2–3 đồng bộ thiết kế chung; chờ nhóm review. Chưa có kết quả build/test.
 
 ## 1. Chặng 1 — Evidence Snapshot
 
@@ -69,120 +69,113 @@ Câu trên là **giả thuyết để thiết kế và kiểm tra**, không ph�
 
 **Trạng thái:** Chặng 1 đã hoàn thiện phần tài liệu theo notes hiện có. Checklist trên xác nhận nội dung đáp ứng tiêu chí Gate 1; không khẳng định coach đã chấm pass, nhóm đã review hoặc problem đã được xác thực.
 
-## 2. Chặng 2 — Ba Solution Options
+## 2. Ba Solution Options — GATE 2
 
-**Điểm xuất phát:** giữ Hypothesis Problem ở Chặng 1. Ba option cùng giúp học viên làm rõ chỗ vướng và quyết định yêu cầu hỗ trợ để học tiếp.
-Đây là ba solution hypotheses để build/test, chưa có bằng chứng option nào hiệu quả hơn.
+> Nguồn thiết kế chung: [repo Thành](https://github.com/thanhpd123/Track1_Day19_2A202602930_PhanDuyThanh/blob/83b359251a1291b78d48d18dfedb4a2d25a81f37/three-option-design-sheet.md).
+> Ngưỡng 20 giây/quay lại lần 2, số bạn khác, trả lời AI và coach đều là tham số/nội dung mô phỏng; chưa có phép đo chứng minh. Dữ liệu hành vi chỉ xử lý trong phiên và cần bật quyền trước khi C gợi ý.
 
-### 2.1. Mở lại Solution Parking Lot
+### 2.1. Comparison Contract — giống hệt nhau ở cả 3 option
 
-| Hướng Day 17 | Nguyên lý dùng trong thiết kế |
+| Trường | Giá trị dùng chung cho A/B/C |
 | --- | --- |
-| FAQ theo slide / checklist tự kiểm tra | Cho user tự xác định nội dung cần giúp; không suy luận nhu cầu từ hành vi |
-| Peer pod / mentor hỏi một câu mở | Làm rõ câu hỏi và mở đường chuyển tới người hỗ trợ |
-| Digest theo slide | Dùng tín hiệu làm căn cứ tham khảo, không kết luận học viên không hiểu |
-| Support Queue | Gợi ý chủ động và tạo bản nháp hỗ trợ; chỉ chuyển khi user xác nhận |
+| User | **Learner** (cả ba option đều lấy learner làm người dùng chính; coach chỉ xuất hiện ở màn kết quả) |
+| Situation | Đang xem lại slide 6 "RAG — Retrieval-Augmented Generation" trước khi làm quiz, chưa hiểu thuật ngữ |
+| Task tester phải làm | Đến lúc tự tin trả lời 1 câu quiz về RAG nằm ngay dưới slide |
+| Outcome kỳ vọng | Gỡ được chỗ vướng ngay trong lúc học, hoặc chuyển được câu hỏi tới đúng người |
+| Fixture | Cùng mini-deck 3 slide (5–7), cùng câu quiz, cùng lời giải thích RAG, cùng câu trả lời của coach *(dữ liệu mô phỏng — xem [fixture chung](shared/content-fixture.md) và [AI log](ai-support-log.md))* |
 
-A/B/C là cách thích nghi các nguyên lý này quanh cùng một task, không build toàn bộ sáu hướng.
-Option A vẫn có hỗ trợ AI theo yêu cầu, nhưng không suy luận tình trạng học viên từ lịch sử.
+> **Vì sao sửa bản nháp trong README nhóm?** Bản nháp đó để Option B gửi digest cho mentor và Option C để **người hỗ trợ** làm user ("learner chỉ nhận thông báo"). Như vậy ba option **không cùng user** → trượt Gate 2. Ở đây learner là user cho cả ba; phía coach chỉ là nơi câu hỏi đến.
 
-### 2.2. Comparison Contract — giữ chung cho A/B/C
+### 2.2. Ba option
 
-| Thành phần | Quyết định dùng chung |
-| --- | --- |
-| Target user | Học viên tự học nội dung AI, đang cần làm rõ chỗ vướng |
-| Situation | Đọc slide RAG trên VLearn; chưa phân biệt truy xuất tài liệu với sinh câu trả lời |
-| Task | Làm rõ chỗ vướng và quyết định chuyển yêu cầu cho người hỗ trợ theo mức chia sẻ mình chọn |
-| Desired outcome | Có yêu cầu mô tả đúng nội dung cần hỗ trợ, biết người nhận và tự quyết định gửi/hủy để quay lại học |
-| Content/data fixture | Cùng một slide, một câu quiz, danh sách người hỗ trợ và ba tín hiệu giả lập dưới đây |
-| Giới hạn | Không hứa giải quyết kiến thức hoặc nhận phản hồi thật; prototype chỉ test việc làm rõ, kiểm tra và yêu cầu hỗ trợ |
-| Điều kiện test | Cùng task, cùng nội dung, cùng độ hoàn thiện, cùng khả năng sửa/hủy/reset; mỗi tester dùng cả A/B/C |
-
-**Fixture mô phỏng chung:**
-
-- Slide: “RAG truy xuất đoạn tài liệu liên quan rồi đưa cùng câu hỏi vào mô hình để sinh câu trả lời.”
-- Quiz: “Bước nào tìm tài liệu liên quan?” — đáp án mẫu: “Truy xuất”. Không dùng kết quả này để chẩn đoán năng lực.
-- Tín hiệu: xem lại slide 3 lần; đổi đáp án quiz; ghi chú “chưa rõ vai trò truy xuất”.
-- Người nhận giả lập: “Lab coach — hỗ trợ khái niệm”, “TA — hỗ trợ bài tập”.
-- Mẫu yêu cầu: nội dung đang học → chỗ chưa rõ → điều đã thử → câu hỏi → người nhận.
-- Kết quả gửi: “Yêu cầu đã gửi — mô phỏng”; không gửi ra ngoài hoặc bảo đảm thời gian phản hồi.
-
-Tất cả là dữ liệu soạn cho prototype, không phải quote, observation hoặc số đo phỏng vấn.
-Cùng fixture được cung cấp cho cả ba; chỉ C suy luận từ tín hiệu hành vi khi được cho phép. A dùng phần user chọn; B dùng phần user đồng ý đưa vào trao đổi.
-
-### 2.3. Ba cách giải
-
-| Thành phần | A — Tự chọn chỗ vướng | B — Cùng AI làm rõ | C — AI gợi ý chủ động |
+| | **Option A** | **Option B** | **Option C** |
 | --- | --- | --- | --- |
-| Solution mechanism | User xác định chỗ vướng, viết yêu cầu; AI chỉ định dạng khi được yêu cầu | User mở đối thoại; AI hỏi làm rõ rồi soạn yêu cầu từ câu trả lời | AI dùng tín hiệu được cho phép để gợi ý chỗ có thể cần hỗ trợ; user kiểm tra |
-| User làm gì? | Chọn đoạn, viết câu hỏi, chọn người nhận và xem trước | Trả lời 1–2 câu, sửa nháp, chọn người nhận và xem trước | Đọc căn cứ, xác nhận/sửa/bỏ gợi ý, chọn người nhận và xem trước |
-| AI làm gì? | Định dạng nội dung user đã nhập; không tự chẩn đoán hay thêm chỗ vướng | Hỏi thiếu thông tin, tóm tắt và soạn nháp; không tự thêm chi tiết | Gợi ý và soạn nháp từ fixture; chỉ rõ suy luận có thể sai |
-| Trigger | User chủ động tạo yêu cầu | User chủ động mở trao đổi với AI | Sau phiên học mô phỏng khi quyền phân tích đã bật |
-| Quyền quyết định | User chọn nội dung và quyết định gửi/hủy | User xác nhận nội dung và quyết định gửi/hủy | User bác bỏ/xác nhận suy luận và quyết định gửi/hủy; AI không tự đưa tên vào queue |
-| Trade-off chính | Ít phụ thuộc suy luận AI, chủ động hơn; cần tự diễn đạt chỗ vướng | Giảm công diễn đạt; tốn lượt trao đổi, có nguy cơ AI hiểu sai | Giảm công bắt đầu; có thể gây phiền, lo ngại dữ liệu và suy luận sai |
-| Giả thuyết giải pháp | Công cụ chỉ rõ vị trí và mẫu yêu cầu đủ giúp người chủ động hỏi | Đối thoại làm rõ giúp người chưa biết diễn đạt nhu cầu | Gợi ý có căn cứ và quyền từ chối giúp người chưa chủ động bắt đầu |
-| Điều cần kiểm tra | Có tự chọn đúng nội dung và viết yêu cầu được không? | AI có giúp làm rõ hay làm user thêm rối? | User có hiểu căn cứ, phát hiện gợi ý sai và kiểm soát chia sẻ không? |
+| Tên option | Tự đánh dấu, coach trả lời | AI giải thích khi được hỏi | AI chủ động hỏi thăm |
+| Từ Parking Lot | #1 FAQ, #2 checklist, #4 mentor | #5 digest theo slide (không theo người) | #6 Support Queue (đưa quyền quyết định về learner) |
+| Cơ chế (1 câu) | Learner tự đánh dấu chỗ chưa hiểu; hệ thống gắn số slide và gửi cho coach, **không suy đoán gì** | Learner hỏi trợ lý; AI giải thích trong phạm vi slide, nói rõ độ chắc chắn, và chỉ khi learner còn chưa hiểu mới soạn nháp câu hỏi cho coach | AI thấy tín hiệu hành vi của chính learner (dừng lâu/quay lại slide), **chủ động hỏi**, và chỉ khi learner đồng ý mới tạo thẻ gửi coach |
+| Vị trí trên spectrum | User-led / No-inference | User + AI co-create | AI initiate, human decide |
+| User làm gì? | Tự nhận ra chỗ kẹt, chọn loại, mô tả, chọn ẩn danh/kèm tên, gửi | Chọn thuật ngữ hoặc tự hỏi; đọc và đánh giá lời giải; quyết định có nhờ coach không; sửa nháp | Phản hồi gợi ý (giải thích / nhờ coach / để sau / tắt); xem trước và xác nhận thẻ |
+| AI làm gì? | Chỉ gắn slide vào câu hỏi | Giải thích dựa trên slide 5–7, nhãn mức hỗ trợ từ tài liệu và nguồn; hiển thị số bạn khác đánh dấu (ẩn danh); soạn nháp | Đo thời gian ở slide và số lần quay lại; hiện gợi ý kèm lý do; soạn bản xem trước thẻ |
+| Trigger | Learner | Learner | AI (dừng ≥ 20 giây ở slide 6 hoặc quay lại slide 6 lần 2) |
+| AI Act / Ask / Don't Act | **Don't Act** | **Ask** (chỉ làm khi được hỏi) | **Act** (khởi xướng) nhưng chỉ ở mức *hỏi learner*, không tự báo coach |
+| Ai giữ quyền quyết định cuối? | Learner | Learner | Learner |
+| Chống lại barrier nào? | Barrier 2 (ẩn danh giảm ngại) và Barrier 1 (tự gắn đúng slide) | Barrier 1 (tra rời rạc ~10 phút) và một phần Barrier 2 ("không chỉ mình mình") | Barrier 3 (coach/hệ thống biết learner đang kẹt) |
+| Rủi ro chính nếu sai | Learner không nhận ra mình kẹt thì không dùng được; phải chờ coach | AI giải thích sai mà learner tin | Gợi ý nhầm thời điểm, hoặc learner thấy bị theo dõi |
+| Người phụ trách chính | Phan Duy Thanh | Chử Trần Phương Nam | Bùi Hải Nam (+ Phùng Gia Khánh) |
 
-### 2.4. Lý do chọn dựa trên evidence
+### 2.3. Distance Check — nội dung đề xuất, nhóm cần review
 
-- **A:** PN2 và PN04 có hành vi chủ động hỏi. Thiết kế giữ quyền bắt đầu cho user và giúp gắn yêu cầu vào nội dung cụ thể; chưa chứng minh mẫu yêu cầu làm người hỗ trợ trả lời nhanh hơn.
-- **B:** PN1 khó xác định nội dung vướng, PN3 tự hỏi AI/tra cứu. Đối thoại là cách thử giảm công làm rõ câu hỏi; chưa chứng minh AI tóm tắt đúng.
-- **C:** PN3 kể ngại hỏi và từng nhẹ nhõm khi được giảng viên hỏi trước. Đây là lý do thử gợi ý chủ động có quyền từ chối, chưa chứng minh chấp nhận AI phân tích hành vi.
-- PN04 cho thấy đã hỏi vẫn có thể chờ lâu. A/B/C không giải quyết lịch làm việc của giảng viên; thời gian phản hồi là điều chưa chứng minh.
+- **A khác B ở chỗ:** ở A lời giải đến từ **con người** (coach) và hệ thống không suy luận gì; ở B **AI tự giải thích ngay** rồi con người chỉ là đường lui khi AI chưa đủ.
+- **B khác C ở chỗ:** ở B **learner khởi xướng** và AI chỉ nhìn ở cấp nội dung (slide); ở C **AI khởi xướng** dựa trên hành vi của *từng người*.
+- **A khác C ở chỗ:** A đòi learner **tự lên tiếng trước**; C là hệ thống **hỏi trước** learner.
+- **Kết luận:** ba option khác nhau ở **mechanism / phân chia quyền** (ai khởi xướng, AI suy luận ở cấp nào, lời giải đến từ đâu), không chỉ khác giao diện ☐ *(nhóm tick sau khi tự đọc lại)*
 
-### 2.5. Distance check
+---
 
-- **A khác B vì:** A để user tự xác định và viết chỗ vướng; B dùng đối thoại AI để cùng làm rõ trước khi soạn yêu cầu.
-- **B khác C vì:** B chỉ bắt đầu khi user yêu cầu; C khởi tạo gợi ý từ tín hiệu được cho phép, rồi user kiểm tra.
-- **A khác C vì:** A không suy luận nhu cầu từ hành vi; C có suy luận, phải hiện căn cứ và cho user bác bỏ.
-- Ba option khác ở cách khởi tạo, làm rõ nhu cầu và phân chia công việc; tất cả giữ quyền gửi cuối cùng ở user.
+## 3. Human–AI Decision Table — GATE 3 🧪
 
-Không cố làm một option kém: cùng nội dung đầy đủ và đường yêu cầu hỗ trợ. Mọi option đều có thể sửa, hủy và tự viết; không mặc định C thông minh hoặc tốt hơn.
+### 3.1. Option A — Tự đánh dấu, coach trả lời
 
-### 2.6. Phân công và Gate 2
+| # | Tình huống | AI **Act** | AI **Ask** | AI **Don't Act** | User hiểu điều gì? | Kiểm soát / phục hồi khi sai |
+| - | ---------- | ---------- | ---------- | ---------------- | ------------------ | ---------------------------- |
+| 1 | Learner bấm đánh dấu chỗ chưa hiểu ở slide đang xem | Tự gắn số slide vào câu hỏi | — | **Không** đoán learner chưa hiểu gì, không tự điền mô tả | "Câu hỏi sẽ gửi tới coach. Hệ thống không tự đoán bạn đang gặp khó ở đâu" | Sửa mô tả, đổi loại, chọn lại slide trước khi gửi |
+| 2 | Chọn cách gửi | — | Hỏi gửi **ẩn danh** hay **kèm tên** (mặc định ẩn danh) | Không tự tiết lộ tên | Dòng "Coach sẽ thấy: …" cập nhật theo lựa chọn | Đổi lại trước khi gửi |
+| 3 | Đã gửi, chờ coach | Hiển thị trạng thái "đã gửi" và phản hồi của coach khi có | — | Không tự tóm tắt hay chỉnh sửa lời coach | "Phản hồi coach ở đây là nội dung mô phỏng; chưa có cam kết thời gian thực tế" | **Sửa câu hỏi** hoặc **Thu hồi** trước khi có phản hồi; **Hỏi thêm** sau khi có phản hồi |
 
-| Option | Người phụ trách chính |
-| --- | --- |
-| A | Nhóm chưa cung cấp phân công |
-| B | Nhóm chưa cung cấp phân công |
-| C | Nhóm chưa cung cấp phân công |
+### 3.2. Option B — AI giải thích khi được hỏi
 
-Không tự gán người phụ trách hoặc coi bản thiết kế là đóng góp đã thực hiện của cá nhân.
+| # | Tình huống | AI **Act** | AI **Ask** | AI **Don't Act** | User hiểu điều gì? | Kiểm soát / phục hồi |
+| - | ---------- | ---------- | ---------- | ---------------- | ------------------ | -------------------- |
+| 1 | Learner mở panel ở slide đang xem | Hiển thị số bạn khác đánh dấu "chưa hiểu" ở slide này (ẩn danh) | — | Không nêu tên ai; không tự giải thích khi chưa được hỏi; không tự gửi coach | "Trợ lý chỉ dựa trên slide 5–7 và có thể trả lời sai" | Bỏ qua panel, tiếp tục học |
+| 2 | Learner hỏi một thuật ngữ | Giải thích dựa trên slide, kèm nguồn ("Slide 7, bước 4") | — | Không trả lời như thể chắc chắn khi slide không nói | Nhãn mô phỏng **Mức hỗ trợ từ tài liệu: đủ / một phần / chưa có** + cảnh báo khi slide chưa đủ (ví dụ Top-k: "slide chưa nói cách chọn k") | "Hỏi phần khác", "Mình hiểu rồi", "Vẫn chưa hiểu" |
+| 3 | Learner vẫn chưa hiểu | Soạn nháp câu hỏi cho coach | Hỏi learner **sửa nháp** và chọn ẩn danh/kèm tên (mặc định ẩn danh) | **Không gửi** khi learner chưa bấm "Gửi cho coach" | "Trợ lý soạn nháp — bạn xem và sửa trước khi gửi" | "Không gửi" (quay lại giải thích), **Thu hồi** sau khi gửi |
 
-- [x] Cùng user, situation, task và desired outcome.
-- [x] Cùng content/data fixture được mô tả cụ thể.
-- [x] Ba cơ chế khác nhau có ý nghĩa.
-- [x] Rõ user/AI làm gì, trigger, quyền cuối và trade-off.
-- [x] Distance check đủ ba cặp, không dựa vào màu/layout/wording.
+### 3.3. Option C — AI chủ động hỏi thăm
 
-**Trạng thái:** Chặng 2 hoàn thiện nội dung thiết kế để nhóm dùng cho bước tiếp theo. Chưa xác nhận review nhóm, phân công hoặc coach chấm pass. Chưa có kết quả test để chọn option thắng.
+| # | Tình huống | AI **Act** | AI **Ask** | AI **Don't Act** | User hiểu điều gì? | Kiểm soát / phục hồi |
+| - | ---------- | ---------- | ---------- | ---------------- | ------------------ | -------------------- |
+| 1 | Learner dừng ≥ 20 giây ở slide 6 hoặc quay lại lần 2 | Hiện gợi ý kèm lý do ("Đang ở slide 6 khoảng N giây"; "Đã quay lại N lần") | "Bạn có cần mình giúp không?" | Không tự báo coach; không đọc ghi chú hay nội dung chat | Panel luôn nói rõ mình dùng dữ liệu gì; nút **"Vì sao mình hỏi?"**; "đây chỉ là suy đoán, có thể sai" | **Để sau**; **Đừng gợi ý nữa**; công tắc Bật/Tắt trong panel; tối đa 2 lần gợi ý |
+| 2 | Learner chọn "Nhờ coach hỗ trợ" | Tạo bản **xem trước thẻ** sẽ vào hàng chờ của coach (learner / nội dung / tín hiệu / gợi ý hành động) | Hỏi **kèm tên** hay **ẩn danh**, rồi xác nhận gửi | **Không gửi** khi learner chưa bấm "Gửi cho coach" | Thấy chính xác coach sẽ nhận được gì, kể cả tín hiệu hệ thống đã đo | "Không gửi"; **Thu hồi** sau khi gửi |
+| 3 | AI gợi ý sai (learner không gặp khó) | — | — | Không lặp lại gợi ý quá 2 lần; không ghi nhận "learner gặp khó" nếu learner từ chối | Gợi ý được gọi rõ là suy đoán | Tắt gợi ý bất kỳ lúc nào; learner vẫn làm quiz bình thường |
 
-## 3. Chặng 3 — Human–AI Decision Table (nháp)
+### 3.4. Bốn nguyên lý Human–AI Design — đối chiếu
 
-| Quyết định | A | B | C |
+| Nguyên lý | A | B | C |
 | --- | --- | --- | --- |
-| User / AI | User chọn và viết; AI định dạng | User trao đổi và sửa; AI hỏi và soạn nháp | AI gợi ý; user kiểm tra và xác nhận |
-| Act / Ask / Don't Act | Act khi user yêu cầu định dạng. Ask trước khi gửi. Don't Act: tự gắn cờ | Ask khi chưa rõ; Act để soạn nháp. Don't Act: thêm chi tiết user chưa cung cấp hoặc tự gửi | Act để gợi ý khi có quyền. Ask để xác nhận. Don't Act khi tắt quyền, thiếu tín hiệu hoặc user từ chối |
-| Expectation | “AI chỉ định dạng phần bạn chọn, không xác định bạn đã hiểu bài hay chưa.” | “AI giúp làm rõ câu hỏi; bản nháp có thể hiểu sai.” | “Xem lại slide hoặc đổi đáp án không chứng minh bạn chưa hiểu.” |
-| Evidence / uncertainty | Hiện đoạn và câu hỏi user cung cấp | Tách câu user nói khỏi phần AI diễn giải; chỗ thiếu ghi “cần xác nhận” | Hiện ba tín hiệu mô phỏng; ghi “có thể cần hỗ trợ”; không dùng % tin cậy không có căn cứ |
-| Control / recovery | Sửa, bỏ định dạng, hủy, quay lại slide | Sửa nháp, bắt đầu lại hoặc chuyển sang tự viết | Bỏ gợi ý, sửa chỗ vướng, tắt gợi ý hoặc chuyển sang tự viết |
-| Nếu AI sai | User khôi phục câu hỏi gốc | User sửa hiểu nhầm rồi tiếp tục task | User bác bỏ suy luận; không gửi hoặc gắn nhãn học viên |
-| Chia sẻ dữ liệu | Xem trước, chọn người nhận; chỉ gửi sau xác nhận | Cùng quyền xem trước và xác nhận | Cùng quyền xem trước và xác nhận; không gửi toàn bộ lịch sử học |
+| **Expectation** | Câu "Hệ thống không tự đoán bạn đang gặp khó ở đâu" + dòng "Coach sẽ thấy…" | "Chỉ dựa trên slide 5–7, có thể sai" | Panel nêu rõ dữ liệu được dùng / không dùng; "Vì sao mình hỏi?" |
+| **Role & Agency** | Learner làm gần hết; AI **Don't Act** vì hậu quả sai thấp nhưng lợi ích cũng phụ thuộc learner tự nhận ra | AI thực hiện giải thích sau yêu cầu user, hỏi thêm khi cần; hậu quả sai vừa (hiểu sai thuật ngữ) | AI **Act** nhưng chỉ ở mức hỏi; hậu quả sai là cảm giác bị theo dõi → không tự báo coach |
+| **Evidence & Uncertainty** | Số slide, loại chỗ vướng | Nguồn slide + nhãn mức hỗ trợ từ tài liệu (không phải độ tin cậy mô hình đã đo) + cảnh báo | Danh sách tín hiệu đã đo, nêu là suy đoán |
+| **Control & Recovery** | Sửa, đổi ẩn danh, thu hồi, hỏi thêm | Hỏi lại, sửa nháp, không gửi, thu hồi | Để sau, tắt, xem trước, không gửi, thu hồi |
 
-**Feedback/data:** prototype dùng dữ liệu giả lập; sửa của user chỉ áp dụng phiên hiện tại, không học lâu dài. Reset xóa lựa chọn phiên. Không thu dữ liệu học thật hoặc gọi model/API. Trước khi gửi hiển thị người nhận và nội dung sẽ chia sẻ.
+### 3.5. Feedback and data check (cho Option C và phần gửi coach ở A/B)
 
-## 4. Phạm vi build đề xuất
+| Câu hỏi | Trả lời trong prototype 🧪 *(nhóm xác nhận)* |
+| --- | --- |
+| Feedback của learner ảnh hưởng phiên hiện tại, lần sau hay không được ghi nhớ? | Chỉ ảnh hưởng **phiên hiện tại**: "Đừng gợi ý nữa" tắt gợi ý trong phiên; prototype không lưu gì sang phiên sau |
+| Dữ liệu nào được dùng? | Thao tác chuyển slide và thời gian ở mỗi slide trong phiên. **Không** dùng ghi chú, đáp án quiz, nội dung chat |
+| Learner có cách rút quyền không? | Có: công tắc Bật/Tắt, "Đừng gợi ý nữa", "Không gửi", "Thu hồi" |
+| Số liệu "12 bạn khác cũng đánh dấu chưa hiểu" (Option B) | **Số liệu minh hoạ**, đã ghi chú trong giao diện; nhắc lại ở bước debrief |
 
-Mỗi option gồm 3 trạng thái: context chung → tương tác quan trọng → xem trước yêu cầu/kết quả quyết định.
-Cùng task và nội dung. Có đường tự viết ở mọi option, nút hủy và reset.
-Annotation về kỳ vọng/hành vi cần quan sát đặt ngoài giao diện tester.
+---
 
-## 5. Gate tự kiểm
+## 4. Gate tự kiểm và trạng thái
 
-- [x] Gate 1 — nội dung: đủ năm thành phần, observation có nguồn và điều chưa biết; xem §1.5. Chưa xác nhận review nhóm/chấm của coach.
-- [x] Gate 2 — nội dung: contract, fixture, ba cơ chế, trigger, trade-off và distance check đã đầy đủ; phân công/review nhóm chưa xác nhận.
-- [ ] Gate 3: nhóm review quyền quyết định, dữ liệu và phục hồi.
-- [ ] Gate 4: prototype thao tác được, mở trên máy khác, reset được.
-- [ ] Gate 5: ba tester ngoài nhóm dùng A/B/C; có notes thật và Next Change.
+- [x] Gate 1 — đủ nội dung evidence, giả thuyết và điều chưa biết.
+- [x] Gate 2 — đủ contract, ba cơ chế và distance check; nội dung mới đồng bộ từ thiết kế chung.
+- [ ] Gate 3 — bảng Human–AI đã có nội dung thiết kế, chờ nhóm review.
+- [ ] Gate 4 — chưa có prototype chạy được và QA.
+- [ ] Gate 5 — chưa có ba feedback test thật và Group Next Change.
 
-Danh sách Day 17 có 4 người, đề hôm nay ghi 3. Giữ danh sách lịch sử; chưa tự loại thành viên hay giả định ngoại lệ đã được coach cho phép.
+Checklist nội dung không xác nhận coach đã chấm pass hoặc nhóm đã review.
+Phân công là đề xuất của tài liệu nhóm, chưa phải đóng góp đã thực hiện.
+
+## 5. Phân công đề xuất từ tài liệu nhóm
+
+| Thành viên | Option / công việc đề xuất |
+| --- | --- |
+| Phan Duy Thành | A; nội dung coach mô phỏng và QA/link |
+| Chử Trần Phương Nam | B; nội dung giải thích AI mô phỏng |
+| Bùi Hải Nam | C, phụ trách chính; điều phối |
+| Phùng Gia Khánh | C, cùng phụ trách; context/slide/quiz/reset dùng chung |
+
+Tài liệu nhóm ghi giảng viên đã đồng ý nhóm 4 người. Người nộp cần xác nhận phân công trước khi ghi đóng góp cá nhân.

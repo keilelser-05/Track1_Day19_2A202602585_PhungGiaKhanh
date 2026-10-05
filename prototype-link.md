@@ -5,14 +5,14 @@
 
 | Option | Cơ chế dự kiến | Người phụ trách | Link | Trạng thái |
 | --- | --- | --- | --- | --- |
-| A | User tự chọn và viết; AI chỉ định dạng khi được yêu cầu | Chưa chốt | Chưa có | Chưa build |
-| B | User bắt đầu trao đổi; AI hỏi làm rõ và soạn nháp | Chưa chốt | Chưa có | Chưa build |
-| C | AI gợi ý từ tín hiệu được cho phép; user kiểm tra | Chưa chốt | Chưa có | Chưa build |
+| A | User đánh dấu và gửi câu hỏi gắn slide cho coach; không suy luận | Chưa chốt | Chưa có | Chưa build |
+| B | User hỏi; AI giải thích theo slide; chuyển coach khi chưa rõ | Chưa chốt | Chưa có | Chưa build |
+| C | AI hỏi thăm từ thời gian/chuyển slide được cho phép; user quyết định | Chưa chốt | Chưa có | Chưa build |
 
 ## Phạm vi đề xuất
 
 - 3 trạng thái mỗi option: context chung → tương tác → xem trước/kết quả quyết định.
-- Cùng slide RAG, quiz, dữ liệu giả lập, task và components.
+- Cùng mini-deck slide RAG 5–7, quiz, lời giải AI/coach mô phỏng, task và components; xem [fixture chung](shared/content-fixture.md).
 - Có sửa, hủy, tự viết và reset; không tự gửi yêu cầu.
 - Không cần API/model thật. Không dùng thông tin học viên thật làm fixture.
 - Annotation về kỳ vọng và điều cần quan sát đặt ngoài frame tester.

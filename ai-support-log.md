@@ -69,3 +69,8 @@ Lưu note PN04 mới do người nộp cung cấp vào `note/notes_khanh_pn04.md
 ### Hoàn thiện Chặng 2 — 05/10/2026
 
 AI hỗ trợ map Solution Parking Lot sang A/B/C, cụ thể hóa Comparison Contract và fixture giả lập, mô tả trigger/user/AI/quyền quyết định/trade-off, đối chiếu PN1/PN2/PN3/PN04 và viết distance check. Không tạo observation hoặc kết quả test, không gán phân công hoặc viết đóng góp/reflection. Nội dung Gate 2 đầy đủ nhưng review nhóm, phân công và chấm của coach chưa xác nhận. Theo chỉ dẫn người nộp, tài liệu làm việc không dùng PN-K; phần Khánh dùng PN04.
+
+### Đồng bộ thiết kế nhóm — 05/10/2026
+
+Nguồn: [repo Thành, commit 83b359251a1291b78d48d18dfedb4a2d25a81f37](https://github.com/thanhpd123/Track1_Day19_2A202602930_PhanDuyThanh/commit/83b359251a1291b78d48d18dfedb4a2d25a81f37). Đồng bộ cơ chế A gửi coach / B AI giải thích / C AI chủ động, bảng Human–AI và phân công đề xuất. Giữ evidence PN04, thông tin người nộp và giới hạn nguồn của repo cá nhân. Tài liệu nguồn ghi giảng viên đồng ý nhóm 4 người; chưa tự xác nhận review/phân công đã chốt.
+AI soạn fixture minh họa dùng chung, đồng bộ task test và link scope. Không tạo feedback hoặc đóng góp/reflection. Nhãn mức hỗ trợ từ tài liệu thay độ tin cậy mô hình chưa đo; thời gian phản hồi coach không coi là SLA thật; ngưỡng trigger và 12 bạn là mô phỏng. Chưa build/test hoặc xác nhận gate được chấm pass.

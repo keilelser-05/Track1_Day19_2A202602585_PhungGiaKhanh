@@ -23,8 +23,8 @@ Repo giữ tên Day19 theo URL người nộp cung cấp; đề/README ghi Lab18
 | Phần | Trạng thái | File làm việc |
 | --- | --- | --- |
 | Chặng 1 | Hoàn thiện nội dung theo notes: evidence, thảo luận, giả thuyết 5 thành phần và điều chưa biết | [Design sheet](three-option-design-sheet.md) |
-| Chặng 2 | Hoàn thiện contract, fixture, ba cơ chế và distance check; phân công chưa xác nhận | [Design sheet](three-option-design-sheet.md) |
-| Chặng 3 | Bảng Human–AI còn là bản nháp | [Design sheet](three-option-design-sheet.md) |
+| Chặng 2 | Đồng bộ A gửi coach / B AI giải thích / C AI chủ động; phân công là đề xuất | [Design sheet](three-option-design-sheet.md) |
+| Chặng 3 | Đã đồng bộ bảng Human–AI theo thiết kế chung; chờ review | [Design sheet](three-option-design-sheet.md) |
 | Chặng 4 | Chưa có prototype hoặc link chạy được | [Prototype link](prototype-link.md) |
 | Chặng 5 | Có task và 5 mục quan sát đề xuất | [Test prompt](test/test-prompt.md) |
 | Chặng 6 | Chưa có feedback test prototype | [Feedback note](prototype-feedback-note.md), [synthesis](group-feedback-synthesis.md) |
@@ -46,7 +46,7 @@ Phân công, đóng góp và reflection cá nhân do người thực hiện tự
 | Case | `Case C — AI Support Radar` |
 | Thời lượng | 180 phút |
 | Hình thức | Sản phẩm nhóm 3 người, **nộp bài cá nhân** |
-| Option tôi phụ trách chính | `[CẦN CHỐT Ở CHẶNG 2]` — A / B / C |
+| Option của tôi theo phân công đề xuất | C (cùng phụ trách); phần dùng chung slide/quiz/reset — chờ nhóm xác nhận |
 | Ngày nộp | `...` |
 
 **Thành viên nhóm — danh sách đầy đủ:**
@@ -58,7 +58,7 @@ Phân công, đóng góp và reflection cá nhân do người thực hiện tự
 | 3 | `2A202602585` | `Phùng Gia Khánh` | Phản biện guide | ✍️ chốt ở Chặng 2 |
 | 4 | `2A202602930` | `Phan Duy Thanh` | Bản ghi & nộp bài | ✍️ chốt ở Chặng 2 |
 
-> Danh sách trên là nhóm Day 17 gồm 4 người. Đề hôm nay yêu cầu 3 người: cần xác nhận nhóm/phân công với coach. Chưa tự loại thành viên hoặc coi phương án hai người cùng phụ trách là ngoại lệ đã được cho phép.
+> Tài liệu nhóm mới ghi giảng viên đã đồng ý nhóm 4 người. Phân công đề xuất: Thành A, Phương Nam B, Bùi Hải Nam chính C, Khánh cùng C và phần dùng chung. Cần nhóm xác nhận trước khi ghi đóng góp thực tế.
 >
 > **Dù phụ trách option nào, mỗi người vẫn phải test cả A/B/C.** Không ai chỉ mang option mình làm đi test.
 
@@ -265,74 +265,26 @@ Chặng 1 đã hoàn thiện phần tài liệu: xem bảng năm thành phần, 
 
 ---
 
-## 7. Chặng 2 — Chọn ba Solution Options
+## 7. Chặng 2 — Ba Solution Options
 
-Nội dung hoàn thiện tại [Design Sheet — Chặng 2](three-option-design-sheet.md#2-chặng-2--ba-solution-options).
+Thiết kế chung tại [Design Sheet](three-option-design-sheet.md#2-ba-solution-options--gate-2).
 
-| Option | Cơ chế |
+| Option | Cơ chế chung mới |
 | --- | --- |
-| A | User tự chọn chỗ vướng và viết; AI chỉ định dạng theo yêu cầu |
-| B | User bắt đầu trao đổi; AI hỏi làm rõ và soạn nháp |
-| C | AI gợi ý từ tín hiệu được cho phép; user kiểm tra trước khi gửi |
+| A | User đánh dấu chỗ vướng, gửi câu hỏi gắn slide cho coach; không suy luận |
+| B | User hỏi; AI giải thích dựa trên slide; chuyển coach nếu vẫn chưa rõ |
+| C | AI gợi ý từ thao tác/thời gian được cho phép; user quyết định giải thích hoặc nhờ coach |
 
-Cùng user, situation tự học slide RAG, task, desired outcome và fixture mô phỏng.
-Cả ba giữ quyền quyết định gửi/hủy ở user. Đã có trigger, trade-off, lý do từ evidence và distance check đủ ba cặp.
-Hoàn thiện nội dung Gate 2; nhóm cần review và xác nhận phân công. Chưa build hoặc test để kết luận phương án thắng.
+Cùng learner, slide RAG 5–7, quiz, lời giải mô phỏng và quyền gửi/hủy.
+Task chung: làm rõ đủ để trả lời quiz, hoặc chuyển câu hỏi đúng người.
+Người nộp cần review thiết kế và xác nhận phân công trước khi build.
+[Fixture chung](shared/content-fixture.md), [task test](test/test-prompt.md).
 
----
+## 8. Chặng 3 — Human–AI Design
 
-## 8. Chặng 3 — Human–AI Design pass · 30 phút
-
-Chỉ review **critical interaction** cần test. Không thiết kế toàn bộ product và **không thêm một màn hình cho mỗi tiêu chí**.
-
-### 1. Bốn quyết định thiết kế
-
-**Expectation**
-- Trước khi AI hoạt động, user có hiểu AI sắp làm gì không?
-- Capability và limit nào cần nói rõ?
-
-**Role and Agency**
-- User làm phần nào? AI làm phần nào?
-- AI **Act, Ask hay Don't Act** tại critical moment?
-- Nếu AI sai, user mất gì và sai có dễ phát hiện không?
-
-**Evidence and Uncertainty**
-- User cần biết AI dựa vào tín hiệu hoặc dữ liệu nào?
-- Nếu AI không chắc, hệ thống thể hiện ra sao?
-
-**Control and Recovery**
-- User preview, edit, reject, stop, undo hoặc dismiss ở đâu?
-- Sau khi AI sai, user tiếp tục task ban đầu bằng đường nào?
-
-### 2. Human–AI Decision Table
-
-| Human–AI decision | Option A | Option B | Option C |
-| ----------------- | -------- | -------- | -------- |
-| **User làm gì? AI làm gì?** | ✍️ | ✍️ | ✍️ |
-| **AI Act / Ask / Don't Act? Vì sao?** | ✍️ | ✍️ | ✍️ |
-| **User hiểu capability/limit bằng gì?** | ✍️ | ✍️ | ✍️ |
-| **Evidence/uncertainty được thể hiện thế nào?** | ✍️ | ✍️ | ✍️ |
-| **User kiểm soát và recovery thế nào?** | ✍️ | ✍️ | ✍️ |
-
-> 🧪 **Nháp đề xuất cho 2 dòng nhạy cảm nhất** (nhóm tự chốt và tự bổ sung 3 dòng còn lại):
->
-> | | A | B | C |
-> | --- | --- | --- | --- |
-> | AI Act/Ask/Don't Act | **Don't Act** — AI không suy đoán, chỉ ghi lại điều learner tự khai | **Ask** — AI nêu "slide này nhiều người xem lại", rồi **hỏi** learner có muốn được hỗ trợ | **Act** — AI chủ động tạo Support Queue; hậu quả khi sai là *gắn cờ sai người* nên bắt buộc có bước **human review** trước khi ai bị liên hệ |
-> | Control & recovery | Learner tự sửa/xoá đánh dấu; không có gì để "undo" | Learner **không chọn nêu tên** = mặc định ở lại ẩn danh; có nút dismiss cảnh báo | Người hỗ trợ **reject** một mục trong queue và ghi lý do; learner có nút "không muốn nhận hỗ trợ" để tắt |
->
-> ⚠️ **Neo vào evidence:** PN3 nói learner **ngại** lên tiếng → A và B đều **dựa vào việc learner lên tiếng**, nên phải nói rõ lý do vì sao cơ chế mới làm việc đó dễ hơn. PN3 cũng nói learner **rất nhẹ nhõm khi được hỏi trước** → đó là evidence **ủng hộ** hướng chủ động, miễn là có đường thoát.
-
-### 3. Feedback and data check — khi liên quan
-
-Coach có thể yêu cầu nhóm bổ sung nếu option dùng **dữ liệu nhạy cảm** hoặc **học từ feedback**. Option C dùng tín hiệu hành vi học tập gắn với từng cá nhân, nên trả lời trước:
-
-- Feedback có ảnh hưởng **phiên hiện tại**, **lần sau**, hay **không được ghi nhớ**?
-- Dữ liệu nào được dùng và user có cách **rút quyền** không?
-
-**GATE 3 — Human control** ✅
-
-> Mỗi option nói rõ **user và AI làm gì**, **agency phù hợp với hậu quả khi sai**, và **user có một đường kiểm soát hoặc phục hồi**.
+Đã đồng bộ bảng thiết kế cho từng option: trigger, hành động/hỏi/không làm, căn cứ, xem trước, sửa, thu hồi và tắt gợi ý.
+Xem [Design Sheet — Chặng 3](three-option-design-sheet.md#3-humanai-decision-table--gate-3-).
+Đây là thiết kế, chưa có bằng chứng prototype chạy được hoặc user test.
 
 ---
 
