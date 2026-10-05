@@ -13,10 +13,6 @@
 | PN3 — [lượt Chử Trần Phương Nam](note/note_chutranphuongnam.md) | Kể gặp thuật ngữ RAG; hỏi AI rồi tra Google nếu chưa rõ; ước lượng khoảng 10 phút/thuật ngữ; nói ngại hỏi người khác. Kể cảm giác nhẹ nhõm khi giảng viên hỏi trước trong lớp code. | Có dấu hiệu rào cản ngại hỏi. Được hỏi trước không đồng nghĩa đồng ý bị AI theo dõi hoặc chia sẻ dữ liệu. |
 | PN04 — [lượt Phùng Gia Khánh](note/notes_khanh_pn04.md) | Chưa xác định được phần cần sửa trong tài liệu 20 trang. Chủ động nhắn giảng viên, kể chờ khoảng 2 ngày. Nhóm tự họp, tra cứu và đoán cách sửa; kể thức đêm gần hạn nộp. | Có dấu hiệu khó làm rõ chỗ cần hỗ trợ và chờ giải đáp. Người này đã chủ động hỏi, không hỗ trợ giả định ngại hỏi/im lặng. Chưa biết có vướng kiến thức khi tự học hoặc nguyên nhân chậm phản hồi. |
 
-**Nguồn Khánh:** theo yêu cầu của người nộp, đã bổ sung P01 vào bảng. Đây là nguồn bổ sung, **chưa tính thành người thứ tư độc lập**: cùng `VinUniversity.m4a` và nội dung tương tự PN1. Chưa khẳng định P01 là Lê Anh Duy, Lê Thanh Tình hoặc AE06. Nhóm cần đối chiếu người phỏng vấn/người trả lời trước khi đếm số người.
-
-**PN04 thuộc lượt phỏng vấn nhằm tìm hiểu Case C**, theo note người nộp cập nhật. Câu chuyện thực tế tập trung vào làm rõ feedback bài tập; không tự đổi tên case hoặc đổi lời kể thành vướng kiến thức. PN04 và P01 là hai mã nguồn khác nhau, chưa gộp danh tính. PN04 chưa được xác nhận ngoài nhóm; bản chép và consent cần đối chiếu.
-
 ### 1.1. Thảo luận nhanh — tổng hợp từ notes
 
 **Situation, behavior hoặc workaround lặp lại:** PN1–PN3 đề cập nội dung/thuật ngữ chưa hiểu; PN2 và PN3 kể tìm nguồn khác để xử lý. PN04 kể làm rõ nhận xét bài tập bằng hỏi giảng viên và tự tra cứu. Có điểm liên hệ là cần làm rõ để làm tiếp, nhưng không coi đọc slide và sửa đồ án là cùng situation/job. P01 có thể trùng PN1 nên không tăng số người độc lập.
@@ -61,11 +57,8 @@ Câu trên là **giả thuyết để thiết kế và kiểm tra**, không ph�
 
 - Tổng hợp từ notes đã cung cấp; chưa nghe lại bản ghi hoặc xác minh từng câu trích.
 - PN1 có câu hỏi dẫn dắt về cảm xúc theo note đính kèm; không dùng cảm xúc làm bằng chứng độc lập về tụt lại.
-- [Note Khánh cũ](note/notes_khanh.md) còn mâu thuẫn metadata. [Nguồn mới của Khánh](note/notes_khanh_day17.md) được đưa vào bảng với giới hạn bản chép; chưa dùng để khẳng định barrier/consequence hoặc tăng số người độc lập.
 - File `notes_phuongnam.md` ghi người phỏng vấn là Bùi Hải Nam. Dẫn theo nội dung file, giữ nguyên tên file và chờ người ghi xác nhận.
 - Các notes là nguồn practice Day 17, không phải feedback prototype Day 18. PN-K chưa được xác nhận độc lập với PN1; không nhân đôi observation hoặc tăng độ mạnh bằng chứng.
-
-- [PN04 hiện hành](note/notes_khanh_pn04.md) thay cách gắn nhãn Case D trước đây: ý định phỏng vấn là Case C, evidence nghiêng về feedback bài tập. Chưa xác nhận người tham gia ngoài nhóm, consent hoặc người phỏng vấn từ bản ghi.
 
 **Gate 1 — kiểm tra nội dung đã hoàn thiện:**
 
