@@ -22,7 +22,7 @@ Repo giữ tên Day19 theo URL người nộp cung cấp; đề/README ghi Lab18
 
 | Phần | Trạng thái | File làm việc |
 | --- | --- | --- |
-| Chặng 1 | Tổng hợp notes, có giới hạn và evidence trái giả thuyết; chờ review | [Design sheet](three-option-design-sheet.md) |
+| Chặng 1 | Hoàn thiện nội dung theo notes: evidence, thảo luận, giả thuyết 5 thành phần và điều chưa biết | [Design sheet](three-option-design-sheet.md) |
 | Chặng 2–3 | Có bản nháp A/B/C và bảng Human–AI; chưa chốt/phân công | [Design sheet](three-option-design-sheet.md) |
 | Chặng 4 | Chưa có prototype hoặc link chạy được | [Prototype link](prototype-link.md) |
 | Chặng 5 | Có task và 5 mục quan sát đề xuất | [Test prompt](test/test-prompt.md) |
@@ -256,7 +256,7 @@ Khi **tự học một phần nội dung khó trên VLearn**, **học viên** g�
 
 Evidence hỗ trợ một phần: PN1 và PN3. Evidence trái giả thuyết: PN2.
 Chưa chứng minh tần suất, việc bỏ qua bài, hậu quả học tập, nhận biết của người hỗ trợ và chấp nhận phân tích hành vi.
-Chưa đánh dấu Gate 1 hoàn thành trước khi nhóm review.
+Chặng 1 đã hoàn thiện phần tài liệu: xem bảng năm thành phần, câu trả lời thảo luận và checklist Gate 1 trong Design Sheet. Đây là kiểm tra nội dung, chưa phải xác nhận review nhóm/chấm của coach hoặc validation.
 
 ---
 
@@ -665,7 +665,7 @@ Track1_Day18_MHV_HoVaTen/
 
 ### 13.3. Checklist trước khi nộp
 
-- [ ] Hypothesis Problem giữ đúng case Day 17, có đủ user/situation/job/barrier/consequence (GATE 1)
+- [x] Hypothesis Problem giữ case Day 17, có đủ user/situation/job/barrier/consequence, observation có nguồn và điều chưa biết (GATE 1 — nội dung)
 - [ ] Ba options nêu rõ mechanism khác nhau, cùng một problem (GATE 2)
 - [ ] Distance check hoàn thành **không** nhắc màu/layout/wording
 - [ ] Mỗi option có Human–AI Decision Table với Act/Ask/Don't Act và đường control/recovery (GATE 3)
@@ -681,7 +681,7 @@ Track1_Day18_MHV_HoVaTen/
 
 | Gate | Nội dung | Trạng thái |
 | ---- | -------- | ---------- |
-| **GATE 1** | Evidence continuity — Hypothesis Problem đủ 5 thành phần + ≥1 observation Day 17 + ≥1 điều chưa biết | ⬜ |
+| **GATE 1** | Evidence continuity — đủ 5 thành phần + observation có nguồn + điều chưa biết | Đủ nội dung; chưa có xác nhận chấm |
 | **GATE 2** | Meaningful options — cùng user/situation/task/outcome, khác mechanism hoặc phân chia quyền | ⬜ |
 | **GATE 3** | Human control — rõ user/AI làm gì, agency phù hợp hậu quả, có đường kiểm soát/phục hồi | ⬜ |
 | **GATE 4** | Test-ready — người ngoài mở được, làm cùng task, quay về context, không cần giải thích | ⬜ |

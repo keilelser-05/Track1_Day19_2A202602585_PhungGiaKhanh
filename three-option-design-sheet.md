@@ -12,22 +12,60 @@
 | PN2 — [lượt Bùi Hải Nam](note/notes_phuongnam.md) | Kể việc tìm trên mạng, hỏi bạn hoặc lab coach; tiếp tục tìm hiểu đến khi thấy ổn. | Có người chủ động tìm hỗ trợ. Làm yếu giả định mọi học viên đều im lặng hoặc không biết hỏi ai. |
 | PN3 — [lượt Chử Trần Phương Nam](note/note_chutranphuongnam.md) | Kể gặp thuật ngữ RAG; hỏi AI rồi tra Google nếu chưa rõ; ước lượng khoảng 10 phút/thuật ngữ; nói ngại hỏi người khác. Kể cảm giác nhẹ nhõm khi giảng viên hỏi trước trong lớp code. | Có dấu hiệu rào cản ngại hỏi. Được hỏi trước không đồng nghĩa đồng ý bị AI theo dõi hoặc chia sẻ dữ liệu. |
 
-- Lặp lại: các note đề cập nội dung/định nghĩa chưa hiểu. PN2 và PN3 kể dùng nguồn khác để tìm hiểu.
-- Khác biệt: PN2 chủ động hỏi người khác, PN3 kể ngại hỏi.
-- Chưa đủ căn cứ nói cả ba đều mắc lâu, bỏ qua bài hoặc có cùng hậu quả.
-- PN1 có câu hỏi dẫn dắt về cảm xúc; không dùng cảm xúc làm bằng chứng độc lập cho việc tụt lại.
-- [Note Khánh](note/notes_khanh.md) còn thiếu và mâu thuẫn metadata; chưa dùng để hỗ trợ giả thuyết.
-- Tên file `notes_phuongnam.md` không trùng người phỏng vấn ghi trong file: Bùi Hải Nam. Cần nhóm xác nhận; không tự đổi danh tính.
+### 1.1. Thảo luận nhanh — tổng hợp từ notes
 
-### Hypothesis Problem tiếp tục từ Day 17
+**Situation, behavior hoặc workaround lặp lại:** cả ba note có nội dung/thuật ngữ chưa hiểu. PN2 và PN3 kể tìm nguồn khác để xử lý; cách chọn nguồn khác nhau. Chưa đủ dữ liệu để nói cùng một hành vi lặp ở mọi người hoặc đo tần suất.
+
+**Evidence mâu thuẫn hoặc bất ngờ:** PN2 chủ động hỏi bạn và lab coach, còn PN3 kể ngại hỏi. Điều này làm yếu giả định mọi học viên đều xử lý âm thầm. PN3 thấy nhẹ nhõm khi được giảng viên hỏi trước, nhưng đó là tương tác người–người, chưa chứng minh chấp nhận AI theo dõi.
+
+**Điều vẫn là suy đoán:** không ai biết học viên đang vướng; họ bỏ qua bài; khó khăn làm giảm điểm/tiến độ hoặc tạo lỗ hổng lâu dài; AI phát hiện sẽ giúp họ học tốt hơn. Không dùng những suy đoán này làm findings.
+
+**Hypothesis Problem tiếp tục:** giữ problem Day 17 về gỡ chỗ vướng khi tự học. Dùng rào cản chưa lên tiếng như điều cần kiểm tra, không coi là đặc điểm chung. A/B/C cần có lựa chọn phù hợp cả người chủ động hỏi và người ngại hỏi.
+
+### 1.2. Hypothesis Problem tiếp tục từ Day 17
 
 Khi **tự học một phần nội dung khó trên VLearn**, **học viên** gặp khó khăn trong việc **gỡ chỗ vướng để học tiếp** vì **người hỗ trợ chưa biết họ đang mắc ở đâu và họ chưa chủ động lên tiếng**, dẫn đến **tự xử lý tốn thời gian hoặc bỏ qua phần chưa hiểu**.
 
-Đây là giả thuyết Day 17 được viết theo năm thành phần, không phải kết luận về tất cả học viên. Trong prototype, thời điểm học, bài và slide cụ thể là dữ liệu mô phỏng.
+| Thành phần | Nội dung của giả thuyết | Evidence và giới hạn |
+| --- | --- | --- |
+| Situation | Tự học nội dung khó trên VLearn | PN3 kể đọc lại slide ở nhà; chưa xác nhận mọi lượt đều diễn ra trên VLearn |
+| User | Học viên tự học | Notes hiện có đều ghi phía học viên; chưa phỏng vấn người hỗ trợ |
+| Job | Gỡ chỗ vướng để học tiếp | PN2 kể tìm hiểu tới khi thấy ổn rồi chuyển phần |
+| Barrier | Người hỗ trợ chưa biết chỗ vướng; học viên chưa lên tiếng | PN3 kể ngại hỏi; PN2 chủ động hỏi. Việc người hỗ trợ chưa biết chưa có bằng chứng trực tiếp |
+| Consequence | Tự xử lý tốn thời gian hoặc bỏ qua phần chưa hiểu | PN3 ước lượng khoảng 10 phút/thuật ngữ; chưa có evidence về bỏ qua bài hoặc hậu quả lâu dài |
 
-**Evidence hỗ trợ một phần:** PN1 có khó khăn tìm nội dung; PN3 có tự tra cứu và ngại hỏi.
-**Evidence trái giả thuyết:** PN2 chủ động hỏi bạn và coach.
-**Chưa chứng minh:** mức độ/tần suất, bỏ qua bài, hậu quả học tập; người hỗ trợ thật sự không biết; chấp nhận phân tích hành vi; khả năng và thời gian hỗ trợ của giảng viên.
+Câu trên là **giả thuyết để thiết kế và kiểm tra**, không phải kết luận về tất cả học viên. Không đổi case, không tìm problem mới.
+
+### 1.3. Evidence ban đầu hỗ trợ giả thuyết
+
+- **PN1:** note ghi người tham gia không tìm được nội dung trên slide. Hỗ trợ dấu hiệu khó xác định chỗ vướng, chưa chứng minh người hỗ trợ không biết.
+- **PN3:** note ghi tra AI rồi Google, ước lượng khoảng 10 phút/thuật ngữ và ngại hỏi người khác. Hỗ trợ một phần barrier và chi phí tự xử lý; thời gian là tự ước lượng, không phải phép đo.
+- **PN2 — evidence chống lại:** người tham gia chủ động hỏi bạn/coach. Giữ chi tiết này để A/B/C không mặc định mọi người đều cần được phát hiện hoặc nhắc trước.
+
+### 1.4. Điều vẫn chưa được chứng minh
+
+1. Tần suất và mức độ khó khăn; chưa biết ai chỉ gặp bất tiện ngắn và ai bị mắc lâu.
+2. Có thật người hỗ trợ không biết chỗ vướng, hay biết nhưng không đủ thời gian giúp?
+3. Việc chưa hiểu có dẫn đến bỏ qua bài, trễ hạn hoặc giảm kết quả học không?
+4. Học viên có đồng ý để AI phân tích hành vi và chia sẻ với người hỗ trợ không?
+5. Việc hỗ trợ chủ động có giúp hoàn thành task học tập, ngoài cảm giác nhẹ nhõm không?
+
+### 1.5. Giới hạn nguồn và Gate 1
+
+- Tổng hợp từ notes đã cung cấp; chưa nghe lại bản ghi hoặc xác minh từng câu trích.
+- PN1 có câu hỏi dẫn dắt về cảm xúc theo note đính kèm; không dùng cảm xúc làm bằng chứng độc lập về tụt lại.
+- [Note Khánh](note/notes_khanh.md) còn thiếu và mâu thuẫn metadata; chưa dùng để hỗ trợ barrier/consequence.
+- File `notes_phuongnam.md` ghi người phỏng vấn là Bùi Hải Nam. Dẫn theo nội dung file, giữ nguyên tên file và chờ người ghi xác nhận.
+- Đây là ba nguồn practice Day 17, không phải ba feedback prototype Day 18.
+
+**Gate 1 — kiểm tra nội dung đã hoàn thiện:**
+
+- [x] Hypothesis Problem có user, situation, job, barrier và consequence.
+- [x] Có observation từ Day 17, chỉ rõ note nguồn và giới hạn.
+- [x] Tách lời kể khỏi diễn giải; giữ evidence làm yếu giả thuyết.
+- [x] Nêu điều vẫn chưa biết.
+
+**Trạng thái:** Chặng 1 đã hoàn thiện phần tài liệu theo notes hiện có. Checklist trên xác nhận nội dung đáp ứng tiêu chí Gate 1; không khẳng định coach đã chấm pass, nhóm đã review hoặc problem đã được xác thực.
 
 ## 2. Chặng 2 — Comparison Contract (nháp)
 
@@ -79,9 +117,9 @@ Mỗi option gồm 3 trạng thái: context chung → tương tác quan trọng 
 Cùng task và nội dung. Có đường tự viết ở mọi option, nút hủy và reset.
 Annotation về kỳ vọng/hành vi cần quan sát đặt ngoài giao diện tester.
 
-## 5. Gate tự kiểm — chưa đánh dấu hoàn thành
+## 5. Gate tự kiểm
 
-- [ ] Gate 1: nhóm đối chiếu sources, review giả thuyết và điều chưa biết.
+- [x] Gate 1 — nội dung: đủ năm thành phần, observation có nguồn và điều chưa biết; xem §1.5. Chưa xác nhận review nhóm/chấm của coach.
 - [ ] Gate 2: nhóm chốt contract, ba cơ chế và phân công.
 - [ ] Gate 3: nhóm review quyền quyết định, dữ liệu và phục hồi.
 - [ ] Gate 4: prototype thao tác được, mở trên máy khác, reset được.

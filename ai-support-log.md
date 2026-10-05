@@ -49,3 +49,7 @@ Mọi nội dung gắn nhãn 🧪 là nháp và phải được nhóm tự rà l
 | Tài liệu/trạng thái | Ghi rõ chưa có prototype, feedback hoặc synthesis | Không viết thay đóng góp cá nhân/reflection; không ghi “nhóm đã tự sửa” nếu chưa xảy ra |
 
 Người nộp yêu cầu điều chỉnh repo: Phùng Gia Khánh. Người phụ trách review nhóm: chưa xác nhận.
+
+### Bổ sung — hoàn thiện Chặng 1 theo yêu cầu người nộp
+
+ChatGPT/Codex hỗ trợ điền bốn câu thảo luận từ notes sẵn có, lập bảng năm thành phần của giả thuyết, tách evidence hỗ trợ/trái giả thuyết và ghi các điều chưa chứng minh. Không tạo lời kể hoặc số đo mới; 10 phút/thuật ngữ được giữ là ước lượng người tham gia theo PN3. Checklist Gate 1 chỉ xác nhận đủ nội dung tài liệu, không xác nhận đã nghe bản ghi, review nhóm hay coach chấm pass. Chưa viết đóng góp/reflection cá nhân.
