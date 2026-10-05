@@ -12,32 +12,19 @@
 | PN2 — [lượt Bùi Hải Nam](note/notes_phuongnam.md) | Kể việc tìm trên mạng, hỏi bạn hoặc lab coach; tiếp tục tìm hiểu đến khi thấy ổn. | Có người chủ động tìm hỗ trợ. Làm yếu giả định mọi học viên đều im lặng hoặc không biết hỏi ai. |
 | PN3 — [lượt Chử Trần Phương Nam](note/note_chutranphuongnam.md) | Kể gặp thuật ngữ RAG; hỏi AI rồi tra Google nếu chưa rõ; ước lượng khoảng 10 phút/thuật ngữ; nói ngại hỏi người khác. Kể cảm giác nhẹ nhõm khi giảng viên hỏi trước trong lớp code. | Có dấu hiệu rào cản ngại hỏi. Được hỏi trước không đồng nghĩa đồng ý bị AI theo dõi hoặc chia sẻ dữ liệu. |
 | PN-K — [nguồn Khánh bổ sung](note/notes_khanh_day17.md), P01 | 00:17–00:31: nhắc buổi học chiều hôm trước. 00:49–01:00: có nhắc phần chưa hiểu và không tìm được nội dung trên slide. 01:08–01:12: nhắc thuật ngữ nhưng chưa nhận dạng chắc loại nào. | Có thể khó tìm/diễn đạt chỗ vướng. Chưa biết cách tự xử lý, thời gian, hậu quả hoặc người hỗ trợ có biết không. Bản chép tự động chưa nghe lại. |
+| PN04 — [lượt Khánh bổ sung](note/notes_khanh_pn04.md) | 00:55–01:10: chưa xác định được phần cần sửa trong tài liệu 20 trang. 01:15–01:50: chủ động nhắn giảng viên, kể chờ khoảng 2 ngày. 02:00–02:35: nhóm tự họp, tra cứu và đoán cách sửa; kể thức đêm gần hạn nộp. | Có dấu hiệu khó làm rõ chỗ cần hỗ trợ và chờ giải đáp. Người này đã chủ động hỏi, không hỗ trợ giả định ngại hỏi/im lặng. Chưa biết có vướng kiến thức khi tự học hoặc nguyên nhân chậm phản hồi. |
 
 **Nguồn Khánh:** theo yêu cầu của người nộp, đã bổ sung P01 vào bảng. Đây là nguồn bổ sung, **chưa tính thành người thứ tư độc lập**: cùng `VinUniversity.m4a` và nội dung tương tự PN1. Chưa khẳng định P01 là Lê Anh Duy, Lê Thanh Tình hoặc AE06. Nhóm cần đối chiếu người phỏng vấn/người trả lời trước khi đếm số người.
 
-### Người Khánh bổ sung — PN04 (Case D, ngoài phạm vi Case C)
-
-Nguồn: [note PN04](note/notes_khanh_pn04_case_d.md), bản ghi `FPTU_Interview_02.m4a`, khoảng 3 phút 15 giây. Attribution thuộc phần Khánh theo yêu cầu người nộp; chưa xác nhận người phỏng vấn từ bản ghi. Không thay PN-K/P01 hoặc gộp hai người.
-
-| User đã kể gì? (tóm tắt note, chưa nghe lại) | Mốc bản ghi | Diễn giải / giới hạn |
-| --- | --- | --- |
-| Nhóm nộp nháp tuần trước, cần nhận xét để làm tiếp | 00:20–00:45 | Situation là sửa đồ án nhóm, không phải tự học slide VLearn |
-| Nhận xét ngắn, không biết lỗi ở đâu trong tài liệu 20 trang | 00:55–01:10 | Có dấu hiệu khó xác định vị trí cần sửa; không đồng nhất với chưa hiểu khái niệm |
-| Chủ động nhắn giảng viên qua kênh nhận dạng là Teams | 01:15–01:25 | Người này chủ động hỏi; không hỗ trợ giả định im lặng/ngại hỏi |
-| Kể chờ khoảng 2 ngày, nhóm họp và tự tra cứu để đoán cách sửa | 01:30–02:15 | Thời gian theo lời kể trong note, chưa đo độc lập; cần kiểm tra nguyên nhân chậm |
-| Kể thức đêm gần hạn nộp | 02:20–02:35 | Chưa biết điểm số hoặc cách sửa cuối cùng có đúng không |
-
-**Cách dùng trong Chặng 1:** ghi nhận như nguồn bổ sung ngoài phạm vi để tránh bỏ sót phần Khánh. Không cộng PN04 vào các nguồn trực tiếp hỗ trợ Hypothesis Problem Case C, không đổi problem sang vòng phản hồi đồ án. Điểm tương đồng “khó xác định chỗ cần giúp” chỉ là liên hệ để xem xét, chưa chứng minh cùng job/barrier.
-
-**Chưa biết:** PN04 có ngoài nhóm không; consent mới có dấu hiệu trong bản chép; chưa rõ tên thật; chưa có đối chứng phía giảng viên. Chưa có bằng chứng giảng viên quá tải hoặc quên nhận xét. Không gán tên Lê Anh Duy/AE06 cho PN04.
+**PN04 thuộc lượt phỏng vấn nhằm tìm hiểu Case C**, theo note người nộp cập nhật. Câu chuyện thực tế tập trung vào làm rõ feedback bài tập; không tự đổi tên case hoặc đổi lời kể thành vướng kiến thức. PN04 và P01 là hai mã nguồn khác nhau, chưa gộp danh tính. PN04 chưa được xác nhận ngoài nhóm; bản chép và consent cần đối chiếu.
 
 ### 1.1. Thảo luận nhanh — tổng hợp từ notes
 
-**Situation, behavior hoặc workaround lặp lại:** cả ba note có nội dung/thuật ngữ chưa hiểu. PN2 và PN3 kể tìm nguồn khác để xử lý; cách chọn nguồn khác nhau. Chưa đủ dữ liệu để nói cùng một hành vi lặp ở mọi người hoặc đo tần suất.
+**Situation, behavior hoặc workaround lặp lại:** PN1–PN3 đề cập nội dung/thuật ngữ chưa hiểu; PN2 và PN3 kể tìm nguồn khác để xử lý. PN04 kể làm rõ nhận xét bài tập bằng hỏi giảng viên và tự tra cứu. Có điểm liên hệ là cần làm rõ để làm tiếp, nhưng không coi đọc slide và sửa đồ án là cùng situation/job. P01 có thể trùng PN1 nên không tăng số người độc lập.
 
-**Evidence mâu thuẫn hoặc bất ngờ:** PN2 chủ động hỏi bạn và lab coach, còn PN3 kể ngại hỏi. Điều này làm yếu giả định mọi học viên đều xử lý âm thầm. PN3 thấy nhẹ nhõm khi được giảng viên hỏi trước, nhưng đó là tương tác người–người, chưa chứng minh chấp nhận AI theo dõi.
+**Evidence mâu thuẫn hoặc bất ngờ:** PN2 chủ động hỏi bạn và lab coach; PN04 chủ động nhắn giảng viên, còn PN3 kể ngại hỏi. Điều này làm yếu giả định mọi học viên đều xử lý âm thầm. PN3 thấy nhẹ nhõm khi được giảng viên hỏi trước, nhưng đó là tương tác người–người, chưa chứng minh chấp nhận AI theo dõi.
 
-**Điều vẫn là suy đoán:** không ai biết học viên đang vướng; họ bỏ qua bài; khó khăn làm giảm điểm/tiến độ hoặc tạo lỗ hổng lâu dài; AI phát hiện sẽ giúp họ học tốt hơn. Không dùng những suy đoán này làm findings.
+**Điều vẫn là suy đoán:** người hỗ trợ không biết chỗ vướng; học viên bỏ qua phần khó; khó khăn làm giảm điểm hoặc tạo lỗ hổng lâu dài; AI phát hiện giúp học tốt hơn. PN04 kể chờ phản hồi và thức đêm, nhưng chưa chứng minh nguyên nhân chậm, giảng viên quá tải hoặc ảnh hưởng điểm số. Không dùng suy đoán làm findings.
 
 **Hypothesis Problem tiếp tục:** giữ problem Day 17 về gỡ chỗ vướng khi tự học. Dùng rào cản chưa lên tiếng như điều cần kiểm tra, không coi là đặc điểm chung. A/B/C cần có lựa chọn phù hợp cả người chủ động hỏi và người ngại hỏi.
 
@@ -60,6 +47,7 @@ Câu trên là **giả thuyết để thiết kế và kiểm tra**, không ph�
 - **PN1 / PN-K (có thể cùng bản ghi):** note ghi người tham gia không tìm được nội dung trên slide. Hỗ trợ dấu hiệu khó xác định chỗ vướng, chưa chứng minh người hỗ trợ không biết.
 - **PN3:** note ghi tra AI rồi Google, ước lượng khoảng 10 phút/thuật ngữ và ngại hỏi người khác. Hỗ trợ một phần barrier và chi phí tự xử lý; thời gian là tự ước lượng, không phải phép đo.
 - **PN2 — evidence chống lại:** người tham gia chủ động hỏi bạn/coach. Giữ chi tiết này để A/B/C không mặc định mọi người đều cần được phát hiện hoặc nhắc trước.
+- **PN04 — evidence bổ sung có giới hạn:** khó xác định phần cần sửa và chờ giải đáp có liên hệ với việc làm rõ nhu cầu hỗ trợ. Hành vi chủ động nhắn giảng viên làm yếu giả định im lặng trong lượt này. Chưa dùng làm bằng chứng trực tiếp cho situation tự học VLearn, vướng kiến thức hoặc nhu cầu AI.
 
 ### 1.4. Điều vẫn chưa được chứng minh
 
@@ -68,6 +56,7 @@ Câu trên là **giả thuyết để thiết kế và kiểm tra**, không ph�
 3. Việc chưa hiểu có dẫn đến bỏ qua bài, trễ hạn hoặc giảm kết quả học không?
 4. Học viên có đồng ý để AI phân tích hành vi và chia sẻ với người hỗ trợ không?
 5. Việc hỗ trợ chủ động có giúp hoàn thành task học tập, ngoài cảm giác nhẹ nhõm không?
+6. PN04 có vướng kiến thức trước khi nhận feedback hay chỉ cần nhận xét bài làm rõ hơn? Hai nhu cầu này có cùng barrier không?
 
 ### 1.5. Giới hạn nguồn và Gate 1
 
@@ -76,6 +65,8 @@ Câu trên là **giả thuyết để thiết kế và kiểm tra**, không ph�
 - [Note Khánh cũ](note/notes_khanh.md) còn mâu thuẫn metadata. [Nguồn mới của Khánh](note/notes_khanh_day17.md) được đưa vào bảng với giới hạn bản chép; chưa dùng để khẳng định barrier/consequence hoặc tăng số người độc lập.
 - File `notes_phuongnam.md` ghi người phỏng vấn là Bùi Hải Nam. Dẫn theo nội dung file, giữ nguyên tên file và chờ người ghi xác nhận.
 - Các notes là nguồn practice Day 17, không phải feedback prototype Day 18. PN-K chưa được xác nhận độc lập với PN1; không nhân đôi observation hoặc tăng độ mạnh bằng chứng.
+
+- [PN04 hiện hành](note/notes_khanh_pn04.md) thay cách gắn nhãn Case D trước đây: ý định phỏng vấn là Case C, evidence nghiêng về feedback bài tập. Chưa xác nhận người tham gia ngoài nhóm, consent hoặc người phỏng vấn từ bản ghi.
 
 **Gate 1 — kiểm tra nội dung đã hoàn thiện:**
 

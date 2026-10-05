@@ -1,3 +1,5 @@
+> **Bản lưu lịch sử — không dùng làm note hiện hành.** Cách phân loại dứt khoát “Case D” ở bản này đã được điều chỉnh theo xác nhận người nộp. Xem [note PN04 hiện hành — phỏng vấn cho Case C](notes_khanh_pn04.md). Evidence gốc về phản hồi đồ án không thay đổi; chưa đủ căn cứ xác nhận toàn bộ tình huống tự học trong Hypothesis Problem Case C.
+
 > **Nguồn Khánh bổ sung ngày 05/10/2026:** người nộp yêu cầu thêm người này vào Chặng 1. Mã giữ là PN04; chưa xác nhận danh tính người phỏng vấn từ bản ghi hoặc người tham gia ngoài nhóm.
 > **Phạm vi:** note là Case D — Assignment Feedback Loop, khác Case C hiện tại. Lưu để đối chiếu; không coi là bằng chứng trực tiếp cho barrier/hậu quả của AI Support Radar. Bản chép chưa nghe lại toàn bộ.
 > Nội dung gốc bên dưới được giữ nguyên. Câu hỏi tiếp số 3 gợi một giải pháp giả định; không dùng làm câu hỏi problem interview trung tính. Những diễn giải về “yếu tố chính” hoặc “nguy cơ rất cao” chưa được kiểm chứng.

@@ -221,7 +221,7 @@ luỹ và đà học giảm dần.
 
 ### Nguồn Khánh bổ sung — PN04
 
-Đã thêm [note PN04 — Case D](note/notes_khanh_pn04_case_d.md) và bảng riêng trong [Chặng 1](three-option-design-sheet.md). Người này kể về phản hồi đồ án nhóm, chủ động nhắn giảng viên và chờ giải đáp. Đây là case khác; không thay ba notes Case C, không đổi Hypothesis Problem hoặc dùng như bằng chứng trực tiếp cho việc học viên im lặng. PN04 và P01 là hai mã nguồn riêng; chưa xác nhận danh tính thật.
+Đã cập nhật [note PN04 hiện hành](note/notes_khanh_pn04.md) theo file mới người nộp cung cấp và đưa vào bảng evidence [Chặng 1](three-option-design-sheet.md). Ý định phỏng vấn là Case C; câu chuyện thu được nghiêng về làm rõ feedback bài tập. Giữ nguyên lời kể, không tự đổi case hoặc biến thành vướng kiến thức khi tự học. PN04 chủ động nhắn giảng viên; không dùng để chứng minh ngại hỏi/im lặng. PN04 và P01 là hai mã nguồn riêng, chưa xác nhận danh tính thật. Bản có tên case_d được giữ làm lịch sử và có liên kết tới bản hiện hành.
 
 ### 5.3. Solution Parking Lot ⚙️
 
@@ -252,7 +252,7 @@ Bảng evidence và giới hạn được ghi tại [Three-Option Design Sheet](
 - Không nói cả ba đều có sự kiện cụ thể “hôm qua”: mức neo vào sự kiện khác nhau.
 - Được giảng viên hỏi trước tại lớp code không chứng minh đồng ý để AI theo dõi/chia sẻ.
 - Cảm xúc PN1 có câu hỏi dẫn dắt theo note đính kèm; cần nghe lại trước khi dùng làm evidence.
-- Đã bổ sung P01 từ [note mới của Khánh](note/notes_khanh_day17.md), có mốc bản ghi và giới hạn. Nội dung có thể trùng PN1; không đếm hai lần. Note cá nhân cũ còn mâu thuẫn metadata.
+- Đã bổ sung nguồn Khánh: P01 có thể trùng PN1, không đếm hai lần; [PN04](note/notes_khanh_pn04.md) là phỏng vấn cho Case C nhưng câu chuyện về feedback bài tập, được đưa vào bảng với giới hạn. Note cá nhân cũ còn mâu thuẫn metadata.
 
 **Giả thuyết tiếp tục (chưa phải finding):**
 

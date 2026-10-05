@@ -61,3 +61,7 @@ Theo yêu cầu người nộp, lưu nguyên nội dung `note(3).md` vào `note/
 ### Bổ sung PN04 — 05/10/2026
 
 Theo yêu cầu Khánh, lưu nguyên `note(4).md` vào `note/notes_khanh_pn04_case_d.md`, thêm chú thích nguồn và bảng tóm tắt có timestamp trong Chặng 1. AI nhận ra đây là Case D (phản hồi đồ án), nên tách khỏi evidence hỗ trợ Case C và không tự đổi problem. Không tạo quote, danh tính, consent hoặc feedback mới; không biến thời gian tự thuật thành số đo. Chỉ ra câu hỏi tiếp số 3 đang gợi giải pháp giả định và các diễn giải chưa có đối chứng. P01 và PN04 không được gộp.
+
+### Rà lại Chặng 1 với note(5).md — 05/10/2026
+
+Lưu note PN04 mới do người nộp cung cấp vào `note/notes_khanh_pn04.md`, đưa vào bảng evidence chung, cập nhật thảo luận/điều chưa biết và liên kết README. Sửa phân loại dứt khoát Case D ở lần trước: đây là phỏng vấn nhằm tìm hiểu Case C nhưng evidence tập trung vào làm rõ feedback bài tập. Giữ bản cũ làm lịch sử có thông báo thay thế. Không đổi sự kiện thành vướng kiến thức, không dùng PN04 để chứng minh im lặng hoặc giảng viên quá tải, không tạo quote/danh tính hay xác nhận consent. Checklist chỉ kiểm tra đủ nội dung, chưa xác nhận coach hoặc review nhóm.
