@@ -1,8 +1,8 @@
 # Chặng 5 — Kịch bản test A/B/C
 
 **Case C — AI Support Radar · Người thực hiện: Phùng Gia Khánh — 2A202602585.**
-**Phạm vi cá nhân:** phụ trách Option C; thực hiện một phiên với một người, cho người đó trải nghiệm cả A/B/C.
-**Trạng thái:** Khánh xác nhận đã test và lấy ý kiến. Thông tin người tham gia, thao tác và feedback cụ thể đang chờ Khánh cung cấp để điền vào form.
+**Phạm vi cá nhân:** phụ trách Option C. Kịch bản dự kiến cho một người trải nghiệm A/B/C; phiên thực tế với PN05 chỉ thử C.
+**Trạng thái:** đã ghi nhận feedback PN05, người ngoài nhóm, cho riêng C. A/B chưa test; chưa có lựa chọn so sánh.
 Dùng [fixture chung](../shared/content-fixture.md) và [ba prototype](../prototype-link.md). Tài liệu này dành cho facilitator; không mở phần ghi chú nội bộ trước mặt tester.
 
 ## 1. Câu hỏi bối cảnh — tối đa 2 phút
@@ -38,7 +38,7 @@ Trước phiên:
 
 | Phiên cá nhân | Người thực hiện | Người test | Thứ tự thực tế |
 | --- | --- | --- | --- |
-| Một phiên, ba lượt A/B/C | Phùng Gia Khánh | Chờ cung cấp tên viết tắt hoặc mã | Chờ Khánh cung cấp |
+| Một phiên, chỉ thử C | Phùng Gia Khánh | PN05 — ngoài nhóm | C; A/B chưa thử |
 
 Phần của Khánh không yêu cầu ba người test. Thứ tự ghi theo phiên đã diễn ra, không thay bằng thứ tự dự kiến. Việc đổi thứ tự giữa các phiên là phối hợp của nhóm, không yêu cầu Khánh tổ chức thêm phiên.
 
@@ -100,52 +100,51 @@ Cho phép câu trả lời “chưa chọn” hoặc “không phương án nào
 - [x] Có reset, đổi thứ tự và cách ghi trợ giúp/giới hạn mô phỏng.
 - [x] Tách kịch bản dự kiến khỏi feedback thật.
 
-**Chặng 5 đã hoàn thiện kịch bản cho phần cá nhân: một người trải nghiệm A/B/C.** Khánh xác nhận phiên test đã diễn ra và đã thu ý kiến. Phần dưới dùng để ghi lại kết quả; chỉ đánh dấu hoàn thành độc lập/reset và tổng hợp Chặng 6 khi có thông tin thực tế.
+**Chặng 5 đã hoàn thiện kịch bản A/B/C.** Phiên thực tế mới thử C với PN05. Đã có feedback C; chưa đủ dữ liệu so sánh A/B/C hoặc đánh dấu Gate 5 hoàn tất.
 
 ## 9. Form ghi lại phiên đã thực hiện
 
-Không cần tổ chức lại buổi test để điền form. Dùng ghi chú, bản ghi hoặc những gì Khánh nhớ được; phần không nhớ ghi “không ghi nhận”.
+Nguồn: thông tin Khánh cung cấp sau phiên. Nội dung dưới đây là tóm tắt, không phải lời nói nguyên văn.
 
 | Thông tin | Nội dung thực tế |
 | --- | --- |
-| Người phỏng vấn/test | Phùng Gia Khánh |
+| Người thực hiện | Phùng Gia Khánh — 2A202602585 |
 | Option phụ trách | C |
-| Số người trong phiên cá nhân | 1 |
-| Phương án trải nghiệm | A, B và C |
-| Mã hoặc tên viết tắt người tham gia | Chờ cung cấp |
-| Có thuộc nhóm build không? | Chờ xác nhận |
-| Bối cảnh học tập liên quan | Chờ cung cấp |
-| Ngày, thời lượng, thiết bị và phiên bản prototype | Chờ cung cấp; không ghi nhận nếu không nhớ |
-| Thứ tự A/B/C thực tế | Chờ cung cấp |
-| Nhiệm vụ đã giao và phần khác kịch bản (nếu có) | Chờ cung cấp |
-| Ghi chú/ghi âm/ghi hình | Chờ cung cấp; chỉ dẫn bản ghi nếu có |
+| Người tham gia | PN05 — ngoài nhóm |
+| Số người | 1 |
+| Phương án trải nghiệm | Chỉ C; A/B chưa thử |
+| Thứ tự thực tế | C |
+| Bối cảnh, ngày, thời lượng, thiết bị, phiên bản | Chưa cung cấp |
+| Nhiệm vụ đã giao | Chưa cung cấp; không mặc định đã dùng đúng task dự kiến |
+| Ghi âm/ghi hình | Chưa cung cấp |
 
-### 9.1. Năm mục quan sát — ghi riêng cho từng option
+### 9.1. Năm mục quan sát
 
 | Mục | A | B | C |
 | --- | --- | --- | --- |
-| 1. Hành động đầu tiên | Chờ cung cấp | Chờ cung cấp | Chờ cung cấp |
-| 2. Do dự, hiểu sai hoặc cần giúp | Chờ cung cấp | Chờ cung cấp | Chờ cung cấp |
-| 3. Căn cứ và giới hạn đã xem | Chờ cung cấp | Chờ cung cấp | Chờ cung cấp |
-| 4. Kiểm soát, phục hồi và reset | Chờ cung cấp | Chờ cung cấp | Chờ cung cấp |
-| 5. Lựa chọn, lý do và đánh đổi | Chờ cung cấp | Chờ cung cấp | Chờ cung cấp |
+| 1. Hành động đầu tiên | Chưa test | Chưa test | Có lướt slide, sử dụng gợi ý, xem hỏi đáp; chưa ghi nhận thứ tự chi tiết |
+| 2. Do dự, hiểu sai hoặc cần giúp | Chưa test | Chưa test | Vướng giao diện và độ linh hoạt hỗ trợ; không cần Khánh hướng dẫn |
+| 3. Căn cứ và giới hạn đã xem | Chưa test | Chưa test | Chưa ghi nhận việc mở nguồn hoặc xem căn cứ/giới hạn |
+| 4. Kiểm soát, phục hồi và reset | Chưa test | Chưa test | Chưa ghi nhận thao tác từ chối, tắt, sửa, thu hồi hoặc reset |
+| 5. Lựa chọn, lý do và đánh đổi | Chưa test | Chưa test | Chưa chọn vì chưa thử đủ A/B/C |
 
-**Kết quả nhiệm vụ A/B/C:** chờ cung cấp; ghi rõ hoàn thành, chưa hoàn thành hoặc có trợ giúp.
+**Kết quả nhiệm vụ:** PN05 tự thao tác C mà không cần hướng dẫn. Chưa có thông tin về hoàn thành quiz hoặc đạt mục tiêu làm rõ kiến thức.
 
-**Riêng C:** chờ xác nhận người tham gia có tự bật gợi ý, nhận gợi ý, phản hồi và tiếp tục học không; ghi đúng các thao tác thực tế.
+**Riêng C:** đã sử dụng tính năng gợi ý và xem hỏi đáp. Chưa ghi nhận cụ thể cách bật quyền, tín hiệu kích hoạt hoặc cách tiếp tục học.
 
-### 9.2. Ý kiến sau phiên
+### 9.2. Ý kiến sau phiên — tóm tắt từ Khánh
 
-- **Phương án người test chọn và lý do:** chờ cung cấp. Không mặc định chọn C vì Khánh phụ trách C.
-- **Điểm thuận tiện, khó hiểu hoặc gây phiền:** chờ cung cấp.
-- **Điểm người test đề nghị sửa:** chờ cung cấp.
-- **Lời nói nguyên văn:** chỉ điền khi có câu ghi chính xác; nếu nhớ ý thì ghi “tóm tắt”.
+- PN05 có chút không hài lòng.
+- Điểm vướng: giao diện; khả năng hỗ trợ chưa linh hoạt.
+- Đề nghị: cải thiện khung giao diện và luồng hoạt động.
+- Chưa chọn phương án vì mới thử C.
+- Không có quote nguyên văn được cung cấp.
 
-### 9.3. Nhận xét của người thực hiện
+### 9.3. Phân biệt kết quả và điều chưa biết
 
-- **OBSERVED — thao tác/lời nói thật:** chờ cung cấp.
-- **INTERPRETED — cách Khánh diễn giải:** chờ cung cấp.
-- **NEXT CHANGE — điểm sửa tiếp dựa trên kết quả:** chờ cung cấp.
-- **STILL UNPROVEN — điều chưa thể kết luận:** một phiên chưa đại diện mọi học viên; các giới hạn khác điền theo thực tế.
+- **OBSERVED:** lướt slide, dùng gợi ý, xem hỏi đáp; không cần hướng dẫn. Các nhận xét về giao diện, độ linh hoạt và phản ứng được ghi theo tóm tắt của Khánh.
+- **INTERPRETED:** chưa có diễn giải riêng của Khánh; không tự suy ra nguyên nhân hoặc mức độ ảnh hưởng.
+- **NEXT CHANGE:** đề xuất từ PN05 là cải thiện khung giao diện và luồng hoạt động; chưa chốt thay đổi cụ thể.
+- **STILL UNPROVEN:** chưa biết C tốt hơn A/B; chưa xác nhận mức độ hiểu bài, đạt task, căn cứ gợi ý hoặc khả năng reset. Một phiên C chưa đại diện mọi học viên.
 
-Phần kịch bản ở trên mô tả cách dự kiến điều phối. Nếu buổi test thực tế có hướng dẫn, đổi task hoặc không reset, ghi lại ở form; không tự coi mọi bước trong kịch bản đều đã được thực hiện.
+Kịch bản phía trên là kế hoạch; bảng này là những gì thực tế được cung cấp. Chưa đánh dấu hoàn thành thử đủ A/B/C.
