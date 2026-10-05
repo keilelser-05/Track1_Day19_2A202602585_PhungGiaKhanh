@@ -23,6 +23,10 @@
       "result": "PASS"
     },
     {
+      "check": "Classroom: sidebar navigation, dock close/reopen, notes, desktop layout and reset",
+      "result": "PASS"
+    },
+    {
       "check": "All: standalone open, same context/quiz, no horizontal overflow at desktop, reset and no external requests",
       "result": "PASS"
     }

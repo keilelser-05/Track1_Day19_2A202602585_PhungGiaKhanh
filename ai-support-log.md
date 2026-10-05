@@ -92,3 +92,7 @@ AI đọc trang welcome, DOM và CSS phía client; lưu trích đoạn HTML/bi�
 ## 05/10/2026 — Option C giữ ngữ cảnh và tư liệu public
 
 AI lưu DOM công khai, CSS đã tải và 2 ảnh public (vòng học/login). Yêu cầu đăng nhập bảo mật bị auto-review từ chối do chưa có xác nhận quyền truy cập riêng; không đi tiếp hoặc lấy dữ liệu tài khoản. AI viết engine C theo ngữ cảnh slide, hội thoại phản hồi theo quy tắc, nguồn, dừng, ghi chú riêng, consent, cooldown và coach recovery. Dùng fixture chung A/B/C; không dùng nội dung phỏng vấn để giả làm dữ liệu test. QA mới 6 nhóm pass và ảnh render được kiểm tra. Đây là kiểm tra phần mềm, không phải feedback hay Gate 4 người thật.
+
+## 05/10/2026 — Đối chiếu 5 ảnh màn học
+
+AI đọc 5 ảnh do user cung cấp, nhận diện header trắng/sidebar/viewer/dock; viết lại shell dùng chung A/B/C. Không đưa email/tên/tiến độ riêng vào fixture; không upload ảnh gốc chứa thông tin tài khoản. AI sửa engine tích hợp đóng/mở panel, ghi chú, chuyển slide, reset và gợi ý inline; QA thực tế ghi trong output, không giả feedback hoặc đóng góp cá nhân. Các màn trang chủ/account ngoài phạm vi prototype.

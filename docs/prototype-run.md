@@ -14,6 +14,7 @@ C mặc định tắt; tester có thể không bật. Nếu bật, ở slide m�
 ## Sửa code
 
 Nguồn chính: `shared/prototype.css`, `shared/lesson-fixture.js`, `shared/prototype.js` (A/B), `shared/radar-c.js` và `shared/radar-c.css` (C); giao diện theo `design.md`.
+Shell chung theo ảnh màn học: `shared/classroom-shell.js` và `.css`. Hỗ trợ ban đầu đóng; nút trên header mở trợ giảng hoặc yêu cầu coach. Nút menu đóng/mở danh mục; reset luôn có trên header.
 Sau sửa, chạy `python scripts/build_prototypes.py` để sinh lại 3 file HTML. Không sửa riêng output HTML rồi để lệch ba bản.
 
 ## QA tự động tùy chọn

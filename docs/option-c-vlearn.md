@@ -40,3 +40,9 @@ QA tự động và ảnh render chỉ kiểm tra phần mềm; Gate 4 còn cầ
 ## Tư liệu thực tế và giới hạn
 
 Đã chụp trang public mô tả vòng học và màn đăng nhập; lưu DOM công khai cùng CSS tải trong trình duyệt. Xem `reference/vlearn/capture-manifest.json`. Đăng nhập bị duyệt tự động từ chối vì chưa có xác nhận rõ quyền dùng tài khoản; không lấy mã hoặc ảnh màn học riêng. Prototype là bản thiết kế của nhóm, không khẳng định tái tạo đúng màn lớp học thật.
+
+## Bản đối chiếu màn học từ 5 ảnh user cung cấp
+
+[Đối chiếu từng ảnh](vlearn-screenshot-comparison.md). Shell dùng header trắng, sidebar trái, tài liệu giữa và dock trợ giảng phải; dock mặc định đóng. C giữ quyền bật riêng và gợi ý inline, không che slide. Danh mục, chuyển trang, quiz, sổ ghi chú và mở/đóng hỗ trợ hoạt động được.
+
+Mã shell chung: `shared/classroom-shell.js` và `shared/classroom-shell.css`. Các file A/B/C được build từ cùng shell/fixture. Không sử dụng thông tin tài khoản từ ảnh; không build trang chủ, account menu hoặc công cụ PDF ngoài critical interaction.

@@ -36,6 +36,7 @@ Kiểm tra mở file HTML độc lập bằng Chromium headless, viewport 1440×
 | B: lời giải có nguồn, thiếu căn cứ, sửa nháp, kết quả quyết định | PASS |
 | C: không gợi ý trước quyền, trigger thời gian, căn cứ, bác bỏ | PASS |
 | C: trigger quay lại, opt-in chia sẻ, tắt xóa tín hiệu | PASS |
+| Classroom: sidebar, đóng/mở dock, ghi chú, reset, viewport 1366 và 1866 | PASS |
 | A/B/C: cùng context/quiz, reset, không tràn ngang desktop, không gọi mạng ngoài | PASS |
 
 Đã xem ảnh render màn đầu của ba option để kiểm tra bố cục và chữ.
@@ -54,10 +55,14 @@ Sẵn sàng mang đi kiểm tra/test. Chưa coi QA tự động là Gate 4 đư�
 
 ## Cập nhật Option C theo VLearn · 05/10/2026
 
-[Chi tiết bản cải tiến](docs/option-c-vlearn.md) · [Nguồn trích đoạn công khai](reference/vlearn/README.md). Màn học mô phỏng dùng nhận diện xanh/đỏ; A/B cùng chrome và fixture. C giữ quyền bật/tắt, căn cứ gợi ý, preview và recovery. Bỏ social proof giả lập để tránh dẫn dắt. QA 6 nhóm pass; Gate 4 kiểm tra người không build vẫn chưa hoàn thành.
+[Chi tiết bản cải tiến](docs/option-c-vlearn.md) · [Nguồn trích đoạn công khai](reference/vlearn/README.md). Màn học mô phỏng dùng nhận diện xanh/đỏ; A/B cùng chrome và fixture. C giữ quyền bật/tắt, căn cứ gợi ý, preview và recovery. Bỏ social proof giả lập để tránh dẫn dắt. QA 7 nhóm pass; Gate 4 kiểm tra người không build vẫn chưa hoàn thành.
 
 ## Option C — hoạt động theo ngữ cảnh
 
 C dùng engine riêng [radar-c.js](shared/radar-c.js) với [fixture chung](shared/lesson-fixture.js): gợi ý theo slide 5–7, thời gian đọc khi trang hiển thị, cooldown/bác bỏ; hội thoại theo chủ đề có nguồn, dừng, ghi chú riêng và giữ yêu cầu coach sau quay lại. Phản hồi theo quy tắc/canned output, không phải model thật. [Mô tả và giới hạn](docs/option-c-vlearn.md).
 
 Tư liệu VLearn public: [manifest](reference/vlearn/capture-manifest.json), [HTML đã render](reference/vlearn/welcome-public-markup.html), [CSS trích đoạn](reference/vlearn/public-extract.css), [ảnh vòng học](reference/vlearn/vlearn-public-interaction.jpg), [ảnh đăng nhập](reference/vlearn/vlearn-public-login.jpg). Không có quyền truy cập màn học riêng; không khẳng định prototype giống chức năng thật sau đăng nhập.
+
+## Đối chiếu giao diện lớp học
+
+Đã đọc 5 ảnh màn VLearn user cung cấp, thay shell của A/B/C bằng header trắng, danh mục trái, tài liệu giữa và trợ giảng phải mở theo lựa chọn. [Bảng đối chiếu](docs/vlearn-screenshot-comparison.md). C gợi ý inline không che tài liệu; sidebar, dock, nguồn, ghi chú, quiz và reset thao tác được. QA thêm kiểm tra 1366×1000 và 1866×1000; không sao chép thông tin tài khoản hoặc coi ảnh tĩnh là source ứng dụng.
