@@ -104,3 +104,8 @@ AI chuyển gợi ý tới cạnh đầu slide; thêm hỏi xác nhận, chọn 
 ## 05/10/2026 — Hoàn thiện Chặng 5
 
 ChatGPT/Codex soạn câu hỏi bối cảnh, task chung A/B/C, năm mục quan sát, lời mở đầu, câu cứu hộ, thứ tự test và hướng dẫn reset. Rà soát tránh ép bật C/gửi coach, nêu ảnh hưởng học lại do fixture chung và giới hạn phản hồi mô phỏng. Đồng bộ README và tham số fixture với engine C hiện tại (12/5 giây, để sau 60 giây). Đây là kịch bản chuẩn bị, không phải phiên test; không tạo quote, observation, feedback, đóng góp cá nhân hoặc reflection.
+
+
+## 05/10/2026 — Chuẩn bị điều phối Chặng 6
+
+ChatGPT/Codex tạo `test/interview-guide.md` từ task và nguyên tắc đã chốt ở Chặng 5, thêm lời dẫn đọc trực tiếp, câu hỏi trung lập, lịch trình và chỗ ghi quan sát. Đồng bộ README để nối kịch bản với Feedback Note và Group Synthesis. Đây chỉ là công cụ chuẩn bị; không tạo/biên tập feedback, quote, observation, quyết định nhóm, đóng góp cá nhân hoặc reflection. Ba phiên test thật và Gate 5 vẫn đang chờ nhóm thực hiện.

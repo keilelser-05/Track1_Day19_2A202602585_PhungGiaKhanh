@@ -27,7 +27,7 @@ Repo giữ tên Day19 theo URL người nộp cung cấp; đề/README ghi Lab18
 | Chặng 3 | Hoàn thiện quyết định Human–AI, quyền dữ liệu và recovery; chưa build/test | [Design sheet](three-option-design-sheet.md) |
 | Chặng 4 | Đã build 3 HTML độc lập, 8 nhóm QA trình duyệt pass; chờ người không build kiểm tra | [Prototype link](prototype-link.md) |
 | Chặng 5 | Hoàn thiện kịch bản: bối cảnh, task chung, 5 mục quan sát, thứ tự/reset và facilitation; chưa test | [Test prompt](test/test-prompt.md) |
-| Chặng 6 | Chưa có feedback test prototype | [Feedback note](prototype-feedback-note.md), [synthesis](group-feedback-synthesis.md) |
+| Chặng 6 | Đã chuẩn bị kịch bản điều phối; còn chờ ba phiên test thật và synthesis do nhóm điền | [Interview guide](test/interview-guide.md), [Feedback note](prototype-feedback-note.md), [synthesis](group-feedback-synthesis.md) |
 
 **Bản nháp thực hiện hiện tại nằm ở các file liên kết trên.** Các bảng trống/nháp trong phần hướng dẫn bên dưới không phải kết quả đã hoàn thành.
 Không dùng ba note phỏng vấn Day 17 thay cho ba feedback test A/B/C.
