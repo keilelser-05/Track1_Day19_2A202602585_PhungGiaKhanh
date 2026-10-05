@@ -20,8 +20,8 @@ Tài liệu này gộp hai phần: **đề bài** (làm gì, luật chơi, gate)
 
 | Mục | Nội dung |
 | --- | --- |
-| MHV | `2A202602930` |
-| Họ và tên | `Phan Duy Thanh` |
+| MHV | `2A202602585` |
+| Họ và tên | `Phùng Gia Khánh` |
 | Nhóm | `H3201` |
 | Track | `Track 1` |
 | Case | `Case C — AI Support Radar` |
