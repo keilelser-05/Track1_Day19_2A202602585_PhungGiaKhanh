@@ -55,7 +55,7 @@ Sẵn sàng mang đi kiểm tra/test. Chưa coi QA tự động là Gate 4 đư�
 
 ## Cập nhật Option C theo VLearn · 05/10/2026
 
-[Chi tiết bản cải tiến](docs/option-c-vlearn.md) · [Nguồn trích đoạn công khai](reference/vlearn/README.md). Màn học mô phỏng dùng nhận diện xanh/đỏ; A/B cùng chrome và fixture. C giữ quyền bật/tắt, căn cứ gợi ý, preview và recovery. Bỏ social proof giả lập để tránh dẫn dắt. QA 7 nhóm pass; Gate 4 kiểm tra người không build vẫn chưa hoàn thành.
+[Chi tiết bản cải tiến](docs/option-c-vlearn.md) · [Nguồn trích đoạn công khai](reference/vlearn/README.md). Màn học mô phỏng dùng nhận diện xanh/đỏ; A/B cùng chrome và fixture. C giữ quyền bật/tắt, căn cứ gợi ý, preview và recovery. Bỏ social proof giả lập để tránh dẫn dắt. QA 8 nhóm pass; Gate 4 kiểm tra người không build vẫn chưa hoàn thành.
 
 ## Option C — hoạt động theo ngữ cảnh
 
@@ -66,3 +66,7 @@ Tư liệu VLearn public: [manifest](reference/vlearn/capture-manifest.json), [H
 ## Đối chiếu giao diện lớp học
 
 Đã đọc 5 ảnh màn VLearn user cung cấp, thay shell của A/B/C bằng header trắng, danh mục trái, tài liệu giữa và trợ giảng phải mở theo lựa chọn. [Bảng đối chiếu](docs/vlearn-screenshot-comparison.md). C gợi ý inline không che tài liệu; sidebar, dock, nguồn, ghi chú, quiz và reset thao tác được. QA thêm kiểm tra 1366×1000 và 1866×1000; không sao chép thông tin tài khoản hoặc coi ảnh tĩnh là source ứng dụng.
+
+## Luồng C hoàn thiện
+
+Tín hiệu → hỏi user đang đọc kỹ hay cần làm rõ → user chọn khái niệm → giải thích/ví dụ hoặc sửa nháp coach → tiếp tục học. Gợi ý ở ngay trước tài liệu, ngưỡng phiên thử rút còn 12/5 giây để phù hợp test ngắn; vẫn mặc định tắt và không gợi ý trước consent. Ngưỡng là giả lập thiết kế, không phải kết quả nghiên cứu. QA bổ sung kiểm tra xác nhận trước lời giải và nháp đúng lựa chọn user.

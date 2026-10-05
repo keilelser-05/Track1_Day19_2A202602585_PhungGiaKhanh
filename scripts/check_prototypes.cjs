@@ -30,7 +30,7 @@ const {pathToFileURL} = require('node:url');
     });
     await check('C: permission, per-slide active time, anchored suggestion and rejection',async()=>{
       const p=await page('c');await p.clock.runFor(50000);assert.equal(await p.locator('[data-action=why]').count(),0);
-      await p.locator('#enabled').check();await click(p,'prev');await p.clock.runFor(45500);assert.match(await p.locator('.radar-prompt').innerText(),/slide 5/);assert.equal(await p.locator('.suggestion-badge').count(),1);await click(p,'next');await click(p,'why');assert.match(await p.locator('.radar-prompt').innerText(),/Slide 5: khoảng 45 giây/);
+      await p.locator('#enabled').check();await click(p,'prev');await p.clock.runFor(12500);assert.match(await p.locator('.radar-prompt').innerText(),/slide 5/i);assert.equal(await p.locator('.suggestion-badge').count(),1);await click(p,'next');await click(p,'why');assert.match(await p.locator('.radar-prompt').innerText(),/Slide 5: khoảng 12 giây/);
       fs.mkdirSync(path.join(root,'test/screenshots'),{recursive:true});await p.screenshot({path:path.join(root,'test/screenshots/option-c-suggestion.png'),fullPage:true});
       await click(p,'reject');assert.match(await p.locator('[role=status]').innerText(),/Không gắn cờ/);await click(p,'prev');await p.clock.runFor(70000);assert.equal(await p.locator('[data-action=why]').count(),0);await click(p,'reset');assert.equal(await p.locator('#enabled').isChecked(),false);await p.close();
     });
@@ -41,10 +41,13 @@ const {pathToFileURL} = require('node:url');
       await click(p,'notes');await p.locator('#notes').fill('Ghi chú riêng: chưa hiểu.');await click(p,'tutor');await click(p,'next');assert.equal(await p.locator('.message.user').count(),3);await click(p,'notes');assert.equal(await p.locator('#notes').inputValue(),'Ghi chú riêng: chưa hiểu.');await click(p,'tutor');await click(p,'panel');await click(p,'tutor-open');assert.equal(await p.locator('.message.user').count(),3);await p.close();
     });
     await check('C: revisit signal, editable preview, consent revocation, coach recovery and full reset',async()=>{
-      const p=await page('c');await p.locator('#enabled').check();await p.clock.runFor(15000);await click(p,'next');await click(p,'prev');await p.clock.runFor(500);assert.equal(await p.locator('.radar-prompt').count(),1);
-      await click(p,'coach-draft');await p.locator('#draft').fill('Xin làm rõ hai bước của RAG.');await p.locator('#share').check();await click(p,'preview');assert.match(await p.locator('#previewSignal').innerText(),/2 lượt/);assert.doesNotMatch(await p.locator('.preview').innerText(),/Ghi chú riêng/);
+      const p=await page('c');await p.locator('#enabled').check();await p.clock.runFor(5000);await click(p,'next');await click(p,'prev');await p.clock.runFor(500);assert.equal(await p.locator('.radar-prompt').count(),1);
+      await click(p,'confirm-help');await p.locator('#topic').selectOption('Truy xuất khác sinh câu trả lời thế nào?');await click(p,'coach-draft');await p.locator('#draft').fill('Xin làm rõ hai bước của RAG.');await p.locator('#share').check();await click(p,'preview');assert.match(await p.locator('#previewSignal').innerText(),/2 lượt/);assert.doesNotMatch(await p.locator('.preview').innerText(),/Ghi chú riêng/);
       await click(p,'disable');assert.equal(await p.locator('#previewSignal').innerText(),'Không chia sẻ');await click(p,'edit');assert.equal(await p.locator('#draft').inputValue(),'Xin làm rõ hai bước của RAG.');await click(p,'preview');await click(p,'send');await click(p,'back');await click(p,'request');await click(p,'withdraw');assert.match(await p.locator('.support-panel').innerText(),/Đã thu hồi/);
       await click(p,'manual-draft');await click(p,'preview');await click(p,'send');await click(p,'response');assert.equal(await p.locator('[data-action=withdraw]').count(),0);await click(p,'reset');assert.equal(await p.locator('#enabled').isChecked(),false);assert.equal(await p.locator('.message').count(),0);await click(p,'notes-open');assert.equal(await p.locator('#notes').inputValue(),'');await p.close();
+    });
+    await check('C: explicit confirmation, chosen topic, example, coach draft and reading recovery',async()=>{
+      const p=await page('c');await p.locator('#enabled').check();await p.clock.runFor(12500);await click(p,'confirm-help');assert.equal(await p.locator('.message.ai').count(),0);await click(p,'guided-explain');assert.match(await p.locator('[role=status]').innerText(),/Chọn chỗ/);await p.locator('#topic').selectOption('Truy xuất khác sinh câu trả lời thế nào?');await p.screenshot({path:path.join(root,'test/screenshots/option-c-confirmed.png'),fullPage:true});await click(p,'guided-example');await p.clock.runFor(700);assert.match(await p.locator('.message.ai').innerText(),/chính sách/);await click(p,'coach-draft');assert.match(await p.locator('#draft').inputValue(),/Truy xuất khác sinh/);assert.doesNotMatch(await p.locator('#draft').inputValue(),/Mình đã xem/);await click(p,'cancel');await click(p,'reset');await p.locator('#enabled').check();await p.clock.runFor(12500);await click(p,'reject');await p.clock.runFor(65000);assert.equal(await p.locator('.radar-prompt').count(),0);await click(p,'reset');await p.close();
     });
     await check('Classroom: sidebar navigation, dock close/reopen, notes, desktop layout and reset',async()=>{
       const p=await page('c');await p.locator('[data-action=goto][data-slide="7"]').click();assert.match(await p.locator('.slide h2').innerText(),/Bốn bước/);await p.locator('[data-ui=sidebar]').first().click();assert.equal(await p.locator('.sidebar-hidden').count(),1);
@@ -58,5 +61,5 @@ const {pathToFileURL} = require('node:url');
       assert.deepEqual(errors,[]);
     });
   }finally{await browser.close();fs.writeFileSync(path.join(root,'test/prototype-checks.json'),JSON.stringify({type:'automated-browser-qa',not_user_feedback:true,checks:rows,errors},null,2)+'\n');}
-  if(rows.length!==7)throw new Error('QA incomplete');
+  if(rows.length!==8)throw new Error('QA incomplete');
 })().catch(e=>{console.error(e);process.exitCode=1;});

@@ -72,7 +72,7 @@ Câu trên là **giả thuyết để thiết kế và kiểm tra**, không ph�
 ## 2. Ba Solution Options — GATE 2
 
 > Nguồn thiết kế chung: [repo Thành](https://github.com/thanhpd123/Track1_Day19_2A202602930_PhanDuyThanh/blob/83b359251a1291b78d48d18dfedb4a2d25a81f37/three-option-design-sheet.md).
-> Ngưỡng 45 giây/quay lại lần 2 kèm 15 giây đọc, trả lời AI và coach đều là tham số/nội dung mô phỏng; chưa có phép đo chứng minh. Dữ liệu hành vi chỉ xử lý trong phiên và cần bật quyền trước khi C gợi ý.
+> Ngưỡng 12 giây/quay lại lần 2 kèm 5 giây đọc, trả lời AI và coach đều là tham số/nội dung mô phỏng; chưa có phép đo chứng minh. Dữ liệu hành vi chỉ xử lý trong phiên và cần bật quyền trước khi C gợi ý.
 
 ### 2.1. Comparison Contract — giống hệt nhau ở cả 3 option
 
@@ -96,7 +96,7 @@ Câu trên là **giả thuyết để thiết kế và kiểm tra**, không ph�
 | Vị trí trên spectrum | User-led / No-inference | User + AI co-create | AI initiate, human decide |
 | User làm gì? | Tự nhận ra chỗ kẹt, chọn loại, mô tả, chọn ẩn danh/kèm tên, gửi | Chọn thuật ngữ hoặc tự hỏi; đọc và đánh giá lời giải; quyết định có nhờ coach không; sửa nháp | Phản hồi gợi ý (giải thích / nhờ coach / để sau / tắt); xem trước và xác nhận thẻ |
 | AI làm gì? | Chỉ gắn slide vào câu hỏi | Giải thích dựa trên slide 5–7, nhãn mức hỗ trợ từ tài liệu và nguồn; hiển thị số bạn khác đánh dấu (ẩn danh); soạn nháp | Đo thời gian ở slide và số lần quay lại; hiện gợi ý kèm lý do; soạn bản xem trước thẻ |
-| Trigger | Learner | Learner | AI (đọc ≥45 giây ở slide mẫu 5–7 hoặc quay lại lần 2 kèm ≥15 giây đọc) |
+| Trigger | Learner | Learner | AI (đọc ≥12 giây ở slide mẫu 5–7 hoặc quay lại lần 2 kèm ≥5 giây đọc) |
 | AI Act / Ask / Don't Act | **Don't Act** | **Ask** (chỉ làm khi được hỏi) | **Act** (khởi xướng) nhưng chỉ ở mức *hỏi learner*, không tự báo coach |
 | Ai giữ quyền quyết định cuối? | Learner | Learner | Learner |
 | Chống lại barrier nào? | Barrier 2 (ẩn danh giảm ngại) và Barrier 1 (tự gắn đúng slide) | Barrier 1 (tra rời rạc ~10 phút) và một phần Barrier 2 ("không chỉ mình mình") | Barrier 3 (coach/hệ thống biết learner đang kẹt) |
@@ -159,7 +159,7 @@ Nếu hiển thị “12 bạn khác”, ghi ngay cạnh là **số liệu minh 
 | Thời điểm | User làm gì? | AI Act, Ask, Don't Act — vì sao | Căn cứ và giới hạn | Control / recovery |
 | --- | --- | --- | --- | --- |
 | Trước phân tích | Chọn bật gợi ý hoặc tiếp tục không bật | Ask xin bật theo dõi thời gian/chuyển slide. Don't Act thu/đánh giá tín hiệu khi tắt | Không dùng ghi chú, quiz hoặc chat để suy luận. Quyền chỉ trong phiên | Mặc định tắt; bỏ qua vẫn dùng A/B và quiz |
-| Có tín hiệu | Đọc hoặc bỏ qua gợi ý | Act mở gợi ý sau ≥45 giây ở slide mẫu 5–7 hoặc quay lại lần 2 kèm ≥15 giây đọc. Ask “Bạn có cần giúp không?”. Don't Act kết luận user chưa hiểu hoặc tự báo coach | “Vì sao mình hỏi?” hiện tín hiệu; ngưỡng là thiết kế mô phỏng, chưa chứng minh phát hiện đúng | Giải thích, nhờ coach, để sau, bác bỏ, tắt gợi ý |
+| Có tín hiệu | Đọc hoặc bỏ qua gợi ý | Act mở gợi ý sau ≥12 giây ở slide mẫu 5–7 hoặc quay lại lần 2 kèm ≥5 giây đọc. Ask “Bạn có cần giúp không?”. Don't Act kết luận user chưa hiểu hoặc tự báo coach | “Vì sao mình hỏi?” hiện tín hiệu; ngưỡng là thiết kế mô phỏng, chưa chứng minh phát hiện đúng | Giải thích, nhờ coach, để sau, bác bỏ, tắt gợi ý |
 | Nhờ coach | Sửa câu hỏi, chọn tín hiệu muốn chia sẻ và tên/người nhận | Act tạo thẻ nháp; Ask xác nhận đúng nội dung/người nhận. Don't Act gửi trước xác nhận | Xem trước slide, câu hỏi, dữ liệu user chọn; suy đoán được ghi rõ và không biến thành nhãn user | Bỏ tín hiệu, sửa chỗ vướng, không gửi, tự viết; thu hồi trước phản hồi |
 
 **Nếu sai:** gợi ý có thể gây phiền hoặc cảm giác bị theo dõi. Không ngắt quiz hay khóa học.

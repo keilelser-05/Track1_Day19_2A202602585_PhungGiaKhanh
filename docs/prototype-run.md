@@ -9,7 +9,7 @@
 `options/option-a.html`, `option-b.html`, `option-c.html` là ba file độc lập: CSS và JS nhúng sẵn. Có thể gửi riêng từng file cho tester; link về bộ A/B/C chỉ hoạt động nếu giữ cấu trúc repo. Không cần Python, Node, server, API key hoặc mạng để thao tác prototype.
 
 Phản hồi AI/coach soạn sẵn. Không gửi dữ liệu thật. Không ghi log tester hoặc lưu phiên.
-C mặc định tắt; tester có thể không bật. Nếu bật, ở slide mẫu 5–7 khoảng 45 giây đọc hoặc quay lại lần 2 kèm ít nhất 15 giây đọc sẽ có gợi ý, tối đa 2 lần. Không hướng dẫn trigger trong lúc test; xem annotations dành cho nhóm.
+C mặc định tắt; tester có thể không bật. Nếu bật, ở slide mẫu 5–7 khoảng 12 giây đọc hoặc quay lại lần 2 kèm ít nhất 5 giây đọc sẽ có gợi ý, tối đa 2 lần. Không hướng dẫn trigger trong lúc test; xem annotations dành cho nhóm.
 
 ## Sửa code
 

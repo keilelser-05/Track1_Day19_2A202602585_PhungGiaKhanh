@@ -13,7 +13,7 @@ Nguồn: 5 ảnh user cung cấp ngày 05/10/2026, đọc trực tiếp từ fil
 ## Option C được thêm vào lớp học thế nào?
 
 1. Vào tài liệu mẫu RAG, hỗ trợ đóng, gợi ý mặc định tắt. User có thể mở AI, ghi chú, chọn slide hoặc làm quiz.
-2. Sau bật, tín hiệu đọc/quay lại theo slide có thể tạo gợi ý inline dưới tài liệu. Header có dấu “Có gợi ý” để báo tín hiệu kể cả khi phần dưới slide chưa trong viewport. Gợi ý nêu vị trí, căn cứ và giới hạn; không tự mở chat hay báo coach. User chọn hiểu thêm, nhờ coach, để sau hoặc bác bỏ.
+2. Sau bật, tín hiệu đọc/quay lại theo slide có thể tạo gợi ý inline ngay trước tài liệu. Header có dấu “Có gợi ý”; khối hỏi xác nhận hiện ngay cạnh vùng slide. Gợi ý nêu vị trí, căn cứ và giới hạn; không tự mở chat hay báo coach. User xác nhận đang đọc kỹ hoặc cần làm rõ; nếu cần, tự chọn khái niệm rồi giải thích/ví dụ hoặc nhờ coach.
 3. Khung trợ giảng mở theo lựa chọn user; giữ hội thoại/nguồn/ghi chú. Gửi coach qua bản nháp, preview và xác nhận; hoặc trở lại quiz. Mọi phản hồi/gửi đều mô phỏng.
 
 A/B cũng dùng shell mới để giữ context, fixture và style chung. Chỉ cơ chế hỗ trợ khác. Những thay đổi dựa trên ảnh là bản dựng lại, không phải mã gốc lấy từ tài khoản VLearn.

@@ -19,3 +19,5 @@ Nguồn thiết kế chính cho các thay đổi UI trong repo. Ưu tiên deskto
 - Shell lớp học chung ở `shared/classroom-shell.js` và `.css`; header, danh mục, viewer, chuyển slide, quiz, ghi chú và reset là thao tác thật trong prototype. Không thêm công cụ PDF/zoom/vẽ chỉ để làm giống ảnh nếu chúng không phục vụ critical interaction.
 - Hỗ trợ mặc định đóng; mở/đóng khung làm vùng slide co/giãn. C có gợi ý inline cạnh tài liệu, không phủ slide hoặc chặn nút. Khi sidebar đóng, reset vẫn có trên header.
 - Không đưa email, tên tài khoản, tiến độ thật hoặc điểm yếu cá nhân từ ảnh vào giao diện/dữ liệu fixture. Avatar chỉ minh họa. Trang chủ/account menu ngoài scope Chặng 4.
+
+- C hỏi xác nhận trước lời giải; gợi ý ngay trước slide để nhìn thấy. Phần cần giúp do user chọn, không suy ra từ thời gian. Màn xác nhận/chọn khái niệm nằm trong trạng thái critical interaction, không mở rộng sản phẩm.

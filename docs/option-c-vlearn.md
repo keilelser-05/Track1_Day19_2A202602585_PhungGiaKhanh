@@ -9,10 +9,10 @@ Mở [Option C](../options/option-c.html) trực tiếp bằng trình duyệt. G
 ## Ba trạng thái chính
 
 1. **Bài học:** slide 6 + quiz; gợi ý mặc định tắt. Người học tự quyết định quyền dùng thời gian ở slide/số lượt quay lại. Không bật vẫn tiếp tục học hoặc tự hỏi được.
-2. **Tương tác quan trọng:** sau bật, ở bất kỳ slide mẫu 5–7 khoảng 45 giây đọc hoặc quay lại lần 2 kèm ít nhất 15 giây đọc thì AI hỏi có cần hỗ trợ. Khối gợi ý không che tài liệu; nút căn cứ cho biết tín hiệu, kèm giới hạn “không chứng minh chưa hiểu”. User chọn giải thích, nhờ coach, để sau, bác bỏ hoặc tắt.
+2. **Tương tác quan trọng:** sau bật, ở bất kỳ slide mẫu 5–7 khoảng 12 giây đọc hoặc quay lại lần 2 kèm ít nhất 5 giây đọc thì AI hỏi có cần hỗ trợ. Khối gợi ý không che tài liệu; nút căn cứ cho biết tín hiệu, kèm giới hạn “không chứng minh chưa hiểu”. User chọn giải thích, nhờ coach, để sau, bác bỏ hoặc tắt.
 3. **Quyết định/kết quả:** dùng lời giải rồi thử quiz, hoặc sửa/xem trước nội dung gửi coach; tên và tín hiệu mặc định không chia sẻ. Gửi và phản hồi đều mô phỏng. Có hủy, sửa, thu hồi trước mở phản hồi, quay lại và reset.
 
-Ngưỡng 45/15 giây là giá trị dựng cho prototype, không phải kết luận từ phỏng vấn hay ngưỡng đã được chứng minh. Chỉ tính khi trang hiển thị, đang học và không nhập câu hỏi/ghi chú; ngừng tính sau 90 giây không tương tác. Giãn cách gợi ý ít nhất 60 giây, tối đa 2 gợi ý/phiên; bác bỏ sẽ ngừng gợi ý slide đó tới khi tắt/bật lại. không tự gắn cờ hoặc báo coach. Tắt xóa tín hiệu; reset xóa cả nội dung phiên.
+Ngưỡng 45/5 giây là giá trị dựng cho prototype, không phải kết luận từ phỏng vấn hay ngưỡng đã được chứng minh. Chỉ tính khi trang hiển thị, đang học và không nhập câu hỏi/ghi chú; ngừng tính sau 90 giây không tương tác. Giãn cách gợi ý ít nhất 60 giây, tối đa 2 gợi ý/phiên; bác bỏ sẽ ngừng gợi ý slide đó tới khi tắt/bật lại. không tự gắn cờ hoặc báo coach. Tắt xóa tín hiệu; reset xóa cả nội dung phiên.
 
 ## Khi test
 
@@ -46,3 +46,11 @@ QA tự động và ảnh render chỉ kiểm tra phần mềm; Gate 4 còn cầ
 [Đối chiếu từng ảnh](vlearn-screenshot-comparison.md). Shell dùng header trắng, sidebar trái, tài liệu giữa và dock trợ giảng phải; dock mặc định đóng. C giữ quyền bật riêng và gợi ý inline, không che slide. Danh mục, chuyển trang, quiz, sổ ghi chú và mở/đóng hỗ trợ hoạt động được.
 
 Mã shell chung: `shared/classroom-shell.js` và `shared/classroom-shell.css`. Các file A/B/C được build từ cùng shell/fixture. Không sử dụng thông tin tài khoản từ ảnh; không build trang chủ, account menu hoặc công cụ PDF ngoài critical interaction.
+
+## Tương tác chính được làm rõ
+
+- Gợi ý nằm ngay trước slide, không bị khuất dưới tài liệu. AI hỏi “Bạn đang đọc kỹ hay cần làm rõ phần này?” trước khi suy luận chỗ vướng.
+- User chọn cần làm rõ, tự chọn khái niệm, rồi chọn giải thích ngắn/ví dụ hoặc chuyển coach. Không tạo lời giải trước khi user xác nhận nhu cầu.
+- Chọn đang đọc kỹ sẽ bỏ gợi ý cho slide đó, không đánh dấu chưa hiểu. Để sau/tắt/quay lại học đều có đường rõ.
+- Ngưỡng 12 giây đọc hoặc quay lại lần 2 với 5 giây đọc chỉ dùng cho phiên prototype ngắn, không phải thuật toán phát hiện khó khăn đã validated.
+- Bản nháp coach dùng chỗ user chọn; không tự viết “đã thử/đã hiểu” khi user chưa làm. User được sửa trước gửi.

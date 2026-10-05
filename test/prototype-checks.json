@@ -23,6 +23,10 @@
       "result": "PASS"
     },
     {
+      "check": "C: explicit confirmation, chosen topic, example, coach draft and reading recovery",
+      "result": "PASS"
+    },
+    {
       "check": "Classroom: sidebar navigation, dock close/reopen, notes, desktop layout and reset",
       "result": "PASS"
     },

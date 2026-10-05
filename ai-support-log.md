@@ -96,3 +96,7 @@ AI lưu DOM công khai, CSS đã tải và 2 ảnh public (vòng học/login). Y
 ## 05/10/2026 — Đối chiếu 5 ảnh màn học
 
 AI đọc 5 ảnh do user cung cấp, nhận diện header trắng/sidebar/viewer/dock; viết lại shell dùng chung A/B/C. Không đưa email/tên/tiến độ riêng vào fixture; không upload ảnh gốc chứa thông tin tài khoản. AI sửa engine tích hợp đóng/mở panel, ghi chú, chuyển slide, reset và gợi ý inline; QA thực tế ghi trong output, không giả feedback hoặc đóng góp cá nhân. Các màn trang chủ/account ngoài phạm vi prototype.
+
+## 05/10/2026 — Hoàn thiện critical interaction C
+
+AI chuyển gợi ý tới cạnh đầu slide; thêm hỏi xác nhận, chọn khái niệm, giải thích/ví dụ và chuyển coach. Rút ngưỡng phiên thử xuống 12/5 giây, ghi rõ giả lập. Không tự ghi user chưa hiểu hoặc đã thử lời giải; bản nháp theo lựa chọn user. Kiểm tra mới gồm xác nhận trước lời giải, lựa chọn khái niệm, căn cứ, recovery và chống gửi ngoài. Không tạo feedback hay reflection.
