@@ -1,0 +1,16 @@
+{
+  "captured_at": "2026-10-05",
+  "sources": [
+    "https://vlearn.dev/welcome",
+    "https://vlearn.dev/login"
+  ],
+  "scope": "Public rendered HTML and loaded CSS. No private classroom access, backend source, credentials, cookies or API traffic collected.",
+  "screenshots": [
+    "vlearn-public-interaction.jpg",
+    "vlearn-public-login.jpg"
+  ],
+  "markup": "welcome-public-markup.html",
+  "styles": "welcome-public.css",
+  "all_loaded_styles_in_zip": "public-client-styles.json",
+  "login_access": "Auto-review rejected secure sign-in request; private pages were not accessed."
+}

@@ -88,3 +88,7 @@ ChatGPT/Codex viết design.md, shared CSS/JS, ba HTML standalone A/B/C và tran
 ## 05/10/2026 — Cải tiến Option C dựa trên giao diện VLearn công khai
 
 AI đọc trang welcome, DOM và CSS phía client; lưu trích đoạn HTML/biến màu có nguồn, viết lại layout nhận diện xanh/đỏ và giữ shell chung A/B/C. Không có source backend hoặc màn học sau đăng nhập. AI sửa code và chạy 5 nhóm QA Chromium, xem ảnh render; kết quả là QA phần mềm, không phải quan sát tester. Ngưỡng trigger là giả lập thiết kế; không tạo quote, feedback, đóng góp cá nhân hoặc reflection.
+
+## 05/10/2026 — Option C giữ ngữ cảnh và tư liệu public
+
+AI lưu DOM công khai, CSS đã tải và 2 ảnh public (vòng học/login). Yêu cầu đăng nhập bảo mật bị auto-review từ chối do chưa có xác nhận quyền truy cập riêng; không đi tiếp hoặc lấy dữ liệu tài khoản. AI viết engine C theo ngữ cảnh slide, hội thoại phản hồi theo quy tắc, nguồn, dừng, ghi chú riêng, consent, cooldown và coach recovery. Dùng fixture chung A/B/C; không dùng nội dung phỏng vấn để giả làm dữ liệu test. QA mới 6 nhóm pass và ảnh render được kiểm tra. Đây là kiểm tra phần mềm, không phải feedback hay Gate 4 người thật.

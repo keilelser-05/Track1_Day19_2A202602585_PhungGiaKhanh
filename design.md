@@ -13,3 +13,5 @@ Nguồn thiết kế chính cho các thay đổi UI trong repo. Ưu tiên deskto
 - Annotation/kỳ vọng quan sát chỉ nằm trong docs/prototype-annotations.md, không nhúng vào giao diện tester.
 
 - Cải tiến C: gợi ý thành khối cạnh tài liệu, không che bài học; bỏ social proof giả lập để tránh dẫn dắt tester. A/B giữ cùng chrome, fixture và task để so sánh.
+
+- C phiên bản 2: nguồn/task từ fixture chung; Tutor giữ hội thoại theo slide, nguồn mở được, ghi chú riêng, dừng phản hồi, thu gọn và mở lại yêu cầu coach. Gợi ý dựa thời gian đọc hiển thị/lượt mở từng slide, cooldown và bác bỏ. Không hiện thông số test cho tester.

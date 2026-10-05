@@ -11,11 +11,15 @@
       "result": "PASS"
     },
     {
-      "check": "C: no prompt before permission, timed prompt, evidence and no-send recovery",
+      "check": "C: permission, per-slide active time, anchored suggestion and rejection",
       "result": "PASS"
     },
     {
-      "check": "C: revisit prompt, explicit signal sharing, disabling erases signal",
+      "check": "C: contextual conversation, source navigation, stop and retained notes",
+      "result": "PASS"
+    },
+    {
+      "check": "C: revisit signal, editable preview, consent revocation, coach recovery and full reset",
       "result": "PASS"
     },
     {

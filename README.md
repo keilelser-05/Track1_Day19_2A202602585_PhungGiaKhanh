@@ -25,7 +25,7 @@ Repo giữ tên Day19 theo URL người nộp cung cấp; đề/README ghi Lab18
 | Chặng 1 | Hoàn thiện nội dung theo notes: evidence, thảo luận, giả thuyết 5 thành phần và điều chưa biết | [Design sheet](three-option-design-sheet.md) |
 | Chặng 2 | Đồng bộ A gửi coach / B AI giải thích / C AI chủ động; phân công là đề xuất | [Design sheet](three-option-design-sheet.md) |
 | Chặng 3 | Hoàn thiện quyết định Human–AI, quyền dữ liệu và recovery; chưa build/test | [Design sheet](three-option-design-sheet.md) |
-| Chặng 4 | Đã build 3 HTML độc lập, 5 nhóm QA trình duyệt pass; chờ người không build kiểm tra | [Prototype link](prototype-link.md) |
+| Chặng 4 | Đã build 3 HTML độc lập, 6 nhóm QA trình duyệt pass; chờ người không build kiểm tra | [Prototype link](prototype-link.md) |
 | Chặng 5 | Có task và 5 mục quan sát đề xuất | [Test prompt](test/test-prompt.md) |
 | Chặng 6 | Chưa có feedback test prototype | [Feedback note](prototype-feedback-note.md), [synthesis](group-feedback-synthesis.md) |
 
@@ -306,7 +306,7 @@ Giao diện tuân theo [design.md](design.md); chung context, mini-deck, quiz, t
 Chỉ cơ chế tương tác khác nhau: tự gửi coach / AI giải thích theo yêu cầu / AI gợi ý chủ động sau bật quyền.
 Có xem trước, sửa, hủy, thu hồi, tắt, tiếp tục quiz và reset.
 
-**QA thực tế:** 5 nhóm kiểm tra Chromium headless pass; không có lỗi JS hoặc gọi mạng ngoài trong các luồng đã kiểm tra. Đã xem ảnh render bố cục A/B/C.
+**QA thực tế:** 6 nhóm kiểm tra Chromium headless pass; không có lỗi JS hoặc gọi mạng ngoài trong các luồng đã kiểm tra. Đã xem ảnh render bố cục A/B/C.
 [Chi tiết QA và Gate 4](prototype-link.md) · [Hướng dẫn](docs/prototype-run.md) · [Annotations ngoài frame](docs/prototype-annotations.md).
 
 **Còn cần:** người không build tự mở/task/reset và ghi nhận thật để xác nhận test-ready theo Gate 4.
@@ -583,4 +583,10 @@ Mọi nội dung gắn nhãn 🧪 là nháp và phải được nhóm tự rà l
 
 ## Cập nhật Option C theo VLearn · 05/10/2026
 
-[Chi tiết bản cải tiến](docs/option-c-vlearn.md) · [Nguồn trích đoạn công khai](reference/vlearn/README.md). Màn học mô phỏng dùng nhận diện xanh/đỏ; A/B cùng chrome và fixture. C giữ quyền bật/tắt, căn cứ gợi ý, preview và recovery. Bỏ social proof giả lập để tránh dẫn dắt. QA 5 nhóm pass; Gate 4 kiểm tra người không build vẫn chưa hoàn thành.
+[Chi tiết bản cải tiến](docs/option-c-vlearn.md) · [Nguồn trích đoạn công khai](reference/vlearn/README.md). Màn học mô phỏng dùng nhận diện xanh/đỏ; A/B cùng chrome và fixture. C giữ quyền bật/tắt, căn cứ gợi ý, preview và recovery. Bỏ social proof giả lập để tránh dẫn dắt. QA 6 nhóm pass; Gate 4 kiểm tra người không build vẫn chưa hoàn thành.
+
+## Option C — hoạt động theo ngữ cảnh
+
+C dùng engine riêng [radar-c.js](shared/radar-c.js) với [fixture chung](shared/lesson-fixture.js): gợi ý theo slide 5–7, thời gian đọc khi trang hiển thị, cooldown/bác bỏ; hội thoại theo chủ đề có nguồn, dừng, ghi chú riêng và giữ yêu cầu coach sau quay lại. Phản hồi theo quy tắc/canned output, không phải model thật. [Mô tả và giới hạn](docs/option-c-vlearn.md).
+
+Tư liệu VLearn public: [manifest](reference/vlearn/capture-manifest.json), [HTML đã render](reference/vlearn/welcome-public-markup.html), [CSS trích đoạn](reference/vlearn/public-extract.css), [ảnh vòng học](reference/vlearn/vlearn-public-interaction.jpg), [ảnh đăng nhập](reference/vlearn/vlearn-public-login.jpg). Không có quyền truy cập màn học riêng; không khẳng định prototype giống chức năng thật sau đăng nhập.
