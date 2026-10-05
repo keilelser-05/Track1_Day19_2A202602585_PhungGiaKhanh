@@ -57,3 +57,7 @@ ChatGPT/Codex hỗ trợ điền bốn câu thảo luận từ notes sẵn có, 
 ### Bổ sung nguồn Khánh — 05/10/2026
 
 Theo yêu cầu người nộp, lưu nguyên nội dung `note(3).md` vào `note/notes_khanh_day17.md`, thêm lời dẫn về attribution và khả năng trùng nguồn, rồi bổ sung PN-K/P01 vào Chặng 1. Không gán tên thật, không tạo quote hoặc hành vi mới. Do tên bản ghi và nội dung tương tự PN1, chưa tính đây là một người độc lập thêm. AI chưa nghe lại bản ghi; metadata và consent còn cần người ghi xác nhận.
+
+### Bổ sung PN04 — 05/10/2026
+
+Theo yêu cầu Khánh, lưu nguyên `note(4).md` vào `note/notes_khanh_pn04_case_d.md`, thêm chú thích nguồn và bảng tóm tắt có timestamp trong Chặng 1. AI nhận ra đây là Case D (phản hồi đồ án), nên tách khỏi evidence hỗ trợ Case C và không tự đổi problem. Không tạo quote, danh tính, consent hoặc feedback mới; không biến thời gian tự thuật thành số đo. Chỉ ra câu hỏi tiếp số 3 đang gợi giải pháp giả định và các diễn giải chưa có đối chứng. P01 và PN04 không được gộp.

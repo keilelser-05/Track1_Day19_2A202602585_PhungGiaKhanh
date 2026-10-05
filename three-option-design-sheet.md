@@ -15,6 +15,22 @@
 
 **Nguồn Khánh:** theo yêu cầu của người nộp, đã bổ sung P01 vào bảng. Đây là nguồn bổ sung, **chưa tính thành người thứ tư độc lập**: cùng `VinUniversity.m4a` và nội dung tương tự PN1. Chưa khẳng định P01 là Lê Anh Duy, Lê Thanh Tình hoặc AE06. Nhóm cần đối chiếu người phỏng vấn/người trả lời trước khi đếm số người.
 
+### Người Khánh bổ sung — PN04 (Case D, ngoài phạm vi Case C)
+
+Nguồn: [note PN04](note/notes_khanh_pn04_case_d.md), bản ghi `FPTU_Interview_02.m4a`, khoảng 3 phút 15 giây. Attribution thuộc phần Khánh theo yêu cầu người nộp; chưa xác nhận người phỏng vấn từ bản ghi. Không thay PN-K/P01 hoặc gộp hai người.
+
+| User đã kể gì? (tóm tắt note, chưa nghe lại) | Mốc bản ghi | Diễn giải / giới hạn |
+| --- | --- | --- |
+| Nhóm nộp nháp tuần trước, cần nhận xét để làm tiếp | 00:20–00:45 | Situation là sửa đồ án nhóm, không phải tự học slide VLearn |
+| Nhận xét ngắn, không biết lỗi ở đâu trong tài liệu 20 trang | 00:55–01:10 | Có dấu hiệu khó xác định vị trí cần sửa; không đồng nhất với chưa hiểu khái niệm |
+| Chủ động nhắn giảng viên qua kênh nhận dạng là Teams | 01:15–01:25 | Người này chủ động hỏi; không hỗ trợ giả định im lặng/ngại hỏi |
+| Kể chờ khoảng 2 ngày, nhóm họp và tự tra cứu để đoán cách sửa | 01:30–02:15 | Thời gian theo lời kể trong note, chưa đo độc lập; cần kiểm tra nguyên nhân chậm |
+| Kể thức đêm gần hạn nộp | 02:20–02:35 | Chưa biết điểm số hoặc cách sửa cuối cùng có đúng không |
+
+**Cách dùng trong Chặng 1:** ghi nhận như nguồn bổ sung ngoài phạm vi để tránh bỏ sót phần Khánh. Không cộng PN04 vào các nguồn trực tiếp hỗ trợ Hypothesis Problem Case C, không đổi problem sang vòng phản hồi đồ án. Điểm tương đồng “khó xác định chỗ cần giúp” chỉ là liên hệ để xem xét, chưa chứng minh cùng job/barrier.
+
+**Chưa biết:** PN04 có ngoài nhóm không; consent mới có dấu hiệu trong bản chép; chưa rõ tên thật; chưa có đối chứng phía giảng viên. Chưa có bằng chứng giảng viên quá tải hoặc quên nhận xét. Không gán tên Lê Anh Duy/AE06 cho PN04.
+
 ### 1.1. Thảo luận nhanh — tổng hợp từ notes
 
 **Situation, behavior hoặc workaround lặp lại:** cả ba note có nội dung/thuật ngữ chưa hiểu. PN2 và PN3 kể tìm nguồn khác để xử lý; cách chọn nguồn khác nhau. Chưa đủ dữ liệu để nói cùng một hành vi lặp ở mọi người hoặc đo tần suất.

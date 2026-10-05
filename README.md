@@ -219,6 +219,10 @@ luỹ và đà học giảm dần.
 
 > [Note Khánh cũ](note/notes_khanh.md) còn mâu thuẫn metadata. Đã bổ sung [note mới của Khánh — P01](note/notes_khanh_day17.md) vào Chặng 1 theo xác nhận người nộp. Nguồn mới có thể trùng PN1; chưa tính thêm người độc lập, chưa xác nhận tên người trả lời.
 
+### Nguồn Khánh bổ sung — PN04
+
+Đã thêm [note PN04 — Case D](note/notes_khanh_pn04_case_d.md) và bảng riêng trong [Chặng 1](three-option-design-sheet.md). Người này kể về phản hồi đồ án nhóm, chủ động nhắn giảng viên và chờ giải đáp. Đây là case khác; không thay ba notes Case C, không đổi Hypothesis Problem hoặc dùng như bằng chứng trực tiếp cho việc học viên im lặng. PN04 và P01 là hai mã nguồn riêng; chưa xác nhận danh tính thật.
+
 ### 5.3. Solution Parking Lot ⚙️
 
 | # | Hướng giải quyết có thể có | AI? |
