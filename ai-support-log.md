@@ -100,3 +100,7 @@ AI đọc 5 ảnh do user cung cấp, nhận diện header trắng/sidebar/viewe
 ## 05/10/2026 — Hoàn thiện critical interaction C
 
 AI chuyển gợi ý tới cạnh đầu slide; thêm hỏi xác nhận, chọn khái niệm, giải thích/ví dụ và chuyển coach. Rút ngưỡng phiên thử xuống 12/5 giây, ghi rõ giả lập. Không tự ghi user chưa hiểu hoặc đã thử lời giải; bản nháp theo lựa chọn user. Kiểm tra mới gồm xác nhận trước lời giải, lựa chọn khái niệm, căn cứ, recovery và chống gửi ngoài. Không tạo feedback hay reflection.
+
+## 05/10/2026 — Hoàn thiện Chặng 5
+
+ChatGPT/Codex soạn câu hỏi bối cảnh, task chung A/B/C, năm mục quan sát, lời mở đầu, câu cứu hộ, thứ tự test và hướng dẫn reset. Rà soát tránh ép bật C/gửi coach, nêu ảnh hưởng học lại do fixture chung và giới hạn phản hồi mô phỏng. Đồng bộ README và tham số fixture với engine C hiện tại (12/5 giây, để sau 60 giây). Đây là kịch bản chuẩn bị, không phải phiên test; không tạo quote, observation, feedback, đóng góp cá nhân hoặc reflection.

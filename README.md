@@ -26,7 +26,7 @@ Repo giữ tên Day19 theo URL người nộp cung cấp; đề/README ghi Lab18
 | Chặng 2 | Đồng bộ A gửi coach / B AI giải thích / C AI chủ động; phân công là đề xuất | [Design sheet](three-option-design-sheet.md) |
 | Chặng 3 | Hoàn thiện quyết định Human–AI, quyền dữ liệu và recovery; chưa build/test | [Design sheet](three-option-design-sheet.md) |
 | Chặng 4 | Đã build 3 HTML độc lập, 8 nhóm QA trình duyệt pass; chờ người không build kiểm tra | [Prototype link](prototype-link.md) |
-| Chặng 5 | Có task và 5 mục quan sát đề xuất | [Test prompt](test/test-prompt.md) |
+| Chặng 5 | Hoàn thiện kịch bản: bối cảnh, task chung, 5 mục quan sát, thứ tự/reset và facilitation; chưa test | [Test prompt](test/test-prompt.md) |
 | Chặng 6 | Chưa có feedback test prototype | [Feedback note](prototype-feedback-note.md), [synthesis](group-feedback-synthesis.md) |
 
 **Bản nháp thực hiện hiện tại nằm ở các file liên kết trên.** Các bảng trống/nháp trong phần hướng dẫn bên dưới không phải kết quả đã hoàn thành.
@@ -316,46 +316,17 @@ Không coi QA tự động là user feedback; chưa chọn option thắng hoặc
 
 ## 10. Chặng 5 — Chuẩn bị test · 15 phút
 
-### 1. Chốt context và task
+Kịch bản đầy đủ: [Test Prompt](test/test-prompt.md).
 
-**Relevant context** — một câu hỏi, **tối đa 2 phút** trong lúc test:
+**Câu hỏi bối cảnh:** “Gần đây bạn có từng gặp một phần chưa hiểu khi tự học bằng slide hoặc bài học trực tuyến không?” — tối đa 2 phút.
 
-> "Gần đây bạn có từng ................................................................................................ không?"
+**Task chung:** “Bạn đang xem lại bài RAG trước khi làm quiz. Trong tình huống này, bạn chưa rõ ‘truy xuất tài liệu’ và ‘sinh câu trả lời’ khác nhau thế nào. Hãy dùng phương án này để làm rõ phần đó và trả lời câu quiz. Nếu vẫn chưa rõ, hãy chọn cách bạn muốn tiếp tục.”
 
-Nếu tester chưa từng có context liên quan, vẫn có thể dùng họ để tìm **interaction breakdown**, nhưng **không đưa ra value claim mạnh**.
+**Năm mục quan sát:** hành động đầu tiên; do dự/hiểu sai/cần giúp; căn cứ và giới hạn; kiểm soát/phục hồi; lựa chọn và đánh đổi.
 
-Gợi ý neo vào case (nhóm tự viết lại bằng lời của mình): *"Gần đây bạn có từng đang tự học slide/bài trên VLearn mà gặp một thuật ngữ hoặc đoạn không hiểu, phải dừng lại xử lý một mình không?"*
+Tester tự thao tác; không chỉ nút, pitch hoặc yêu cầu bật AI/gửi coach. Reset trước mỗi lượt, cùng slide 6 và fixture; dự kiến thứ tự A–B–C / B–C–A / C–A–B giữa ba tester. Ghi thứ tự thật và trợ giúp đã đưa. Lặp cùng nội dung có ảnh hưởng học lại, nên không chọn option chỉ bằng thời gian/đáp án quiz.
 
-**Outcome task** — task nói **kết quả cần đạt**, **không nói nút cần bấm**:
-
-> "Trong tình huống này, hãy dùng từng phương án để ........................................................................"
-
-### 2. Observation focus
-
-Chọn **tối đa năm** thứ:
-
-- [ ] first action;
-- [ ] hesitation;
-- [ ] evidence read / ignored;
-- [ ] misunderstanding;
-- [ ] help needed;
-- [ ] correction / recovery;
-- [ ] option được chọn và trade-off.
-
-### 3. Luật facilitation
-
-1. Tester **tự điều khiển** prototype.
-2. Dùng **cùng một task** cho A/B/C.
-3. **Không narrate** hoặc giải thích icon.
-4. **Không lấp im lặng.**
-5. **Không hỏi "Bạn có thích không?"**
-6. Khi tester hỏi cách hoạt động, hỏi lại: *"Theo bạn, nó nên hoạt động như thế nào?"*
-
-**Ba câu cứu hộ:**
-
-- "Bạn cứ nói to suy nghĩ của mình nhé."
-- "Bạn sẽ làm gì tiếp theo?"
-- "Theo bạn, nó nên hoạt động như thế nào?"
+**Trạng thái:** đã hoàn thiện tài liệu Chặng 5; chưa thực hiện phiên test. Feedback, đóng góp cá nhân và reflection phải được ghi từ việc thật.
 
 ---
 
