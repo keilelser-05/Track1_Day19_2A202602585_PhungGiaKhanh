@@ -2,7 +2,7 @@
 
 > Người nộp: Phùng Gia Khánh — 2A202602585.
 > Cập nhật 05/10/2026. Evidence được tóm tắt từ notes hiện có, chưa đối chiếu bản ghi.
-> Chặng 2–3 đồng bộ thiết kế chung; chờ nhóm review. Chưa có kết quả build/test.
+> Chặng 2–3 hoàn thiện nội dung thiết kế; chờ nhóm review. Chưa có kết quả build/test.
 
 ## 1. Chặng 1 — Evidence Snapshot
 
@@ -112,57 +112,89 @@ Câu trên là **giả thuyết để thiết kế và kiểm tra**, không ph�
 
 ---
 
-## 3. Human–AI Decision Table — GATE 3 🧪
+## 3. Chặng 3 — Human–AI Design pass
 
-### 3.1. Option A — Tự đánh dấu, coach trả lời
+**Phạm vi:** chỉ tương tác quan trọng quanh slide RAG → làm rõ → quyết định nhờ coach hoặc quay lại quiz.
+Các quyết định dưới đây là yêu cầu để build prototype, chưa phải hành vi hệ thống đã chạy hoặc kết quả test.
+Act = thực hiện; Ask = hỏi/xác nhận; Don't Act = không can thiệp. Thao tác gắn slide, hiển thị trạng thái và gửi là chức năng hệ thống, không mặc định cần AI.
 
-| # | Tình huống | AI **Act** | AI **Ask** | AI **Don't Act** | User hiểu điều gì? | Kiểm soát / phục hồi khi sai |
-| - | ---------- | ---------- | ---------- | ---------------- | ------------------ | ---------------------------- |
-| 1 | Learner bấm đánh dấu chỗ chưa hiểu ở slide đang xem | Tự gắn số slide vào câu hỏi | — | **Không** đoán learner chưa hiểu gì, không tự điền mô tả | "Câu hỏi sẽ gửi tới coach. Hệ thống không tự đoán bạn đang gặp khó ở đâu" | Sửa mô tả, đổi loại, chọn lại slide trước khi gửi |
-| 2 | Chọn cách gửi | — | Hỏi gửi **ẩn danh** hay **kèm tên** (mặc định ẩn danh) | Không tự tiết lộ tên | Dòng "Coach sẽ thấy: …" cập nhật theo lựa chọn | Đổi lại trước khi gửi |
-| 3 | Đã gửi, chờ coach | Hiển thị trạng thái "đã gửi" và phản hồi của coach khi có | — | Không tự tóm tắt hay chỉnh sửa lời coach | "Phản hồi coach ở đây là nội dung mô phỏng; chưa có cam kết thời gian thực tế" | **Sửa câu hỏi** hoặc **Thu hồi** trước khi có phản hồi; **Hỏi thêm** sau khi có phản hồi |
+### 3.1. Bốn quyết định thiết kế
 
-### 3.2. Option B — AI giải thích khi được hỏi
-
-| # | Tình huống | AI **Act** | AI **Ask** | AI **Don't Act** | User hiểu điều gì? | Kiểm soát / phục hồi |
-| - | ---------- | ---------- | ---------- | ---------------- | ------------------ | -------------------- |
-| 1 | Learner mở panel ở slide đang xem | Hiển thị số bạn khác đánh dấu "chưa hiểu" ở slide này (ẩn danh) | — | Không nêu tên ai; không tự giải thích khi chưa được hỏi; không tự gửi coach | "Trợ lý chỉ dựa trên slide 5–7 và có thể trả lời sai" | Bỏ qua panel, tiếp tục học |
-| 2 | Learner hỏi một thuật ngữ | Giải thích dựa trên slide, kèm nguồn ("Slide 7, bước 4") | — | Không trả lời như thể chắc chắn khi slide không nói | Nhãn mô phỏng **Mức hỗ trợ từ tài liệu: đủ / một phần / chưa có** + cảnh báo khi slide chưa đủ (ví dụ Top-k: "slide chưa nói cách chọn k") | "Hỏi phần khác", "Mình hiểu rồi", "Vẫn chưa hiểu" |
-| 3 | Learner vẫn chưa hiểu | Soạn nháp câu hỏi cho coach | Hỏi learner **sửa nháp** và chọn ẩn danh/kèm tên (mặc định ẩn danh) | **Không gửi** khi learner chưa bấm "Gửi cho coach" | "Trợ lý soạn nháp — bạn xem và sửa trước khi gửi" | "Không gửi" (quay lại giải thích), **Thu hồi** sau khi gửi |
-
-### 3.3. Option C — AI chủ động hỏi thăm
-
-| # | Tình huống | AI **Act** | AI **Ask** | AI **Don't Act** | User hiểu điều gì? | Kiểm soát / phục hồi |
-| - | ---------- | ---------- | ---------- | ---------------- | ------------------ | -------------------- |
-| 1 | Learner dừng ≥ 20 giây ở slide 6 hoặc quay lại lần 2 | Hiện gợi ý kèm lý do ("Đang ở slide 6 khoảng N giây"; "Đã quay lại N lần") | "Bạn có cần mình giúp không?" | Không tự báo coach; không đọc ghi chú hay nội dung chat | Panel luôn nói rõ mình dùng dữ liệu gì; nút **"Vì sao mình hỏi?"**; "đây chỉ là suy đoán, có thể sai" | **Để sau**; **Đừng gợi ý nữa**; công tắc Bật/Tắt trong panel; tối đa 2 lần gợi ý |
-| 2 | Learner chọn "Nhờ coach hỗ trợ" | Tạo bản **xem trước thẻ** sẽ vào hàng chờ của coach (learner / nội dung / tín hiệu / gợi ý hành động) | Hỏi **kèm tên** hay **ẩn danh**, rồi xác nhận gửi | **Không gửi** khi learner chưa bấm "Gửi cho coach" | Thấy chính xác coach sẽ nhận được gì, kể cả tín hiệu hệ thống đã đo | "Không gửi"; **Thu hồi** sau khi gửi |
-| 3 | AI gợi ý sai (learner không gặp khó) | — | — | Không lặp lại gợi ý quá 2 lần; không ghi nhận "learner gặp khó" nếu learner từ chối | Gợi ý được gọi rõ là suy đoán | Tắt gợi ý bất kỳ lúc nào; learner vẫn làm quiz bình thường |
-
-### 3.4. Bốn nguyên lý Human–AI Design — đối chiếu
-
-| Nguyên lý | A | B | C |
+| Quyết định | A — Tự đánh dấu, coach trả lời | B — AI giải thích khi được hỏi | C — AI chủ động hỏi thăm |
 | --- | --- | --- | --- |
-| **Expectation** | Câu "Hệ thống không tự đoán bạn đang gặp khó ở đâu" + dòng "Coach sẽ thấy…" | "Chỉ dựa trên slide 5–7, có thể sai" | Panel nêu rõ dữ liệu được dùng / không dùng; "Vì sao mình hỏi?" |
-| **Role & Agency** | Learner làm gần hết; AI **Don't Act** vì hậu quả sai thấp nhưng lợi ích cũng phụ thuộc learner tự nhận ra | AI thực hiện giải thích sau yêu cầu user, hỏi thêm khi cần; hậu quả sai vừa (hiểu sai thuật ngữ) | AI **Act** nhưng chỉ ở mức hỏi; hậu quả sai là cảm giác bị theo dõi → không tự báo coach |
-| **Evidence & Uncertainty** | Số slide, loại chỗ vướng | Nguồn slide + nhãn mức hỗ trợ từ tài liệu (không phải độ tin cậy mô hình đã đo) + cảnh báo | Danh sách tín hiệu đã đo, nêu là suy đoán |
-| **Control & Recovery** | Sửa, đổi ẩn danh, thu hồi, hỏi thêm | Hỏi lại, sửa nháp, không gửi, thu hồi | Để sau, tắt, xem trước, không gửi, thu hồi |
+| **Expectation — hiểu khả năng/giới hạn** | Trước tạo câu hỏi: “Bạn chọn chỗ vướng; hệ thống gắn slide và gửi coach khi bạn xác nhận.” Không hứa coach trả lời ngay | Trước hỏi: “Trợ lý dùng slide 5–7, có thể giải thích sai hoặc chưa đủ.” Phản hồi là soạn sẵn trong prototype | Trước bật: “Chỉ dùng chuyển slide và thời gian ở slide trong phiên để gợi ý; không xác định bạn đã hiểu hay chưa.” |
+| **Role & Agency — ai quyết định** | User chọn slide, mô tả, cách chia sẻ và gửi; AI Don't Act với suy luận nhu cầu | User khởi xướng; AI Act để giải thích sau yêu cầu, Ask nếu câu hỏi thiếu rõ; user kiểm tra và quyết định chuyển coach | User bật quyền; AI Act để đưa gợi ý, Ask user cần giúp gì; không tự gửi hoặc gắn cờ người học |
+| **Evidence & Uncertainty — căn cứ/không chắc** | Hiện slide và mô tả gốc để user kiểm tra; không tạo nhãn suy đoán năng lực | Hiện đúng đoạn slide và mức hỗ trợ tài liệu; không dùng % tin cậy không có căn cứ. Nếu slide thiếu thì nói rõ | Hiện thời gian/lần quay lại thật của phiên mô phỏng; “đây chỉ là suy đoán, có thể sai”. Không suy ra khó khăn từ tín hiệu đơn lẻ như một fact |
+| **Control & Recovery — sửa/phục hồi** | Sửa slide/câu hỏi, hủy, đổi tên/ẩn danh, thu hồi trước phản hồi, hỏi thêm sau phản hồi | Hỏi lại, bỏ lời giải, sửa nháp, chuyển coach hoặc tự viết, quay lại quiz | Để sau, bác bỏ, tắt, chuyển tự viết, bỏ tín hiệu khỏi thẻ; mọi lựa chọn vẫn cho học/quiz tiếp |
 
-### 3.5. Feedback and data check (cho Option C và phần gửi coach ở A/B)
+### 3.2. Option A — Tự đánh dấu, coach trả lời
 
-| Câu hỏi | Trả lời trong prototype 🧪 *(nhóm xác nhận)* |
+**Critical interaction:** user xác định chỗ cần hỏi và kiểm tra yêu cầu trước khi gửi.
+
+| Thời điểm | User làm gì? | Hệ thống / AI Act, Ask, Don't Act — vì sao | Căn cứ và giới hạn | Control / recovery |
+| --- | --- | --- | --- | --- |
+| Đánh dấu slide | Chọn vị trí, loại vướng và tự viết câu hỏi | Hệ thống Act gắn slide. AI Don't Act: chưa có yêu cầu suy luận và user giữ nội dung | Hiện slide và câu hỏi gốc; không tự bổ sung nguyên nhân | Chọn lại slide, sửa nội dung, hủy về context |
+| Xem trước | Chọn ẩn danh/kèm tên và người nhận | Hệ thống Ask xác nhận gửi. Don't Act: không tiết lộ tên hoặc gửi ngầm | “Coach sẽ thấy…” liệt kê đúng nội dung chia sẻ; mặc định không kèm tên | Đổi người nhận/cách chia sẻ; chưa gửi khi hủy |
+| Kết quả quyết định | Gửi hoặc không gửi; đọc phản hồi mô phỏng khi có | Hệ thống Act hiển thị trạng thái. AI Don't Act sửa lời coach hoặc chấm hiểu bài | “Đã gửi — mô phỏng”; coach reply là soạn sẵn, không có SLA thật | Trước phản hồi: sửa/thu hồi. Sau phản hồi: hỏi thêm; không hứa xóa nội dung đã được đọc |
+
+**Nếu sai:** gắn nhầm slide/câu hỏi có thể khiến coach hỗ trợ lệch. Vì vậy xem trước luôn có sửa; không coi rủi ro là thấp chỉ vì A không dùng suy luận AI.
+
+### 3.3. Option B — AI giải thích khi được hỏi
+
+**Critical interaction:** user đánh giá lời giải có căn cứ rồi quyết định học tiếp hoặc nhờ người.
+
+| Thời điểm | User làm gì? | AI Act, Ask, Don't Act — vì sao | Căn cứ và giới hạn | Control / recovery |
+| --- | --- | --- | --- | --- |
+| Khởi tạo | Chọn thuật ngữ hoặc nhập câu hỏi | Don't Act trước yêu cầu. Ask một câu làm rõ nếu câu hỏi mơ hồ | Chỉ dùng slide 5–7 và phần user nhập để trả lời | Đóng panel; hỏi phần khác hoặc tự viết cho coach |
+| Nhận lời giải | Đọc, mở nguồn, chọn đã rõ/chưa rõ | Act trả lời trong phạm vi tài liệu. Don't Act bịa phần slide thiếu hoặc coi user đã hiểu chỉ vì bấm nút | Hiện đoạn nguồn; nhãn “đủ / một phần / chưa có căn cứ trong slide”. Nhãn mô phỏng không phải xác suất đúng | Hỏi lại, bỏ câu trả lời, mở slide kiểm tra; quiz vẫn dùng được |
+| Chuyển coach | Kiểm tra/sửa nháp, người nhận và chia sẻ | Act soạn nháp từ trao đổi user chọn. Ask trước gửi. Don't Act gửi toàn bộ chat hay tự nêu nguyên nhân | Tách lời user khỏi tóm tắt AI; đánh dấu thông tin chưa xác nhận | Sửa hoặc tự viết thay nháp, không gửi; thu hồi trước phản hồi |
+
+**Nếu sai:** lời giải sai có thể tạo hiểu nhầm khó phát hiện. Nguồn và cảnh báo phải ở cạnh câu trả lời, kèm đường chuyển coach.
+Nếu hiển thị “12 bạn khác”, ghi ngay cạnh là **số liệu minh họa**; không dùng nó làm chứng cứ lời giải đúng hoặc user cần giúp.
+
+### 3.4. Option C — AI chủ động hỏi thăm
+
+**Critical interaction:** user kiểm tra một suy đoán chủ động và chọn mức hỗ trợ/chia sẻ.
+
+| Thời điểm | User làm gì? | AI Act, Ask, Don't Act — vì sao | Căn cứ và giới hạn | Control / recovery |
+| --- | --- | --- | --- | --- |
+| Trước phân tích | Chọn bật gợi ý hoặc tiếp tục không bật | Ask xin bật theo dõi thời gian/chuyển slide. Don't Act thu/đánh giá tín hiệu khi tắt | Không dùng ghi chú, quiz hoặc chat để suy luận. Quyền chỉ trong phiên | Mặc định tắt; bỏ qua vẫn dùng A/B và quiz |
+| Có tín hiệu | Đọc hoặc bỏ qua gợi ý | Act mở gợi ý sau ≥20 giây ở slide 6 hoặc quay lại lần 2. Ask “Bạn có cần giúp không?”. Don't Act kết luận user chưa hiểu hoặc tự báo coach | “Vì sao mình hỏi?” hiện tín hiệu; ngưỡng là thiết kế mô phỏng, chưa chứng minh phát hiện đúng | Giải thích, nhờ coach, để sau, bác bỏ, tắt gợi ý |
+| Nhờ coach | Sửa câu hỏi, chọn tín hiệu muốn chia sẻ và tên/người nhận | Act tạo thẻ nháp; Ask xác nhận đúng nội dung/người nhận. Don't Act gửi trước xác nhận | Xem trước slide, câu hỏi, dữ liệu user chọn; suy đoán được ghi rõ và không biến thành nhãn user | Bỏ tín hiệu, sửa chỗ vướng, không gửi, tự viết; thu hồi trước phản hồi |
+
+**Nếu sai:** gợi ý có thể gây phiền hoặc cảm giác bị theo dõi. Không ngắt quiz hay khóa học.
+“Để sau” đóng gợi ý, không mở lại trên cùng slide đến khi user rời rồi quay lại; tối đa 2 gợi ý/phiên.
+“Tắt” dừng thu tín hiệu và xóa tín hiệu đang giữ trong phiên; chỉ bật lại khi user chủ động.
+“Không cần giúp” không tạo cờ khó khăn hoặc gửi dữ liệu. Nếu cần lời giải, dùng cùng lời giải/cảnh báo của B.
+
+### 3.5. Feedback and data check
+
+| Câu hỏi | Quyết định thiết kế |
 | --- | --- |
-| Feedback của learner ảnh hưởng phiên hiện tại, lần sau hay không được ghi nhớ? | Chỉ ảnh hưởng **phiên hiện tại**: "Đừng gợi ý nữa" tắt gợi ý trong phiên; prototype không lưu gì sang phiên sau |
-| Dữ liệu nào được dùng? | Thao tác chuyển slide và thời gian ở mỗi slide trong phiên. **Không** dùng ghi chú, đáp án quiz, nội dung chat |
-| Learner có cách rút quyền không? | Có: công tắc Bật/Tắt, "Đừng gợi ý nữa", "Không gửi", "Thu hồi" |
-| Số liệu "12 bạn khác cũng đánh dấu chưa hiểu" (Option B) | **Số liệu minh hoạ**, đã ghi chú trong giao diện; nhắc lại ở bước debrief |
+| Feedback ảnh hưởng phiên nào? | Sửa nháp, bác bỏ và tắt chỉ có tác dụng trong phiên. Không huấn luyện model, không ghi nhớ lâu dài |
+| Dữ liệu A/B dùng? | Slide và nội dung user chủ động nhập/chọn. Chat B dùng để giải thích hoặc soạn nháp, không tự chia sẻ toàn bộ |
+| Dữ liệu C dùng? | Thời gian ở slide và thao tác chuyển slide sau khi user bật. Không dùng ghi chú/quiz/chat để suy luận |
+| Chia sẻ coach? | User chọn người nhận, mặc định không kèm tên; xem trước mọi trường. Tín hiệu C không tự động đi kèm |
+| Cách rút quyền? | Tắt C, bỏ tín hiệu khỏi thẻ, hủy trước gửi, thu hồi trước phản hồi; giải thích giới hạn nếu nội dung đã được đọc |
+| Reset? | Xóa mọi lựa chọn, nháp và tín hiệu phiên; C về tắt; context và fixture ban đầu được khôi phục |
+| Dữ liệu thật? | Prototype dùng fixture và phản hồi soạn sẵn, không gửi coach thật hoặc thu dữ liệu phỏng vấn |
 
----
+### 3.6. Kiểm tra Gate 3 — nội dung
+
+- [x] Mỗi option có critical interaction, vai user và AI/hệ thống.
+- [x] Act/Ask/Don't Act được chọn theo hậu quả và khả năng phát hiện sai.
+- [x] Capability/limit xuất hiện trước hành động AI hoặc gửi.
+- [x] Có căn cứ và cách thể hiện khi tài liệu/tín hiệu chưa đủ.
+- [x] Có sửa, từ chối và đường tiếp tục task sau khi sai.
+- [x] Có quy định feedback, dữ liệu dùng, chia sẻ và rút quyền.
+
+Chặng 3 đã hoàn thiện **quyết định thiết kế để build**. Chưa chứng minh prototype thể hiện đúng các quyết định này; QA và test thuộc Chặng 4–6.
 
 ## 4. Gate tự kiểm và trạng thái
 
 - [x] Gate 1 — đủ nội dung evidence, giả thuyết và điều chưa biết.
 - [x] Gate 2 — đủ contract, ba cơ chế và distance check; nội dung mới đồng bộ từ thiết kế chung.
-- [ ] Gate 3 — bảng Human–AI đã có nội dung thiết kế, chờ nhóm review.
+- [x] Gate 3 — hoàn thiện nội dung quyết định thiết kế; chưa có xác nhận review nhóm/chấm.
 - [ ] Gate 4 — chưa có prototype chạy được và QA.
 - [ ] Gate 5 — chưa có ba feedback test thật và Group Next Change.
 

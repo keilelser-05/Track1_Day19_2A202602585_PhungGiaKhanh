@@ -24,7 +24,7 @@ Repo giữ tên Day19 theo URL người nộp cung cấp; đề/README ghi Lab18
 | --- | --- | --- |
 | Chặng 1 | Hoàn thiện nội dung theo notes: evidence, thảo luận, giả thuyết 5 thành phần và điều chưa biết | [Design sheet](three-option-design-sheet.md) |
 | Chặng 2 | Đồng bộ A gửi coach / B AI giải thích / C AI chủ động; phân công là đề xuất | [Design sheet](three-option-design-sheet.md) |
-| Chặng 3 | Đã đồng bộ bảng Human–AI theo thiết kế chung; chờ review | [Design sheet](three-option-design-sheet.md) |
+| Chặng 3 | Hoàn thiện quyết định Human–AI, quyền dữ liệu và recovery; chưa build/test | [Design sheet](three-option-design-sheet.md) |
 | Chặng 4 | Chưa có prototype hoặc link chạy được | [Prototype link](prototype-link.md) |
 | Chặng 5 | Có task và 5 mục quan sát đề xuất | [Test prompt](test/test-prompt.md) |
 | Chặng 6 | Chưa có feedback test prototype | [Feedback note](prototype-feedback-note.md), [synthesis](group-feedback-synthesis.md) |
@@ -280,11 +280,20 @@ Task chung: làm rõ đủ để trả lời quiz, hoặc chuyển câu hỏi đ
 Người nộp cần review thiết kế và xác nhận phân công trước khi build.
 [Fixture chung](shared/content-fixture.md), [task test](test/test-prompt.md).
 
-## 8. Chặng 3 — Human–AI Design
+## 8. Chặng 3 — Human–AI Design pass
 
-Đã đồng bộ bảng thiết kế cho từng option: trigger, hành động/hỏi/không làm, căn cứ, xem trước, sửa, thu hồi và tắt gợi ý.
-Xem [Design Sheet — Chặng 3](three-option-design-sheet.md#3-humanai-decision-table--gate-3-).
-Đây là thiết kế, chưa có bằng chứng prototype chạy được hoặc user test.
+Nội dung hoàn thiện tại [Design Sheet — Chặng 3](three-option-design-sheet.md#3-chặng-3--humanai-design-pass).
+
+| Option | Quyết định chính |
+| --- | --- |
+| A | User xác định câu hỏi; hệ thống gắn slide, AI không tự suy luận; user xem trước và gửi |
+| B | AI giải thích sau yêu cầu, hiện căn cứ và giới hạn; user sửa/chuyển coach khi chưa rõ |
+| C | Mặc định tắt; user bật quyền trước khi theo dõi thời gian/chuyển slide; gợi ý không tự báo coach |
+
+Đã hoàn thiện bốn nguyên lý, bảng Act/Ask/Don't Act từng option, hậu quả khi sai, đường sửa/phục hồi và quy định feedback/dữ liệu.
+Cả ba có sửa, hủy và tiếp tục quiz; mọi chia sẻ coach cần xem trước và xác nhận.
+Reset xóa dữ liệu phiên và trả C về tắt. Không hứa thu hồi nội dung đã được người nhận đọc.
+Gate 3 đủ nội dung thiết kế; kiểm tra triển khai nằm ở Chặng 4 và test ở Chặng 6.
 
 ---
 
@@ -562,7 +571,7 @@ Track1_Day18_MHV_HoVaTen/
 - [x] Hypothesis Problem giữ case Day 17, có đủ user/situation/job/barrier/consequence, observation có nguồn và điều chưa biết (GATE 1 — nội dung)
 - [x] Ba options nêu rõ mechanism khác nhau, cùng một problem (GATE 2 — nội dung)
 - [x] Distance check hoàn thành **không** nhắc màu/layout/wording
-- [ ] Mỗi option có Human–AI Decision Table với Act/Ask/Don't Act và đường control/recovery (GATE 3)
+- [x] Mỗi option có Human–AI Decision Table với Act/Ask/Don't Act và đường control/recovery (GATE 3 — thiết kế)
 - [ ] Cả ba prototype mở được, cùng context, có reset path, không cần narrate (GATE 4)
 - [ ] Test prompt dùng cùng một task cho A/B/C; observation focus ≤ 5 mục
 - [ ] Ba Feedback Notes độc lập, tách rõ OBSERVED / INTERPRETED / DECIDED / STILL UNPROVEN (GATE 5)
@@ -577,7 +586,7 @@ Track1_Day18_MHV_HoVaTen/
 | ---- | -------- | ---------- |
 | **GATE 1** | Evidence continuity — đủ 5 thành phần + observation có nguồn + điều chưa biết | Đủ nội dung; chưa có xác nhận chấm |
 | **GATE 2** | Meaningful options — cùng user/situation/task/outcome, khác mechanism hoặc phân chia quyền | Đủ nội dung; chưa có xác nhận chấm |
-| **GATE 3** | Human control — rõ user/AI làm gì, agency phù hợp hậu quả, có đường kiểm soát/phục hồi | ⬜ |
+| **GATE 3** | Human control — rõ user/AI làm gì, agency phù hợp hậu quả, có đường kiểm soát/phục hồi | Đủ nội dung thiết kế; chưa có xác nhận chấm |
 | **GATE 4** | Test-ready — người ngoài mở được, làm cùng task, quay về context, không cần giải thích | ⬜ |
 | **GATE 5** | Learning, not praise — 3 feedback độc lập, có pattern, 1 Next Change, 1 Still Unproven | ⬜ |
 

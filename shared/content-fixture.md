@@ -27,7 +27,7 @@ Không ghi thời gian phản hồi thực tế hoặc giả định coach luôn
 
 ## Trigger và dữ liệu
 
-C: sau khi user bật quyền, dùng thời gian ở slide 6 ≥20 giây hoặc quay lại slide lần 2 để mở một gợi ý; tối đa 2 lần/phiên. Ngưỡng là lựa chọn thiết kế, chưa đo hiệu quả.
+C: mặc định tắt; sau khi user bật quyền, dùng thời gian ở slide 6 ≥20 giây hoặc quay lại slide lần 2 để mở một gợi ý; tối đa 2 lần/phiên. Ngưỡng là lựa chọn thiết kế, chưa đo hiệu quả.
 Không dùng ghi chú, đáp án quiz hoặc nội dung chat để suy luận nhu cầu.
 Gợi ý: “Bạn đang ở slide này khá lâu. Bạn muốn làm rõ phần nào không? Đây chỉ là suy đoán.”
 B: “12 bạn khác đánh dấu” là số minh họa, ghi rõ ngay cạnh số; không có dữ liệu học viên thật.
@@ -37,4 +37,5 @@ B: “12 bạn khác đánh dấu” là số minh họa, ghi rõ ngay cạnh s�
 Mặc định gửi ẩn danh; user có thể chọn kèm tên giả lập, xem trước nội dung rồi gửi/hủy.
 Thẻ gồm slide, câu hỏi, điều đã thử do user cung cấp và tín hiệu user đồng ý chia sẻ.
 “Đã gửi” là mô phỏng. Có sửa/thu hồi theo trạng thái; không hứa xóa một tin đã được người nhận đọc.
-Reset xóa lựa chọn và tín hiệu phiên. Tắt C vẫn dùng được A/B và quiz.
+Reset xóa lựa chọn/nháp/tín hiệu phiên và trả C về tắt. Tắt C dừng theo dõi, xóa tín hiệu phiên; vẫn dùng được A/B và quiz.
+“Để sau” không mở lại gợi ý trên cùng slide đến khi user rời rồi quay lại; tối đa 2 gợi ý/phiên. “Không cần giúp” không tạo cờ khó khăn. Tín hiệu C mặc định không chia sẻ; user chọn trường chia sẻ trước gửi.

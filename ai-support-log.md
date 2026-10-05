@@ -74,3 +74,7 @@ AI hỗ trợ map Solution Parking Lot sang A/B/C, cụ thể hóa Comparison Co
 
 Nguồn: [repo Thành, commit 83b359251a1291b78d48d18dfedb4a2d25a81f37](https://github.com/thanhpd123/Track1_Day19_2A202602930_PhanDuyThanh/commit/83b359251a1291b78d48d18dfedb4a2d25a81f37). Đồng bộ cơ chế A gửi coach / B AI giải thích / C AI chủ động, bảng Human–AI và phân công đề xuất. Giữ evidence PN04, thông tin người nộp và giới hạn nguồn của repo cá nhân. Tài liệu nguồn ghi giảng viên đồng ý nhóm 4 người; chưa tự xác nhận review/phân công đã chốt.
 AI soạn fixture minh họa dùng chung, đồng bộ task test và link scope. Không tạo feedback hoặc đóng góp/reflection. Nhãn mức hỗ trợ từ tài liệu thay độ tin cậy mô hình chưa đo; thời gian phản hồi coach không coi là SLA thật; ngưỡng trigger và 12 bạn là mô phỏng. Chưa build/test hoặc xác nhận gate được chấm pass.
+
+### Hoàn thiện Chặng 3 — 05/10/2026
+
+AI hỗ trợ viết bảng bốn nguyên lý, critical interaction và Act/Ask/Don't Act cho từng option; phân biệt chức năng hệ thống với suy luận AI; nêu hậu quả khi sai và đường tiếp tục task. Làm rõ C mặc định tắt, chỉ dùng thời gian/chuyển slide sau bật quyền; xem trước dữ liệu gửi, giới hạn thu hồi và reset. Đồng bộ fixture/README. Đây là quyết định thiết kế, chưa phải kiểm thử hoặc observation. Không viết feedback, đóng góp hay reflection cá nhân; chưa xác nhận nhóm review hoặc coach chấm pass.
