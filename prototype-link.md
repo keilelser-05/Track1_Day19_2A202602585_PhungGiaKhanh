@@ -50,3 +50,8 @@ Chưa kiểm tra máy của tester ngoài nhóm. Không ghi “không cần gi�
 - [ ] Nhóm ghi người kiểm, lỗi quan sát và kết quả kiểm tra trên máy khác.
 
 Sẵn sàng mang đi kiểm tra/test. Chưa coi QA tự động là Gate 4 được coach xác nhận.
+
+
+## Cập nhật Option C theo VLearn · 05/10/2026
+
+[Chi tiết bản cải tiến](docs/option-c-vlearn.md) · [Nguồn trích đoạn công khai](reference/vlearn/README.md). Màn học mô phỏng dùng nhận diện xanh/đỏ; A/B cùng chrome và fixture. C giữ quyền bật/tắt, căn cứ gợi ý, preview và recovery. Bỏ social proof giả lập để tránh dẫn dắt. QA 5 nhóm pass; Gate 4 kiểm tra người không build vẫn chưa hoàn thành.

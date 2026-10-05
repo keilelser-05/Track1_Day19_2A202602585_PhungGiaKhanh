@@ -579,3 +579,8 @@ Mọi nội dung gắn nhãn 🧪 là nháp và phải được nhóm tự rà l
 | **Canned AI output** | Output AI được soạn sẵn để nhét vào prototype, không cần model thật |
 | **Wizard of Oz** | Người mô phỏng AI thật ở sau; không được giải thích giao diện hộ tester |
 | **Next Change** | Thay đổi cụ thể nhóm sẽ làm ở iteration tiếp theo, dựa trên behavior + trade-off quan sát được |
+
+
+## Cập nhật Option C theo VLearn · 05/10/2026
+
+[Chi tiết bản cải tiến](docs/option-c-vlearn.md) · [Nguồn trích đoạn công khai](reference/vlearn/README.md). Màn học mô phỏng dùng nhận diện xanh/đỏ; A/B cùng chrome và fixture. C giữ quyền bật/tắt, căn cứ gợi ý, preview và recovery. Bỏ social proof giả lập để tránh dẫn dắt. QA 5 nhóm pass; Gate 4 kiểm tra người không build vẫn chưa hoàn thành.

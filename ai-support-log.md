@@ -83,3 +83,8 @@ AI hỗ trợ viết bảng bốn nguyên lý, critical interaction và Act/Ask/
 
 ChatGPT/Codex viết design.md, shared CSS/JS, ba HTML standalone A/B/C và trang index; giữ context/quiz/fixture chung và khác cơ chế. Sinh nội dung soạn sẵn theo fixture, tạo annotations ngoài giao diện, build script và browser QA. Không dùng model/API hoặc gửi coach thật.
 Đã chạy 5 nhóm kiểm tra tự động trên Chromium (luồng A/B/C, chia sẻ/tắt/reset, không gọi mạng ngoài), tất cả pass; xem test/prototype-checks.json. Đã xem ảnh render màn đầu ba bản. QA tự động không phải observation/feedback user, không thay bước người không build kiểm tra Gate 4. Không viết thay đóng góp cá nhân/reflection, không gán người build trong nhóm khi việc build thực tế do AI hỗ trợ theo yêu cầu người nộp.
+
+
+## 05/10/2026 — Cải tiến Option C dựa trên giao diện VLearn công khai
+
+AI đọc trang welcome, DOM và CSS phía client; lưu trích đoạn HTML/biến màu có nguồn, viết lại layout nhận diện xanh/đỏ và giữ shell chung A/B/C. Không có source backend hoặc màn học sau đăng nhập. AI sửa code và chạy 5 nhóm QA Chromium, xem ảnh render; kết quả là QA phần mềm, không phải quan sát tester. Ngưỡng trigger là giả lập thiết kế; không tạo quote, feedback, đóng góp cá nhân hoặc reflection.
