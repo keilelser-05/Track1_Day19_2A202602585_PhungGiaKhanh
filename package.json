@@ -1,0 +1,8 @@
+{
+  "name": "vlearn-three-micro-prototypes",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Offline standalone HTML prototypes for the Human–AI lab",
+  "scripts": {"check:prototypes": "node scripts/check_prototypes.cjs"},
+  "devDependencies": {"playwright": "^1.58.0"}
+}

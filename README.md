@@ -25,7 +25,7 @@ Repo giữ tên Day19 theo URL người nộp cung cấp; đề/README ghi Lab18
 | Chặng 1 | Hoàn thiện nội dung theo notes: evidence, thảo luận, giả thuyết 5 thành phần và điều chưa biết | [Design sheet](three-option-design-sheet.md) |
 | Chặng 2 | Đồng bộ A gửi coach / B AI giải thích / C AI chủ động; phân công là đề xuất | [Design sheet](three-option-design-sheet.md) |
 | Chặng 3 | Hoàn thiện quyết định Human–AI, quyền dữ liệu và recovery; chưa build/test | [Design sheet](three-option-design-sheet.md) |
-| Chặng 4 | Chưa có prototype hoặc link chạy được | [Prototype link](prototype-link.md) |
+| Chặng 4 | Đã build 3 HTML độc lập, 5 nhóm QA trình duyệt pass; chờ người không build kiểm tra | [Prototype link](prototype-link.md) |
 | Chặng 5 | Có task và 5 mục quan sát đề xuất | [Test prompt](test/test-prompt.md) |
 | Chặng 6 | Chưa có feedback test prototype | [Feedback note](prototype-feedback-note.md), [synthesis](group-feedback-synthesis.md) |
 
@@ -297,80 +297,20 @@ Gate 3 đủ nội dung thiết kế; kiểm tra triển khai nằm ở Chặng 
 
 ---
 
-## 9. Chặng 4 — Build ba micro-prototype · 80 phút
+## 9. Chặng 4 — Ba micro-prototype HTML
 
-### 1. Scope chuẩn
+[Trang mở A/B/C](index.html) · [A](options/option-a.html) · [B](options/option-b.html) · [C](options/option-c.html).
 
-Mỗi option chỉ cần **2–3 màn hình hoặc trạng thái**:
+Tải repo về máy và mở index.html bằng Chrome/Edge. Ba file option nhúng sẵn CSS/JS, có thể mở riêng, không cần API/server.
+Giao diện tuân theo [design.md](design.md); chung context, mini-deck, quiz, task và nội dung mô phỏng.
+Chỉ cơ chế tương tác khác nhau: tự gửi coach / AI giải thích theo yêu cầu / AI gợi ý chủ động sau bật quyền.
+Có xem trước, sửa, hủy, thu hồi, tắt, tiếp tục quiz và reset.
 
-```text
-COMMON CONTEXT
-      ↓
-CRITICAL INTERACTION
-      ↓
-RESULT / USER DECISION
-```
+**QA thực tế:** 5 nhóm kiểm tra Chromium headless pass; không có lỗi JS hoặc gọi mạng ngoài trong các luồng đã kiểm tra. Đã xem ảnh render bố cục A/B/C.
+[Chi tiết QA và Gate 4](prototype-link.md) · [Hướng dẫn](docs/prototype-run.md) · [Annotations ngoài frame](docs/prototype-annotations.md).
 
-Cả ba options dùng chung khoảng **70%**:
-
-- Context screen;
-- Content/data fixture;
-- Component và visual style;
-- Task và desired outcome.
-
-**Chỉ critical interaction cần khác rõ.**
-
-### 2. Definition of testable
-
-Prototype sẵn sàng khi:
-
-- [ ] Tester có thể **tự mở và thao tác** A/B/C.
-- [ ] Cả ba bắt đầu từ **cùng một context và task**.
-- [ ] Option **không cần facilitator narrate** để hiểu.
-- [ ] Nội dung **đủ thật** để tester ra quyết định.
-- [ ] Mỗi option thể hiện được **điểm user lấy lại control**.
-- [ ] Có **đường reset** về common context.
-
-**Được dùng:**
-
-- Figma, Framer hoặc công cụ tương đương.
-- HTML/CSS/JavaScript.
-- Prototype giấy có flow rõ.
-- **Canned AI output.**
-- Wizard of Oz — miễn người mô phỏng AI **không giải thích giao diện hộ tester**.
-
-**Không cần:**
-
-- Model hoặc API thật.
-- Full onboarding hoặc dashboard.
-- Responsive cho nhiều thiết bị.
-- Visual polish hoàn chỉnh.
-- Một failure catalog đầy đủ.
-
-### 3. Build order
-
-| Phút | Việc cần làm | Ai |
-| ---- | ------------ | -- |
-| **0–10** | Vẽ common context, task và content fixture dùng cho cả ba | Cả nhóm |
-| **10–55** | Mỗi thành viên build một option bằng shared components | Mỗi người 1 option |
-| **55–65** | Thêm control/recovery và evidence/uncertainty cần thiết | Cả nhóm |
-| **65–75** | Mỗi thành viên tự test option do người khác build | Đổi chéo |
-| **75–80** | Chuẩn hoá A/B/C, kiểm link và reset path | Cả nhóm |
-
-### 4. Prototype annotation
-
-Đặt annotation **ngoài frame**, **không hiện cho tester**:
-
-```text
-OPTION ___
-We expect the tester to: ______________________________________
-Watch for: ____________________________________________________
-Do not explain: _______________________________________________
-```
-
-**GATE 4 — Test-ready** ✅
-
-> Một người **không build** có thể mở, thực hiện cùng task qua A/B/C và quay về context ban đầu **mà không cần người khác giải thích**.
+**Còn cần:** người không build tự mở/task/reset và ghi nhận thật để xác nhận test-ready theo Gate 4.
+Không coi QA tự động là user feedback; chưa chọn option thắng hoặc tuyên bố validated.
 
 ---
 
@@ -587,7 +527,7 @@ Track1_Day18_MHV_HoVaTen/
 | **GATE 1** | Evidence continuity — đủ 5 thành phần + observation có nguồn + điều chưa biết | Đủ nội dung; chưa có xác nhận chấm |
 | **GATE 2** | Meaningful options — cùng user/situation/task/outcome, khác mechanism hoặc phân chia quyền | Đủ nội dung; chưa có xác nhận chấm |
 | **GATE 3** | Human control — rõ user/AI làm gì, agency phù hợp hậu quả, có đường kiểm soát/phục hồi | Đủ nội dung thiết kế; chưa có xác nhận chấm |
-| **GATE 4** | Test-ready — người ngoài mở được, làm cùng task, quay về context, không cần giải thích | ⬜ |
+| **GATE 4** | Test-ready — người không build tự mở/task/reset không cần giải thích | Đã build/QA; chờ kiểm tra người thật |
 | **GATE 5** | Learning, not praise — 3 feedback độc lập, có pattern, 1 Next Change, 1 Still Unproven | ⬜ |
 
 ---

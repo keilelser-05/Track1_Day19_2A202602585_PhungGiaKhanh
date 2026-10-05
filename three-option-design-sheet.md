@@ -2,7 +2,7 @@
 
 > Người nộp: Phùng Gia Khánh — 2A202602585.
 > Cập nhật 05/10/2026. Evidence được tóm tắt từ notes hiện có, chưa đối chiếu bản ghi.
-> Chặng 2–3 hoàn thiện nội dung thiết kế; chờ nhóm review. Chưa có kết quả build/test.
+> Chặng 2–3 hoàn thiện nội dung thiết kế; chờ nhóm review. Đã build và QA tự động; chưa có user test.
 
 ## 1. Chặng 1 — Evidence Snapshot
 
@@ -188,14 +188,14 @@ Nếu hiển thị “12 bạn khác”, ghi ngay cạnh là **số liệu minh 
 - [x] Có sửa, từ chối và đường tiếp tục task sau khi sai.
 - [x] Có quy định feedback, dữ liệu dùng, chia sẻ và rút quyền.
 
-Chặng 3 đã hoàn thiện **quyết định thiết kế để build**. Chưa chứng minh prototype thể hiện đúng các quyết định này; QA và test thuộc Chặng 4–6.
+Chặng 3 hoàn thiện quyết định thiết kế. Chặng 4 đã có prototype và [QA tự động](prototype-link.md); chưa có user test chứng minh người học hiểu/kiểm soát được.
 
 ## 4. Gate tự kiểm và trạng thái
 
 - [x] Gate 1 — đủ nội dung evidence, giả thuyết và điều chưa biết.
 - [x] Gate 2 — đủ contract, ba cơ chế và distance check; nội dung mới đồng bộ từ thiết kế chung.
 - [x] Gate 3 — hoàn thiện nội dung quyết định thiết kế; chưa có xác nhận review nhóm/chấm.
-- [ ] Gate 4 — chưa có prototype chạy được và QA.
+- [ ] Gate 4 — đã build ba HTML và QA tự động pass; chờ người không build kiểm tra độc lập (xem prototype-link.md).
 - [ ] Gate 5 — chưa có ba feedback test thật và Group Next Change.
 
 Checklist nội dung không xác nhận coach đã chấm pass hoặc nhóm đã review.

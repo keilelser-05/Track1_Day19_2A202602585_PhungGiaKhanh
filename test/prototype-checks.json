@@ -1,0 +1,27 @@
+{
+  "type": "automated-browser-qa",
+  "not_user_feedback": true,
+  "checks": [
+    {
+      "check": "A: validation, edit, preview, cancel, send, withdraw, coach and quiz",
+      "result": "PASS"
+    },
+    {
+      "check": "B: grounded explanation, insufficient source, editable escalation and decision result",
+      "result": "PASS"
+    },
+    {
+      "check": "C: no prompt before permission, timed prompt, evidence and no-send recovery",
+      "result": "PASS"
+    },
+    {
+      "check": "C: revisit prompt, explicit signal sharing, disabling erases signal",
+      "result": "PASS"
+    },
+    {
+      "check": "All: standalone open, same context/quiz, no horizontal overflow at desktop, reset and no external requests",
+      "result": "PASS"
+    }
+  ],
+  "errors": []
+}

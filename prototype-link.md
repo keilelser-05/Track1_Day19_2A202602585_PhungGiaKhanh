@@ -1,35 +1,52 @@
-# Prototype Link — H3201 · Case C
+# Prototype A/B/C — H3201 · Case C
 
-> Trạng thái: **chưa build / chưa có link chạy được**. Bản nháp cơ chế: [Design sheet](three-option-design-sheet.md).
-> Người nộp: Phùng Gia Khánh — 2A202602585. Chưa chốt phân công.
+> Ba file HTML đã build, mở trực tiếp được. QA tự động trên Chromium đã pass; chưa có kiểm tra của người ngoài nhóm hoặc feedback user thật.
 
-| Option | Cơ chế dự kiến | Người phụ trách | Link | Trạng thái |
-| --- | --- | --- | --- | --- |
-| A | User đánh dấu và gửi câu hỏi gắn slide cho coach; không suy luận | Chưa chốt | Chưa có | Chưa build |
-| B | User hỏi; AI giải thích theo slide; chuyển coach khi chưa rõ | Chưa chốt | Chưa có | Chưa build |
-| C | AI hỏi thăm từ thời gian/chuyển slide được cho phép; user quyết định | Chưa chốt | Chưa có | Chưa build |
+## 1. Link và cơ chế
 
-## Phạm vi đề xuất
-
-- 3 trạng thái mỗi option: context chung → tương tác → xem trước/kết quả quyết định.
-- Cùng mini-deck slide RAG 5–7, quiz, lời giải AI/coach mô phỏng, task và components; xem [fixture chung](shared/content-fixture.md).
-- Có sửa, hủy, tự viết và reset; không tự gửi yêu cầu.
-- Không cần API/model thật. Không dùng thông tin học viên thật làm fixture.
-- Annotation về kỳ vọng và điều cần quan sát đặt ngoài frame tester.
-- [Task test đề xuất](test/test-prompt.md).
-
-## QA — chỉ đánh dấu sau khi kiểm tra thật
-
-| Hạng mục | A | B | C |
+| Option | Cơ chế | File HTML | Trạng thái |
 | --- | --- | --- | --- |
-| Người ngoài mở được | Chưa kiểm | Chưa kiểm | Chưa kiểm |
-| Tự thực hiện cùng task | Chưa kiểm | Chưa kiểm | Chưa kiểm |
-| Reset về context | Chưa kiểm | Chưa kiểm | Chưa kiểm |
-| Hiểu giới hạn/căn cứ của AI | Chưa kiểm | Chưa kiểm | Chưa kiểm |
-| Sửa hoặc từ chối khi AI sai | Chưa kiểm | Chưa kiểm | Chưa kiểm |
-| Độ hoàn thiện tương đương | Chưa kiểm | Chưa kiểm | Chưa kiểm |
+| A | User tự đánh dấu và gửi coach; không suy luận | [option-a.html](options/option-a.html) | Đã build, QA tự động pass |
+| B | User hỏi; AI giải thích theo slide; chuyển coach nếu chưa rõ | [option-b.html](options/option-b.html) | Đã build, QA tự động pass |
+| C | AI gợi ý sau bật quyền; user kiểm tra và quyết định | [option-c.html](options/option-c.html) | Đã build, QA tự động pass |
 
-- [ ] Điền link thật và các bước mở/reset cho từng option.
-- [ ] Người không build thử từng option.
-- [ ] Ghi lỗi và người kiểm.
-- [ ] Đạt Gate 4 trước khi test ngoài nhóm.
+[Trang mở bộ A/B/C](index.html) · [Hướng dẫn chạy](docs/prototype-run.md).
+GitHub hiển thị HTML như mã nguồn: tải repo/ZIP và mở index.html bằng trình duyệt. Không cần server, API hoặc mạng.
+Mỗi option nhúng CSS/JS nên có thể tải và mở riêng. Link về bộ A/B/C cần giữ cấu trúc thư mục.
+
+## 2. Common context và phạm vi
+
+- Chung slide RAG 5–7, quiz, task, canned AI/coach, components và visual style.
+- Nguồn chung: [CSS](shared/prototype.css), [JS](shared/prototype.js), [fixture](shared/content-fixture.md).
+- Theo [design.md](design.md); ưu tiên laptop/desktop.
+- 3 trạng thái: bài học → tương tác làm rõ/xem trước → quyết định/kết quả. Các thao tác sửa/hủy là biến thể trong cùng trạng thái.
+- Mỗi option có “Làm lại từ đầu”: quay về slide 6, bỏ quiz/nháp/kết quả/tín hiệu, trả C về tắt.
+- C có nút bật/tắt, căn cứ gợi ý, bác bỏ/để sau; không tự gửi coach.
+- Sửa và thu hồi trước phản hồi; sau phản hồi có hỏi thêm. Không hứa xóa nội dung đã được đọc.
+- [Annotations dành cho nhóm](docs/prototype-annotations.md) nằm ngoài giao diện tester.
+
+## 3. QA thực tế
+
+Nguồn: [output QA](test/prototype-checks.json), script [check_prototypes.cjs](scripts/check_prototypes.cjs).
+Kiểm tra mở file HTML độc lập bằng Chromium headless, viewport 1440×1100; không phải feedback tester.
+
+| Nhóm kiểm tra | Kết quả |
+| --- | --- |
+| A: validation, sửa, xem trước, hủy, gửi, thu hồi, coach và quiz | PASS |
+| B: lời giải có nguồn, thiếu căn cứ, sửa nháp, kết quả quyết định | PASS |
+| C: không gợi ý trước quyền, trigger thời gian, căn cứ, bác bỏ | PASS |
+| C: trigger quay lại, opt-in chia sẻ, tắt xóa tín hiệu | PASS |
+| A/B/C: cùng context/quiz, reset, không tràn ngang desktop, không gọi mạng ngoài | PASS |
+
+Đã xem ảnh render màn đầu của ba option để kiểm tra bố cục và chữ.
+Chưa kiểm tra máy của tester ngoài nhóm. Không ghi “không cần giải thích” như một finding khi chưa test người thật.
+
+## 4. Gate 4 — bước còn cần kiểm tra người thật
+
+- [x] Build ba option, nội dung chung và cơ chế khác nhau.
+- [x] Luồng mở/task/reset được kiểm tra tự động.
+- [x] Control/recovery và annotations đã có.
+- [ ] Người không build tự mở và làm cùng task qua A/B/C, reset mà không cần giải thích.
+- [ ] Nhóm ghi người kiểm, lỗi quan sát và kết quả kiểm tra trên máy khác.
+
+Sẵn sàng mang đi kiểm tra/test. Chưa coi QA tự động là Gate 4 được coach xác nhận.

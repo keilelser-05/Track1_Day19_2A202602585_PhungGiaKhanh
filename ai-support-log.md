@@ -78,3 +78,8 @@ AI soạn fixture minh họa dùng chung, đồng bộ task test và link scope.
 ### Hoàn thiện Chặng 3 — 05/10/2026
 
 AI hỗ trợ viết bảng bốn nguyên lý, critical interaction và Act/Ask/Don't Act cho từng option; phân biệt chức năng hệ thống với suy luận AI; nêu hậu quả khi sai và đường tiếp tục task. Làm rõ C mặc định tắt, chỉ dùng thời gian/chuyển slide sau bật quyền; xem trước dữ liệu gửi, giới hạn thu hồi và reset. Đồng bộ fixture/README. Đây là quyết định thiết kế, chưa phải kiểm thử hoặc observation. Không viết feedback, đóng góp hay reflection cá nhân; chưa xác nhận nhóm review hoặc coach chấm pass.
+
+### Chặng 4 — build và QA prototype HTML — 05/10/2026
+
+ChatGPT/Codex viết design.md, shared CSS/JS, ba HTML standalone A/B/C và trang index; giữ context/quiz/fixture chung và khác cơ chế. Sinh nội dung soạn sẵn theo fixture, tạo annotations ngoài giao diện, build script và browser QA. Không dùng model/API hoặc gửi coach thật.
+Đã chạy 5 nhóm kiểm tra tự động trên Chromium (luồng A/B/C, chia sẻ/tắt/reset, không gọi mạng ngoài), tất cả pass; xem test/prototype-checks.json. Đã xem ảnh render màn đầu ba bản. QA tự động không phải observation/feedback user, không thay bước người không build kiểm tra Gate 4. Không viết thay đóng góp cá nhân/reflection, không gán người build trong nhóm khi việc build thực tế do AI hỗ trợ theo yêu cầu người nộp.
