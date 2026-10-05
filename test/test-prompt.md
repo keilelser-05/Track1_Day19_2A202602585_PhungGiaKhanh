@@ -1,6 +1,8 @@
 # Chặng 5 — Kịch bản test A/B/C
 
-**Case C — AI Support Radar · Trạng thái: đã chuẩn bị kịch bản, chưa thực hiện test.**
+**Case C — AI Support Radar · Người thực hiện: Phùng Gia Khánh — 2A202602585.**
+**Phạm vi cá nhân:** phụ trách Option C; thực hiện một phiên với một người, cho người đó trải nghiệm cả A/B/C.
+**Trạng thái:** Khánh xác nhận đã test và lấy ý kiến. Thông tin người tham gia, thao tác và feedback cụ thể đang chờ Khánh cung cấp để điền vào form.
 Dùng [fixture chung](../shared/content-fixture.md) và [ba prototype](../prototype-link.md). Tài liệu này dành cho facilitator; không mở phần ghi chú nội bộ trước mặt tester.
 
 ## 1. Câu hỏi bối cảnh — tối đa 2 phút
@@ -15,7 +17,7 @@ Ghi câu trả lời thật và bối cảnh ngắn. Không mặc định tester
 
 > “Đây là bản thử: câu trả lời của trợ lý và coach được soạn sẵn, không gửi tới người thật. Bạn không cần nhập tên hoặc dữ liệu cá nhân thật.”
 
-Đọc cùng lời mở đầu cho mọi tester, không giới thiệu ưu điểm hoặc cơ chế từng option.
+Đọc cùng lời mở đầu cho cả ba lượt của người tham gia, không giới thiệu ưu điểm hoặc cơ chế từng option.
 
 ## 3. Nhiệm vụ chung — đọc nguyên văn cho A/B/C
 
@@ -34,13 +36,11 @@ Trước phiên:
 - Chuẩn bị đồng hồ và [Feedback Note](../prototype-feedback-note.md); chưa điền observation khi chưa test.
 - Xin phép trước nếu muốn ghi âm hoặc ghi hình; nếu không thì ghi chú hành vi.
 
-| Phiên dự kiến | Thứ tự |
-| --- | --- |
-| Tester 1 | A → B → C |
-| Tester 2 | B → C → A |
-| Tester 3 | C → A → B |
+| Phiên cá nhân | Người thực hiện | Người test | Thứ tự thực tế |
+| --- | --- | --- | --- |
+| Một phiên, ba lượt A/B/C | Phùng Gia Khánh | Chờ cung cấp tên viết tắt hoặc mã | Chờ Khánh cung cấp |
 
-Ghi thứ tự thực tế trong note. Nếu nhóm có phiên thứ tư, dùng C → B → A và ghi đây là phiên bổ sung. Không tự gán tên tester khi chưa có người thật.
+Phần của Khánh không yêu cầu ba người test. Thứ tự ghi theo phiên đã diễn ra, không thay bằng thứ tự dự kiến. Việc đổi thứ tự giữa các phiên là phối hợp của nhóm, không yêu cầu Khánh tổ chức thêm phiên.
 
 Trước mỗi lượt, reset và đọc lại cùng task. Không xóa dữ liệu của lượt hiện tại khi tester chưa hoàn tất; ghi chú trước khi reset. Việc lặp nội dung có thể khiến các lượt sau dễ hơn, nên không xếp hạng option chỉ bằng thời gian hoặc đáp án quiz.
 
@@ -100,4 +100,52 @@ Cho phép câu trả lời “chưa chọn” hoặc “không phương án nào
 - [x] Có reset, đổi thứ tự và cách ghi trợ giúp/giới hạn mô phỏng.
 - [x] Tách kịch bản dự kiến khỏi feedback thật.
 
-**Chặng 5 đã hoàn thiện tài liệu chuẩn bị test.** Kiểm tra mở/reset trên thiết bị dùng cho phiên phải làm trước khi bắt đầu. Chưa có feedback Chặng 6 hoặc xác nhận Gate 4 bởi người không build; ba lượt test sau này cũng không đủ để tuyên bố solution đã validated.
+**Chặng 5 đã hoàn thiện kịch bản cho phần cá nhân: một người trải nghiệm A/B/C.** Khánh xác nhận phiên test đã diễn ra và đã thu ý kiến. Phần dưới dùng để ghi lại kết quả; chỉ đánh dấu hoàn thành độc lập/reset và tổng hợp Chặng 6 khi có thông tin thực tế.
+
+## 9. Form ghi lại phiên đã thực hiện
+
+Không cần tổ chức lại buổi test để điền form. Dùng ghi chú, bản ghi hoặc những gì Khánh nhớ được; phần không nhớ ghi “không ghi nhận”.
+
+| Thông tin | Nội dung thực tế |
+| --- | --- |
+| Người phỏng vấn/test | Phùng Gia Khánh |
+| Option phụ trách | C |
+| Số người trong phiên cá nhân | 1 |
+| Phương án trải nghiệm | A, B và C |
+| Mã hoặc tên viết tắt người tham gia | Chờ cung cấp |
+| Có thuộc nhóm build không? | Chờ xác nhận |
+| Bối cảnh học tập liên quan | Chờ cung cấp |
+| Ngày, thời lượng, thiết bị và phiên bản prototype | Chờ cung cấp; không ghi nhận nếu không nhớ |
+| Thứ tự A/B/C thực tế | Chờ cung cấp |
+| Nhiệm vụ đã giao và phần khác kịch bản (nếu có) | Chờ cung cấp |
+| Ghi chú/ghi âm/ghi hình | Chờ cung cấp; chỉ dẫn bản ghi nếu có |
+
+### 9.1. Năm mục quan sát — ghi riêng cho từng option
+
+| Mục | A | B | C |
+| --- | --- | --- | --- |
+| 1. Hành động đầu tiên | Chờ cung cấp | Chờ cung cấp | Chờ cung cấp |
+| 2. Do dự, hiểu sai hoặc cần giúp | Chờ cung cấp | Chờ cung cấp | Chờ cung cấp |
+| 3. Căn cứ và giới hạn đã xem | Chờ cung cấp | Chờ cung cấp | Chờ cung cấp |
+| 4. Kiểm soát, phục hồi và reset | Chờ cung cấp | Chờ cung cấp | Chờ cung cấp |
+| 5. Lựa chọn, lý do và đánh đổi | Chờ cung cấp | Chờ cung cấp | Chờ cung cấp |
+
+**Kết quả nhiệm vụ A/B/C:** chờ cung cấp; ghi rõ hoàn thành, chưa hoàn thành hoặc có trợ giúp.
+
+**Riêng C:** chờ xác nhận người tham gia có tự bật gợi ý, nhận gợi ý, phản hồi và tiếp tục học không; ghi đúng các thao tác thực tế.
+
+### 9.2. Ý kiến sau phiên
+
+- **Phương án người test chọn và lý do:** chờ cung cấp. Không mặc định chọn C vì Khánh phụ trách C.
+- **Điểm thuận tiện, khó hiểu hoặc gây phiền:** chờ cung cấp.
+- **Điểm người test đề nghị sửa:** chờ cung cấp.
+- **Lời nói nguyên văn:** chỉ điền khi có câu ghi chính xác; nếu nhớ ý thì ghi “tóm tắt”.
+
+### 9.3. Nhận xét của người thực hiện
+
+- **OBSERVED — thao tác/lời nói thật:** chờ cung cấp.
+- **INTERPRETED — cách Khánh diễn giải:** chờ cung cấp.
+- **NEXT CHANGE — điểm sửa tiếp dựa trên kết quả:** chờ cung cấp.
+- **STILL UNPROVEN — điều chưa thể kết luận:** một phiên chưa đại diện mọi học viên; các giới hạn khác điền theo thực tế.
+
+Phần kịch bản ở trên mô tả cách dự kiến điều phối. Nếu buổi test thực tế có hướng dẫn, đổi task hoặc không reset, ghi lại ở form; không tự coi mọi bước trong kịch bản đều đã được thực hiện.
