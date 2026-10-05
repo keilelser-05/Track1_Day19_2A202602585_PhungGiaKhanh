@@ -23,7 +23,8 @@ Repo giữ tên Day19 theo URL người nộp cung cấp; đề/README ghi Lab18
 | Phần | Trạng thái | File làm việc |
 | --- | --- | --- |
 | Chặng 1 | Hoàn thiện nội dung theo notes: evidence, thảo luận, giả thuyết 5 thành phần và điều chưa biết | [Design sheet](three-option-design-sheet.md) |
-| Chặng 2–3 | Có bản nháp A/B/C và bảng Human–AI; chưa chốt/phân công | [Design sheet](three-option-design-sheet.md) |
+| Chặng 2 | Hoàn thiện contract, fixture, ba cơ chế và distance check; phân công chưa xác nhận | [Design sheet](three-option-design-sheet.md) |
+| Chặng 3 | Bảng Human–AI còn là bản nháp | [Design sheet](three-option-design-sheet.md) |
 | Chặng 4 | Chưa có prototype hoặc link chạy được | [Prototype link](prototype-link.md) |
 | Chặng 5 | Có task và 5 mục quan sát đề xuất | [Test prompt](test/test-prompt.md) |
 | Chặng 6 | Chưa có feedback test prototype | [Feedback note](prototype-feedback-note.md), [synthesis](group-feedback-synthesis.md) |
@@ -217,11 +218,11 @@ luỹ và đà học giảm dần.
 | PN2 | `Bùi Hải Nam` → learner `2A202602872` (khoá 4 AI Thực Chiến) | Có **nhiều kênh hỗ trợ** và **chủ động dùng** (search, hỏi bạn, hỏi lab coach) |
 | PN3 | `Chử Trần Phương Nam` → learner nữ (track chuyên sâu AI Thực Chiến) | **Ngại** nên không hỏi ai; ~10 phút/thuật ngữ; khi được hỏi trước thì **"Wow, được giải thoát rồi!"** |
 
-> [Note Khánh cũ](note/notes_khanh.md) còn mâu thuẫn metadata. Đã bổ sung [note mới của Khánh — P01](note/notes_khanh_day17.md) vào Chặng 1 theo xác nhận người nộp. Nguồn mới có thể trùng PN1; chưa tính thêm người độc lập, chưa xác nhận tên người trả lời.
+> Phần phỏng vấn của Khánh dùng [PN04](note/notes_khanh_pn04.md).
 
 ### Nguồn Khánh bổ sung — PN04
 
-Đã cập nhật [note PN04 hiện hành](note/notes_khanh_pn04.md) theo file mới người nộp cung cấp và đưa vào bảng evidence [Chặng 1](three-option-design-sheet.md). Ý định phỏng vấn là Case C; câu chuyện thu được nghiêng về làm rõ feedback bài tập. Giữ nguyên lời kể, không tự đổi case hoặc biến thành vướng kiến thức khi tự học. PN04 chủ động nhắn giảng viên; không dùng để chứng minh ngại hỏi/im lặng. PN04 và P01 là hai mã nguồn riêng, chưa xác nhận danh tính thật. Bản có tên case_d được giữ làm lịch sử và có liên kết tới bản hiện hành.
+[PN04 — lượt Phùng Gia Khánh](note/notes_khanh_pn04.md) ghi việc làm rõ nhận xét bài tập, chủ động hỏi giảng viên và chờ phản hồi. Nguồn được đối chiếu với Hypothesis Problem cùng các notes khác; không dùng để chứng minh ngại hỏi.
 
 ### 5.3. Solution Parking Lot ⚙️
 
@@ -252,7 +253,7 @@ Bảng evidence và giới hạn được ghi tại [Three-Option Design Sheet](
 - Không nói cả ba đều có sự kiện cụ thể “hôm qua”: mức neo vào sự kiện khác nhau.
 - Được giảng viên hỏi trước tại lớp code không chứng minh đồng ý để AI theo dõi/chia sẻ.
 - Cảm xúc PN1 có câu hỏi dẫn dắt theo note đính kèm; cần nghe lại trước khi dùng làm evidence.
-- Đã bổ sung nguồn Khánh: P01 có thể trùng PN1, không đếm hai lần; [PN04](note/notes_khanh_pn04.md) là phỏng vấn cho Case C nhưng câu chuyện về feedback bài tập, được đưa vào bảng với giới hạn. Note cá nhân cũ còn mâu thuẫn metadata.
+- Phần Khánh dùng [PN04](note/notes_khanh_pn04.md): có chủ động hỏi nhưng chưa làm rõ nguyên nhân chậm phản hồi hoặc vướng kiến thức.
 
 **Giả thuyết tiếp tục (chưa phải finding):**
 
@@ -264,82 +265,19 @@ Chặng 1 đã hoàn thiện phần tài liệu: xem bảng năm thành phần, 
 
 ---
 
-## 7. Chặng 2 — Chọn ba Solution Options · 20 phút
+## 7. Chặng 2 — Chọn ba Solution Options
 
-### 1. Mở lại Solution Parking Lot
+Nội dung hoàn thiện tại [Design Sheet — Chặng 2](three-option-design-sheet.md#2-chặng-2--ba-solution-options).
 
-Đọc lại §5.3. **Không cần nghĩ thêm quota ý tưởng mới.** Chỉ bổ sung một hướng khi pool hiện tại:
+| Option | Cơ chế |
+| --- | --- |
+| A | User tự chọn chỗ vướng và viết; AI chỉ định dạng theo yêu cầu |
+| B | User bắt đầu trao đổi; AI hỏi làm rõ và soạn nháp |
+| C | AI gợi ý từ tín hiệu được cho phép; user kiểm tra trước khi gửi |
 
-- [ ] toàn là cùng một cơ chế;
-- [ ] chỉ thay UI hoặc wording;
-- [ ] không có hướng **user-led / no-inference** hoặc **human escalation** khi context cần;
-- [ ] không tạo được ba options cùng giải một task.
-
-> Day 16 chỉ được dùng như một **prompt**, không phải deliverable:
-> *"Có nguyên lý nào từ sản phẩm đã teardown giúp nhóm nghĩ ra một cơ chế khác? Nhóm đang **adapt nguyên lý nào**, thay vì copy feature nào?"*
-
-### 2. Chọn ba cách giải
-
-Ba options cùng xuất phát từ **một** Hypothesis Problem nhưng đại diện cho **ba solution hypothesis khác nhau**.
-
-#### Những thứ phải giữ nguyên ⚙️
-
-| Thành phần | Quyết định chung cho A/B/C |
-| ---------- | --------------------------- |
-| **Target user** | Learner tự học trên VLearn vào buổi tối, một mình, không có ai ngồi cạnh |
-| **Situation** | Đang tự học một bài/slide khó; gặp thuật ngữ / định nghĩa chưa rõ; không có ai hỗ trợ trực tiếp |
-| **Task** | Hiểu đủ nội dung để học tiếp và làm quiz/bài tập đúng hạn |
-| **Desired outcome** | Gỡ được chỗ vướng ngay trong lúc còn đang học, không dồn nợ kiến thức |
-| **Content/data fixture** | Cùng một deck VLearn rút gọn (~10–12 slide) · cùng một thuật ngữ gây vướng (ví dụ `RAG`) · cùng bộ tín hiệu hành vi giả lập (điều hướng slide, dừng lâu, đánh dấu "Chưa hiểu", đổi đáp án quiz, đoạn chat với AI Chat) · cùng một persona learner |
-
-#### Những thứ được phép khác
-
-| Thành phần | Option A | Option B | Option C |
-| ---------- | -------- | -------- | -------- |
-| **Solution mechanism** ✍️ | | | |
-| **User làm gì?** ✍️ | | | |
-| **AI làm gì?** ✍️ | | | |
-| **Trigger** ✍️ | | | |
-| **Trade-off chính** ✍️ | | | |
-
-> 🧪 **Bản nháp khoanh vùng 3 option** (AI hỗ trợ soạn từ Parking Lot — nhóm tự review và chốt, đây **chưa** phải quyết định):
->
-> | | Option A | Option B | Option C |
-> | --- | --- | --- | --- |
-> | Nguồn từ Parking Lot | #2 (checklist tự kiểm tra) + tín hiệu "đánh dấu Chưa hiểu" | #5 (digest theo slide, không theo người) | #6 (Support Queue đúng directive) |
-> | Mechanism | Learner **tự khai** mình kẹt ở đâu; AI chỉ **tổng hợp cái learner đã tự nói**, không suy đoán | AI **phát hiện nội dung khó ở cấp slide** (không gắn cờ ai); learner **quyết định** có nêu tên mình để được hỗ trợ hay không | AI **suy đoán từng learner** đang kẹt ở đâu, xếp ưu tiên và đề xuất hành động; người hỗ trợ **review & quyết định** |
-> | User làm gì | Chủ động đánh dấu / tự kiểm tra | Đọc cảnh báo nội dung khó, chọn "cần người hỗ trợ" | Chỉ **nhận** thông báo; quyết định có phản hồi hay không |
-> | AI làm gì | Không suy đoán; chỉ gom và hiển thị lại | Suy đoán ở **cấp nội dung**, không ở cấp người | Suy đoán ở **cấp người** + xếp hạng ưu tiên |
-> | Trigger | Learner bấm/đánh dấu trong lúc học | Hết slide / hết phiên học | Hết phiên học |
-> | Trade-off chính | An toàn, learner giữ toàn quyền — nhưng **chỉ chạy khi learner đã biết mình kẹt ở đâu** (đúng barrier PN1 lại chưa được giải) | Giảm cảm giác bị theo dõi — nhưng **vẫn cần learner tự lên tiếng**, nên Pain B chưa được giải | Giải được barrier "không ai biết" — nhưng chạm thẳng vào Pain B (ngại) và rủi ro riêng tư / AI gắn cờ sai |
-
-#### Distance check ✍️
-
-Hoàn thành ba câu **không nhắc màu, layout hoặc wording**:
-
-- **A khác B vì:** `...`
-- **B khác C vì:** `...`
-- **A khác C vì:** `...`
-
-> 🧪 Nháp gợi ý để nhóm đối chiếu (phải tự viết lại bằng lời của nhóm):
->
-> - A khác B vì A để **user khởi tạo** và AI không suy đoán gì, còn B để **AI suy đoán ở cấp nội dung** rồi user quyết định có lộ diện không.
-> - B khác C vì B **không bao giờ định danh học viên**, còn C để AI **tạo nhận định về từng con người** rồi người hỗ trợ review.
-> - A khác C vì A **đảo ngược điểm khởi tạo** (learner tự nói ra trước), C là **AI khởi tạo rồi người review**.
-
-Spectrum tham chiếu (không bắt buộc mọi case phải dùng đúng spectrum này; **không cố tình làm một option tệ để hai option còn lại thắng**):
-
-```text
-USER CREATES / INITIATES          ← Option A
-       ↓
-USER + AI CO-CREATE               ← Option B
-       ↓
-AI CREATES / INITIATES, USER REVIEWS  ← Option C
-```
-
-**GATE 2 — Meaningful options** ✅
-
-> Ba options **cùng user, situation, task và desired outcome**; khác nhau có ý nghĩa ở **mechanism** hoặc **cách phân chia công việc và quyền quyết định giữa user với AI**.
+Cùng user, situation tự học slide RAG, task, desired outcome và fixture mô phỏng.
+Cả ba giữ quyền quyết định gửi/hủy ở user. Đã có trigger, trade-off, lý do từ evidence và distance check đủ ba cặp.
+Hoàn thiện nội dung Gate 2; nhóm cần review và xác nhận phân công. Chưa build hoặc test để kết luận phương án thắng.
 
 ---
 
@@ -670,8 +608,8 @@ Track1_Day18_MHV_HoVaTen/
 ### 13.3. Checklist trước khi nộp
 
 - [x] Hypothesis Problem giữ case Day 17, có đủ user/situation/job/barrier/consequence, observation có nguồn và điều chưa biết (GATE 1 — nội dung)
-- [ ] Ba options nêu rõ mechanism khác nhau, cùng một problem (GATE 2)
-- [ ] Distance check hoàn thành **không** nhắc màu/layout/wording
+- [x] Ba options nêu rõ mechanism khác nhau, cùng một problem (GATE 2 — nội dung)
+- [x] Distance check hoàn thành **không** nhắc màu/layout/wording
 - [ ] Mỗi option có Human–AI Decision Table với Act/Ask/Don't Act và đường control/recovery (GATE 3)
 - [ ] Cả ba prototype mở được, cùng context, có reset path, không cần narrate (GATE 4)
 - [ ] Test prompt dùng cùng một task cho A/B/C; observation focus ≤ 5 mục
@@ -686,7 +624,7 @@ Track1_Day18_MHV_HoVaTen/
 | Gate | Nội dung | Trạng thái |
 | ---- | -------- | ---------- |
 | **GATE 1** | Evidence continuity — đủ 5 thành phần + observation có nguồn + điều chưa biết | Đủ nội dung; chưa có xác nhận chấm |
-| **GATE 2** | Meaningful options — cùng user/situation/task/outcome, khác mechanism hoặc phân chia quyền | ⬜ |
+| **GATE 2** | Meaningful options — cùng user/situation/task/outcome, khác mechanism hoặc phân chia quyền | Đủ nội dung; chưa có xác nhận chấm |
 | **GATE 3** | Human control — rõ user/AI làm gì, agency phù hợp hậu quả, có đường kiểm soát/phục hồi | ⬜ |
 | **GATE 4** | Test-ready — người ngoài mở được, làm cùng task, quay về context, không cần giải thích | ⬜ |
 | **GATE 5** | Learning, not praise — 3 feedback độc lập, có pattern, 1 Next Change, 1 Still Unproven | ⬜ |

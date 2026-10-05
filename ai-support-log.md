@@ -65,3 +65,7 @@ Theo yêu cầu Khánh, lưu nguyên `note(4).md` vào `note/notes_khanh_pn04_ca
 ### Rà lại Chặng 1 với note(5).md — 05/10/2026
 
 Lưu note PN04 mới do người nộp cung cấp vào `note/notes_khanh_pn04.md`, đưa vào bảng evidence chung, cập nhật thảo luận/điều chưa biết và liên kết README. Sửa phân loại dứt khoát Case D ở lần trước: đây là phỏng vấn nhằm tìm hiểu Case C nhưng evidence tập trung vào làm rõ feedback bài tập. Giữ bản cũ làm lịch sử có thông báo thay thế. Không đổi sự kiện thành vướng kiến thức, không dùng PN04 để chứng minh im lặng hoặc giảng viên quá tải, không tạo quote/danh tính hay xác nhận consent. Checklist chỉ kiểm tra đủ nội dung, chưa xác nhận coach hoặc review nhóm.
+
+### Hoàn thiện Chặng 2 — 05/10/2026
+
+AI hỗ trợ map Solution Parking Lot sang A/B/C, cụ thể hóa Comparison Contract và fixture giả lập, mô tả trigger/user/AI/quyền quyết định/trade-off, đối chiếu PN1/PN2/PN3/PN04 và viết distance check. Không tạo observation hoặc kết quả test, không gán phân công hoặc viết đóng góp/reflection. Nội dung Gate 2 đầy đủ nhưng review nhóm, phân công và chấm của coach chưa xác nhận. Theo chỉ dẫn người nộp, tài liệu làm việc không dùng PN-K; phần Khánh dùng PN04.
