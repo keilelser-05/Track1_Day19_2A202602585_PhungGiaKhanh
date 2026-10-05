@@ -14,41 +14,55 @@
 
 ---
 
-## Phiên 1
+## Phiên 1 — PN05
+
+Nguồn: nội dung do Phùng Gia Khánh cung cấp sau phiên. AI chỉ sắp xếp thông tin đã có, không tạo thêm evidence hoặc viết reflection cá nhân.
 
 | Mục | Nội dung |
 | --- | --- |
-| Người facilitate | ✍️ *(MHV — Họ tên)* |
-| Tester (mã hoá, ví dụ `T1`) | ✍️ |
-| Thời gian / địa điểm | ✍️ |
-| Option được test | A ⬜ · B ⬜ · C ⬜ *(phải đủ cả ba)* |
-| Thứ tự trình bày A/B/C | ✍️ |
+| Người facilitate | Phùng Gia Khánh — 2A202602585 |
+| Tester | PN05 — ngoài nhóm |
+| Thời gian / địa điểm / thiết bị / phiên bản | Chưa cung cấp |
+| Option được test | Chỉ C; A/B chưa thử |
+| Thứ tự thực tế | C |
+| Trạng thái | Có feedback C; chưa hoàn thành so sánh A/B/C |
 
-**OBSERVED — hành vi quan sát được 🚫**
+**OBSERVED — theo ghi nhận Khánh cung cấp**
 
-| # | Thời điểm | Tester làm gì (mô tả hành vi, không suy diễn) | Với option |
-| - | --------- | ------------------------------------------- | ---------- |
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| # | Thời điểm | Tester làm gì | Với option |
+| - | --------- | ------------- | ---------- |
+| 1 | Chưa ghi nhận | Lướt slide | C |
+| 2 | Chưa ghi nhận | Sử dụng tính năng gợi ý | C |
+| 3 | Chưa ghi nhận | Xem hỏi đáp | C |
 
-**INTERPRETED — nhóm hiểu là gì 🚫**
+Khánh xác nhận PN05 không cần hướng dẫn. Chưa có thông tin về kết quả quiz, xem căn cứ, bật/tắt quyền hoặc reset.
 
-- ✍️
+**Feedback — tóm tắt, không phải quote**
 
-**DECIDED — tester chọn gì và đánh đổi gì 🚫**
+- Vướng ở giao diện và độ linh hoạt hỗ trợ không cao.
+- Gợi ý cải thiện khung giao diện và luồng hoạt động.
+- Khánh ghi nhận phản ứng có chút không hài lòng.
 
-| Chọn option | Lý do tester nói | Đánh đổi / điều tester phải từ bỏ |
+**INTERPRETED — nhận xét cá nhân**
+
+- Chưa được Khánh cung cấp; giữ trống để người thực hiện tự viết.
+
+**DECIDED — lựa chọn của tester**
+
+| Chọn option | Lý do | Đánh đổi |
 | --- | --- | --- |
-| | | |
+| Chưa chọn | Chưa test hết A/B/C | Chưa ghi nhận |
 
-**STILL UNPROVEN — điều phiên này chưa chứng minh được 🚫**
+**STILL UNPROVEN — giới hạn dữ liệu hiện có**
 
-- ✍️
+- Chưa có dữ liệu A/B để so sánh hoặc chọn phương án tốt nhất.
+- Chưa ghi nhận đạt mục tiêu học tập, kết quả quiz hoặc reset.
+- Chưa biết cụ thể thành phần giao diện/bước hỗ trợ gây vướng.
+- Chưa có kết luận đại diện cho các học viên khác.
 
-**Quote nguyên văn (nếu có) 🚫**
+**Quote nguyên văn**
 
-> "..."
+Chưa cung cấp; không tạo quote từ phần tóm tắt.
 
 ---
 
