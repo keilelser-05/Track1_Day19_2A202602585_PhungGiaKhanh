@@ -1,6 +1,6 @@
 # Prototype A/B/C — H3201 · Case C
 
-> Ba file HTML đã build, mở trực tiếp được. QA tự động trên Chromium đã pass; chưa có kiểm tra của người ngoài nhóm hoặc feedback user thật.
+> Ba file HTML đã build, mở trực tiếp được. QA tự động trên Chromium đã pass; đã có feedback PN05 ngoài nhóm cho riêng C; chưa có kiểm tra cá nhân đủ A/B/C/reset.
 
 ## 1. Link và cơ chế
 
@@ -40,7 +40,7 @@ Kiểm tra mở file HTML độc lập bằng Chromium headless, viewport 1440×
 | A/B/C: cùng context/quiz, reset, không tràn ngang desktop, không gọi mạng ngoài | PASS |
 
 Đã xem ảnh render màn đầu của ba option để kiểm tra bố cục và chữ.
-Chưa kiểm tra máy của tester ngoài nhóm. Không ghi “không cần giải thích” như một finding khi chưa test người thật.
+PN05 đã tự dùng C không cần Khánh hướng dẫn. Thiết bị/phiên bản chưa được cung cấp; không suy ra đã hoàn thành task/reset A/B/C.
 
 ## 4. Gate 4 — bước còn cần kiểm tra người thật
 
@@ -55,7 +55,7 @@ Sẵn sàng mang đi kiểm tra/test. Chưa coi QA tự động là Gate 4 đư�
 
 ## Cập nhật Option C theo VLearn · 05/10/2026
 
-[Chi tiết bản cải tiến](docs/option-c-vlearn.md) · [Nguồn trích đoạn công khai](reference/vlearn/README.md). Màn học mô phỏng dùng nhận diện xanh/đỏ; A/B cùng chrome và fixture. C giữ quyền bật/tắt, căn cứ gợi ý, preview và recovery. Bỏ social proof giả lập để tránh dẫn dắt. QA 8 nhóm pass; Gate 4 kiểm tra người không build vẫn chưa hoàn thành.
+[Chi tiết bản cải tiến](docs/option-c-vlearn.md) · [Nguồn trích đoạn công khai](reference/vlearn/README.md). Màn học mô phỏng dùng nhận diện xanh/đỏ; A/B cùng chrome và fixture. C giữ quyền bật/tắt, căn cứ gợi ý, preview và recovery. Bỏ social proof giả lập để tránh dẫn dắt. QA 8 nhóm pass; Gate 4 mới có ghi nhận PN05 tự thao tác C; task/reset đủ A/B/C chưa được xác nhận.
 
 ## Option C — hoạt động theo ngữ cảnh
 
@@ -70,3 +70,8 @@ Tư liệu VLearn public: [manifest](reference/vlearn/capture-manifest.json), [H
 ## Luồng C hoàn thiện
 
 Tín hiệu → hỏi user đang đọc kỹ hay cần làm rõ → user chọn khái niệm → giải thích/ví dụ hoặc sửa nháp coach → tiếp tục học. Gợi ý ở ngay trước tài liệu, ngưỡng phiên thử rút còn 12/5 giây để phù hợp test ngắn; vẫn mặc định tắt và không gợi ý trước consent. Ngưỡng là giả lập thiết kế, không phải kết quả nghiên cứu. QA bổ sung kiểm tra xác nhận trước lời giải và nháp đúng lựa chọn user.
+
+
+## Feedback người thật hiện có
+
+[PN05](prototype-feedback-note.md) đã lướt slide, dùng gợi ý và xem hỏi đáp C, không cần hướng dẫn; phản hồi về khung giao diện/độ linh hoạt chưa tốt. Chưa có dữ liệu mở/reset hoặc quiz. [Tổng hợp nguồn và hướng sửa](group-feedback-synthesis.md). QA 8 nhóm là kết quả lưu từ lần build trước; lượt cập nhật tài liệu này không chạy lại kiểm tra trình duyệt.

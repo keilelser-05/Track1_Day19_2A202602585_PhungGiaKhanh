@@ -148,3 +148,8 @@ Nguồn: thông tin Khánh cung cấp sau phiên. Nội dung dưới đây là t
 - **STILL UNPROVEN:** chưa biết C tốt hơn A/B; chưa xác nhận mức độ hiểu bài, đạt task, căn cứ gợi ý hoặc khả năng reset. Một phiên C chưa đại diện mọi học viên.
 
 Kịch bản phía trên là kế hoạch; bảng này là những gì thực tế được cung cấp. Chưa đánh dấu hoàn thành thử đủ A/B/C.
+
+
+## 10. Nguồn nhóm và tổng hợp
+
+[Group Feedback Synthesis](../group-feedback-synthesis.md) đã đối chiếu notes Thành với PN05. Bản nguồn gán lượt T4 đủ A/B/C cho Khánh không được dùng thay phiên này. Task phía trên giữ để thử đủ ba bản về sau; không khẳng định PN05 đã được giao đúng task đó.

@@ -1,8 +1,8 @@
 # Three-Option Design Sheet — H3201 · Case C
 
 > Người nộp: Phùng Gia Khánh — 2A202602585.
-> Cập nhật 05/10/2026. Evidence được tóm tắt từ notes hiện có, chưa đối chiếu bản ghi.
-> Chặng 2–3 hoàn thiện nội dung thiết kế; chờ nhóm review. Đã build và QA tự động; chưa có user test.
+> Cập nhật 06/10/2026. Evidence được tóm tắt từ notes hiện có, chưa đối chiếu bản ghi.
+> Chặng 2–3 hoàn thiện nội dung thiết kế; chờ nhóm review. Đã build và QA tự động; PN05 đã thử riêng C, A/B cá nhân chưa test.
 
 ## 1. Chặng 1 — Evidence Snapshot
 
@@ -42,7 +42,7 @@ Câu trên là **giả thuyết để thiết kế và kiểm tra**, không ph�
 - **PN1:** note ghi người tham gia không tìm được nội dung trên slide. Hỗ trợ dấu hiệu khó xác định chỗ vướng, chưa chứng minh người hỗ trợ không biết.
 - **PN3:** note ghi tra AI rồi Google, ước lượng khoảng 10 phút/thuật ngữ và ngại hỏi người khác. Hỗ trợ một phần barrier và chi phí tự xử lý; thời gian là tự ước lượng, không phải phép đo.
 - **PN2 — evidence chống lại:** người tham gia chủ động hỏi bạn/coach. Giữ chi tiết này để A/B/C không mặc định mọi người đều cần được phát hiện hoặc nhắc trước.
-- **PN04 — evidence bổ sung có giới hạn:** khó xác định phần cần sửa và chờ giải đáp có liên hệ với việc làm rõ nhu cầu hỗ trợ. Hành vi chủ động nhắn giảng viên làm yếu giả định im lặng trong lượt này. Chưa dùng làm bằng chứng trực tiếp cho situation tự học VLearn, vướng kiến thức hoặc nhu cầu AI.
+- **PN04 — evidence có giới hạn:** khó xác định phần cần sửa và chờ giải đáp có liên hệ với việc làm rõ nhu cầu hỗ trợ. Hành vi chủ động nhắn giảng viên làm yếu giả định im lặng trong lượt này. Chưa dùng làm bằng chứng trực tiếp cho situation tự học VLearn, vướng kiến thức hoặc nhu cầu AI.
 
 ### 1.4. Điều vẫn chưa được chứng minh
 
@@ -95,11 +95,11 @@ Câu trên là **giả thuyết để thiết kế và kiểm tra**, không ph�
 | Cơ chế (1 câu) | Learner tự đánh dấu chỗ chưa hiểu; hệ thống gắn số slide và gửi cho coach, **không suy đoán gì** | Learner hỏi trợ lý; AI giải thích trong phạm vi slide, nói rõ độ chắc chắn, và chỉ khi learner còn chưa hiểu mới soạn nháp câu hỏi cho coach | AI thấy tín hiệu hành vi của chính learner (dừng lâu/quay lại slide), **chủ động hỏi**, và chỉ khi learner đồng ý mới tạo thẻ gửi coach |
 | Vị trí trên spectrum | User-led / No-inference | User + AI co-create | AI initiate, human decide |
 | User làm gì? | Tự nhận ra chỗ kẹt, chọn loại, mô tả, chọn ẩn danh/kèm tên, gửi | Chọn thuật ngữ hoặc tự hỏi; đọc và đánh giá lời giải; quyết định có nhờ coach không; sửa nháp | Phản hồi gợi ý (giải thích / nhờ coach / để sau / tắt); xem trước và xác nhận thẻ |
-| AI làm gì? | Chỉ gắn slide vào câu hỏi | Giải thích dựa trên slide 5–7, nhãn mức hỗ trợ từ tài liệu và nguồn; hiển thị số bạn khác đánh dấu (ẩn danh); soạn nháp | Đo thời gian ở slide và số lần quay lại; hiện gợi ý kèm lý do; soạn bản xem trước thẻ |
+| AI làm gì? | Chỉ gắn slide vào câu hỏi | Giải thích dựa trên slide 5–7, nhãn mức hỗ trợ từ tài liệu và nguồn; soạn nháp; không dùng số học viên giả làm bằng chứng | Đo thời gian ở slide và số lần quay lại; hiện gợi ý kèm lý do; soạn bản xem trước thẻ |
 | Trigger | Learner | Learner | AI (đọc ≥12 giây ở slide mẫu 5–7 hoặc quay lại lần 2 kèm ≥5 giây đọc) |
 | AI Act / Ask / Don't Act | **Don't Act** | **Ask** (chỉ làm khi được hỏi) | **Act** (khởi xướng) nhưng chỉ ở mức *hỏi learner*, không tự báo coach |
 | Ai giữ quyền quyết định cuối? | Learner | Learner | Learner |
-| Chống lại barrier nào? | Barrier 2 (ẩn danh giảm ngại) và Barrier 1 (tự gắn đúng slide) | Barrier 1 (tra rời rạc ~10 phút) và một phần Barrier 2 ("không chỉ mình mình") | Barrier 3 (coach/hệ thống biết learner đang kẹt) |
+| Chống lại barrier nào? | Barrier 2 (ẩn danh giảm ngại) và Barrier 1 (tự gắn đúng slide) | Tra cứu rời rạc và ngại hỏi người; 10 phút là ước lượng từ PN3, không phải tốc độ sản phẩm | Khoảng trống hỗ trợ: hỏi xác nhận khi có tín hiệu, không kết luận learner đang kẹt |
 | Rủi ro chính nếu sai | Learner không nhận ra mình kẹt thì không dùng được; phải chờ coach | AI giải thích sai mà learner tin | Gợi ý nhầm thời điểm, hoặc learner thấy bị theo dõi |
 | Người phụ trách chính | Phan Duy Thanh | Chử Trần Phương Nam | Bùi Hải Nam (+ Phùng Gia Khánh) |
 
@@ -188,7 +188,7 @@ Nếu hiển thị “12 bạn khác”, ghi ngay cạnh là **số liệu minh 
 - [x] Có sửa, từ chối và đường tiếp tục task sau khi sai.
 - [x] Có quy định feedback, dữ liệu dùng, chia sẻ và rút quyền.
 
-Chặng 3 hoàn thiện quyết định thiết kế. Chặng 4 đã có prototype và [QA tự động](prototype-link.md); chưa có user test chứng minh người học hiểu/kiểm soát được.
+Chặng 3 hoàn thiện quyết định thiết kế. Chặng 4 đã có prototype và [QA tự động](prototype-link.md). PN05 tự dùng gợi ý/hỏi đáp C nhưng chưa có dữ liệu hiểu bài hoặc reset.
 
 ## 4. Gate tự kiểm và trạng thái
 
@@ -196,7 +196,7 @@ Chặng 3 hoàn thiện quyết định thiết kế. Chặng 4 đã có prototy
 - [x] Gate 2 — đủ contract, ba cơ chế và distance check; nội dung mới đồng bộ từ thiết kế chung.
 - [x] Gate 3 — hoàn thiện nội dung quyết định thiết kế; chưa có xác nhận review nhóm/chấm.
 - [ ] Gate 4 — đã build ba HTML và QA tự động pass; chờ người không build kiểm tra độc lập (xem prototype-link.md).
-- [ ] Gate 5 — chưa có ba feedback test thật và Group Next Change.
+- [ ] Gate 5 — đã có PN05 và tổng hợp nguồn nhóm; chưa đủ ba feedback độc lập thử đủ A/B/C. Xem [synthesis](group-feedback-synthesis.md).
 
 Checklist nội dung không xác nhận coach đã chấm pass hoặc nhóm đã review.
 Phân công là đề xuất của tài liệu nhóm, chưa phải đóng góp đã thực hiện.
@@ -212,3 +212,10 @@ Phân công là đề xuất của tài liệu nhóm, chưa phải đóng góp �
 
 Tài liệu nhóm ghi giảng viên đã đồng ý nhóm 4 người. Người nộp cần xác nhận phân công trước khi ghi đóng góp cá nhân.
 
+
+
+## 6. Kết nối Chặng 4–6
+
+[Prototype và QA](prototype-link.md) → [task/5 mục quan sát](test/test-prompt.md) → [feedback PN05](prototype-feedback-note.md) → [tổng hợp/Next Change/Still Unproven](group-feedback-synthesis.md).
+
+PN05 chỉ thử C, tự thao tác, vướng giao diện và độ linh hoạt. Không ghi đã thử A/B hoặc chọn B theo note khác trong nguồn Thành. Thiết kế giữ cùng context để vòng sau so sánh được; ngưỡng C và phản hồi AI/coach là mô phỏng.

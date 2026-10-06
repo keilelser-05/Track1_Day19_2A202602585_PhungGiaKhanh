@@ -1,18 +1,8 @@
-# Prototype Feedback Note — phiên do chính người nộp facilitate 🚫
+# Prototype Feedback Note — Phùng Gia Khánh · PN05
 
-> **Nhóm:** H3201 · **Track 1** · **Case C — AI Support Radar**
-> Đầu ra của **Chặng 6 — Test với ba người** (GATE 5).
->
-> **Luật bắt buộc:**
-> - Mỗi thành viên **tự facilitate 1 phiên** và **tự viết 1 bản** note ở đây. 🚫 Không dùng AI viết thay.
-> - **Không** tạo quote, observation hoặc feedback không tồn tại.
-> - Tester phải trải nghiệm **cả A/B/C**, không chỉ option của người facilitate.
-> - Ghi **hành vi trước, diễn giải sau**. "Tester chọn B" không đủ nếu thiếu lý do, trade-off và hành vi đi kèm.
-> - Facilitator **không** giải thích, không dẫn dắt, không hỏi "Bạn có thích không?".
-
-**Task dùng chung cho cả ba phiên — phải giống hệt nhau cho A/B/C (relevant context + outcome task):** ✍️
-
----
+Nhóm H3201 · Track 1 · Case C: AI Support Radar.
+Nguồn: nội dung do Khánh cung cấp sau phiên. Chỉ sắp xếp ghi nhận sẵn có; không tạo quote, timestamp hoặc reflection.
+Kế hoạch [test A/B/C](test/test-prompt.md) khác phiên thực tế chỉ thử C. [Tổng hợp nhóm](group-feedback-synthesis.md).
 
 ## Phiên 1 — PN05
 
@@ -66,87 +56,10 @@ Chưa cung cấp; không tạo quote từ phần tóm tắt.
 
 ---
 
-## Phiên 2
+## Kết quả cá nhân và bước còn thiếu
 
-| Mục | Nội dung |
-| --- | --- |
-| Người facilitate | ✍️ |
-| Tester (mã hoá) | ✍️ |
-| Thời gian / địa điểm | ✍️ |
-| Option được test | A ⬜ · B ⬜ · C ⬜ |
-| Thứ tự trình bày A/B/C | ✍️ |
-
-**OBSERVED 🚫**
-
-| # | Thời điểm | Tester làm gì | Với option |
-| - | --------- | ------------- | ---------- |
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-
-**INTERPRETED 🚫**
-
-- ✍️
-
-**DECIDED 🚫**
-
-| Chọn option | Lý do tester nói | Đánh đổi |
-| --- | --- | --- |
-| | | |
-
-**STILL UNPROVEN 🚫**
-
-- ✍️
-
-**Quote nguyên văn 🚫**
-
-> "..."
-
----
-
-## Phiên 3
-
-| Mục | Nội dung |
-| --- | --- |
-| Người facilitate | ✍️ |
-| Tester (mã hoá) | ✍️ |
-| Thời gian / địa điểm | ✍️ |
-| Option được test | A ⬜ · B ⬜ · C ⬜ |
-| Thứ tự trình bày A/B/C | ✍️ |
-
-**OBSERVED 🚫**
-
-| # | Thời điểm | Tester làm gì | Với option |
-| - | --------- | ------------- | ---------- |
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-
-**INTERPRETED 🚫**
-
-- ✍️
-
-**DECIDED 🚫**
-
-| Chọn option | Lý do tester nói | Đánh đổi |
-| --- | --- | --- |
-| | | |
-
-**STILL UNPROVEN 🚫**
-
-- ✍️
-
-**Quote nguyên văn 🚫**
-
-> "..."
-
----
-
-## Ghi chú facilitation (tuỳ chọn)
-
-| # | Điều mình làm tốt khi facilitate | Điều mình vô tình dẫn dắt / cần tránh lần sau |
-| - | -------------------------------- | --------------------------------------------- |
-| 1 | | |
-| 2 | | |
-
-> Sau khi hoàn tất, chuyển pattern sang [group-feedback-synthesis.md](./group-feedback-synthesis.md).
+- Đã test một người ngoài nhóm và ghi feedback C.
+- Chưa thử đủ A/B/C; chưa có lựa chọn so sánh.
+- PN05 tự thao tác C; chưa ghi nhận mở/reset/quiz nên chưa đủ xác nhận Gate 4.
+- Ngày, thiết bị, phiên bản và task thực tế chưa cung cấp; không tự điền từ bản Thành.
+- Reflection và quyết định sửa cụ thể cần Khánh tự ghi.

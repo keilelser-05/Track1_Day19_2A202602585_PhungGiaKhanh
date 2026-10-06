@@ -1,3 +1,5 @@
+> **Kịch bản dự kiến.** Phiên thực tế của Khánh với PN05 chỉ thử C. Dùng [form đã ghi kết quả](test-prompt.md) và [feedback PN05](../prototype-feedback-note.md) cho kết quả thật; không coi lịch trình A/B/C bên dưới là đã thực hiện.
+
 # Note phỏng vấn/test prototype A/B/C
 
 **Case C — AI Support Radar · Dùng trực tiếp khi test với một người.**  
@@ -95,3 +97,4 @@ ____________________________________________________________________________
 ____________________________________________________________________________
 
 > Không điền trước câu trả lời, lời trích dẫn hoặc feedback. Một buổi test giúp tìm vấn đề tương tác và hướng sửa; chưa chứng minh giải pháp đã được xác thực.
+

@@ -1,3 +1,5 @@
+> **Trạng thái hiện tại 06/10/2026:** prototype đã build; PN05 ngoài nhóm chỉ test C; có tổng hợp nguồn nhóm, chưa đủ Gate 4/5. Các mục theo ngày phía dưới là lịch sử, không phải trạng thái hiện tại.
+
 # AI Support Log — H3201 · Case C
 
 > Khai báo **mọi** cách dùng AI trong quá trình làm lab (luật §4.3 của README).
@@ -109,3 +111,19 @@ ChatGPT/Codex soạn câu hỏi bối cảnh, task chung A/B/C, năm mục quan 
 ## 05/10/2026 — Chuẩn bị điều phối Chặng 6
 
 ChatGPT/Codex tạo `test/interview-guide.md` từ task và nguyên tắc đã chốt ở Chặng 5, thêm lời dẫn đọc trực tiếp, câu hỏi trung lập, lịch trình và chỗ ghi quan sát. Đồng bộ README để nối kịch bản với Feedback Note và Group Synthesis. Đây chỉ là công cụ chuẩn bị; không tạo/biên tập feedback, quote, observation, quyết định nhóm, đóng góp cá nhân hoặc reflection. Ba phiên test thật và Gate 5 vẫn đang chờ nhóm thực hiện.
+
+
+## 06/10/2026 — Hoàn thiện bài từ ZIP của Thành và xác nhận PN05
+
+| AI đã hỗ trợ | Giới hạn / điều chỉnh |
+| --- | --- |
+| Đọc ZIP commit 1db2f38730f6bb95f2fca13c33d570907f74bae0, đối chiếu toàn bộ deliverables và repo Khánh | Bản root và thư mục cá nhân có trạng thái/cơ chế khác; không đồng bộ máy móc |
+| Sắp xếp feedback PN05 do Khánh tự cung cấp | PN05 chỉ thử C; không tạo task, quote, timestamp, kết quả quiz/reset hoặc chọn option |
+| Tổng hợp T1/T2 từ note nguồn, T3 từ bảng thứ cấp | Ghi rõ nguồn và chưa xác minh bản ghi; không gộp phiên khác prototype vào phép đo so sánh |
+| Loại T4 khỏi kết quả bài Khánh | Note nguồn gán Khánh test đủ A/B/C/chọn B trái xác nhận PN05; chỉ lưu đối chiếu |
+| Đồng bộ README, Design Sheet, prototype-link, test status và synthesis | Giữ code/fixture C hiện có, theo design.md; không tự thay task hoặc bật C mặc định |
+| Soạn một Next Change đề xuất từ feedback | Chưa phải quyết định nhóm đã chốt; chưa sửa/test prototype trong lượt này |
+| Tạo khung contribution/reflection với thông tin có căn cứ | Không viết reflection hoặc nhận code AI là do Khánh tự build |
+| Kiểm tra links và tính nhất quán tài liệu; cập nhật GitHub | QA trình duyệt 8 nhóm là kết quả trước đây, không phải test mới |
+
+Không tạo interview evidence, không tính PN-K trong tổng hợp, dùng PN04 cho phỏng vấn Case C. Không khẳng định gate đã được chấm hoặc solution đã xác thực.
