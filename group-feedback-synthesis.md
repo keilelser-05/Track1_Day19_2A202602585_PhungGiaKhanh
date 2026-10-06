@@ -3,7 +3,7 @@
 Người nộp: Phùng Gia Khánh — 2A202602585. Cập nhật 06/10/2026.
 Nguồn: [feedback PN05](prototype-feedback-note.md), [T1](feedback-note/feedback-phanduythanh.md), [T2](feedback-note/feedback-buihainam.md), [tổng hợp Thành](reference/day19-thanh/group-feedback-synthesis-original.md).
 
-Đây là tổng hợp tài liệu được cung cấp, chưa xác minh bản ghi. PN05 chỉ thử C; T1/T2 có notes A/B/C; T3 chỉ có tóm tắt thứ cấp. Không tính note T4 mâu thuẫn xác nhận của Khánh.
+Đây là tổng hợp tài liệu được cung cấp, chưa xác minh bản ghi. PN05 đã thử đủ A/B/C theo xác nhận bổ sung của Khánh; T1/T2 có notes A/B/C; T3 chỉ có tóm tắt thứ cấp. Không đếm T4 thành người thứ tư hoặc nhập chi tiết nguồn T4 vào PN05.
 
 ## 1. Evidence và lựa chọn
 
@@ -12,16 +12,16 @@ Nguồn: [feedback PN05](prototype-feedback-note.md), [T1](feedback-note/feedbac
 | T1 | Phan Duy Thanh, note độc lập nguồn | A → B → C | Dừng ở textarea A; dùng chip B; chờ gợi ý C và chọn giải thích | Chọn C vì hệ thống hỏi trước; có thể bị gián đoạn khi gợi ý sai | Mặc định C bật/20 giây trong nguồn khác bản Khánh; ảnh hưởng học lại |
 | T2 | Bùi Hải Nam, note độc lập nguồn | B → A → C | Hỏi tự do B, sửa nháp coach; chọn kèm tên ở A; để gợi ý C lại sau | Chọn B vì hỏi nhanh/tự do, không chờ coach; rủi ro tin lời AI sai | Chưa xác minh nguyên nhân để sau; không mặc định đã hiểu bài |
 | T3 | Chử Trần Phương Nam, chỉ tổng hợp Thành | Nguồn ghi thử A/B/C; thứ tự chưa có | Nguồn ghi do dự danh tính A, đọc chip B, dùng giải thích C | Nguồn ghi chọn B vì tự đọc và không phải hỏi người | Chưa có note độc lập; không đếm thành feedback đủ điều kiện |
-| PN05 | Phùng Gia Khánh, xác nhận trực tiếp | Chỉ C | Lướt slide, dùng gợi ý, xem hỏi đáp; không cần hướng dẫn. Vướng giao diện/độ linh hoạt; chút không hài lòng | Chưa chọn; đề nghị cải thiện khung và luồng hỗ trợ | Chưa thử A/B; chưa ghi nhận quiz/reset hoặc task hoàn tất |
+| PN05 | Phùng Gia Khánh, xác nhận trực tiếp | Đủ A/B/C; thứ tự đầy đủ chưa cung cấp | A vướng luồng; B vướng giao diện; C vướng cả hai. Tự mở/task/reset cả ba, không cần hướng dẫn; dùng gợi ý/hỏi đáp C | **Chọn B** vì vận hành trơn tru, hoàn thiện; chấp nhận điểm vướng giao diện | Chưa có kết quả quiz cụ thể, thời gian và bước vướng chi tiết |
 
-T1 chọn C; T2 chọn B. Không dùng T3/PN05 để tuyên bố “đa số chọn B”, không tính PN05 vào mẫu so sánh.
+Trong ba notes riêng T1/T2/PN05, hai người chọn B và một người chọn C. Đây là mô tả mẫu nhỏ từ các phiên/phiên bản có khác biệt, chưa đủ khẳng định B tốt nhất cho mọi học viên. T3 không được đếm thêm.
 
 ## 2. Pattern và khác biệt
 
 | Nhận xét | Căn cứ | Mức kết luận |
 | --- | --- | --- |
 | T1 và PN05 đều sử dụng hỗ trợ từ gợi ý C | T1 bấm giải thích; PN05 dùng gợi ý/xem hỏi đáp | Hành vi sử dụng lặp lại ở hai nguồn, nhưng prototype/điều kiện khác; chưa chứng minh giá trị học tập |
-| Đón nhận C khác nhau | T1 chọn C; T2 để sau và chọn B; PN05 dùng C nhưng chưa hài lòng | Khác biệt cần giữ, không biến việc bấm hỗ trợ thành yêu thích C |
+| Đón nhận C khác nhau | T1 chọn C; T2 để sau và chọn B; PN05 dùng C nhưng chưa hài lòng và chọn B | Khác biệt cần giữ, không biến việc bấm hỗ trợ thành yêu thích C |
 | Nhu cầu tự diễn đạt khác nhau | T1 khó viết câu hỏi A; T2 tự hỏi B và sửa nháp | Gợi ý rằng cần cả lựa chọn sẵn và hỏi tiếp; chưa suy ra đặc điểm ổn định của từng nhóm học viên |
 | Giao diện và độ linh hoạt C là điểm cần kiểm tra | PN05 nêu hai điểm này | Một người ghi nhận, chưa phải pattern nhiều tester |
 
@@ -44,20 +44,20 @@ Bản Thành đề xuất thêm tín hiệu cụ thể ở popup C. Bản C hi�
 
 ## 4. Một Still Unproven trọng tâm
 
-**PN05 có chọn C và hoàn thành task tốt hơn A/B khi trải nghiệm cả ba dưới cùng điều kiện không?**
+**Luồng hỗ trợ C sau cải tiến có giúp người học tự tiếp tục thuận lợi, đồng thời tăng mức hiểu bài so với bản hiện tại không?**
 
-Chưa trả lời được vì PN05 chỉ thử C; không có kết quả quiz, thời gian, thao tác reset và so sánh. T1/T2 dùng bản khác nên không thay được phiên cá nhân.
+PN05 đã chọn B, nên câu hỏi lựa chọn A/B/C trước đây đã được trả lời. Tuy nhiên, chưa có số đo hiểu bài, thời gian, bước vướng cụ thể hoặc dữ liệu sau sửa C. Lựa chọn và khả năng thao tác không tự chứng minh hiệu quả học tập.
 
-Vòng tiếp theo: dùng cùng fixture/task và bản prototype, cho PN05 thử đủ ba option; reset trước lượt, ghi thứ tự và ảnh hưởng đã học nội dung; hỏi lựa chọn và đánh đổi sau cả ba. Đồng thời ghi điểm vướng cụ thể của khung C. Không tổ chức phiên giả hoặc điền trước kết quả.
+Vòng sau: dùng cùng task/fixture, ghi bước do dự ở khung C và cách người học hỏi tiếp/quay về bài; kiểm tra câu trả lời kiến thức và lý do. Ghi thứ tự và phiên bản để đánh giá ảnh hưởng học lại.
 
 ## 5. Kết luận và Gate 5
 
-Các nguồn cho thấy người học dùng và phản hồi khác nhau với hỗ trợ chủ động. PN05 tự thao tác C nhưng gặp vướng giao diện và độ linh hoạt. Hướng sửa đề xuất tập trung vào khung hỗ trợ C và đường tiếp tục; chưa chọn phương án thắng.
+T1 chọn C; T2 và PN05 chọn B. PN05 đánh giá B vận hành trơn tru, hoàn thiện dù giao diện còn vướng. C cần cải thiện luồng và khung hỗ trợ; đơn giản, linh hoạt và hoàn thiện là bài học Khánh rút ra. Hướng sửa C ở phần 3 là đề xuất có căn cứ, chưa ghi thành quyết định chung đã được nhóm xác nhận.
 
+- [x] Có ba Feedback Notes riêng T1/T2/PN05, mỗi người đã thử A/B/C theo nguồn cung cấp.
 - [x] Có bảng nguồn, hành vi, lựa chọn/đánh đổi và giới hạn.
-- [x] Giữ khác biệt, evidence chưa thuận giả thuyết; tách dữ liệu và diễn giải.
+- [x] Giữ khác biệt và dữ liệu chưa thuận giả thuyết; tách dữ liệu khỏi diễn giải.
 - [x] Có một Next Change đề xuất và một Still Unproven trọng tâm.
-- [ ] Có ba Feedback Notes độc lập xác nhận thử đủ A/B/C — còn thiếu.
 - [ ] Nhóm xác nhận quyết định sửa và người phụ trách.
 
-Gate 5 chưa đánh dấu pass. Không kết luận problem/solution hoặc giá trị sản phẩm đã được xác thực.
+**Gate 5:** phần feedback và tổng hợp đã đủ nội dung; chưa đánh dấu pass toàn bộ vì chưa có xác nhận quyết định sửa chung. Không coi đây là coach đã chấm pass hoặc sản phẩm đã được xác thực. Khác biệt phiên bản và mức chi tiết của notes được giữ rõ để người đọc đánh giá giới hạn so sánh.

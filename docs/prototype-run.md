@@ -23,4 +23,4 @@ Chỉ người phát triển cần cài: `npm install`, `npx playwright install 
 Kiểm tra dùng Chromium headless mở trực tiếp `file://`, không thay thế tester thật. Output: `test/prototype-checks.json`, ảnh ở `test/screenshots/`.
 Biến `LAB_CHROMIUM_PACKAGE` là tùy chọn môi trường QA để chỉ đường dẫn module Chromium khác; không cần cho tester.
 
-QA không chứng minh người ngoài tự hiểu giao diện, giá trị sản phẩm hoặc lựa chọn thắng. Trước Gate 4, nhóm cần người không build kiểm tra mở/task/reset và ghi kết quả thật.
+QA không chứng minh người ngoài tự hiểu giao diện, giá trị sản phẩm hoặc lựa chọn thắng. PN05 ngoài nhóm đã tự mở/task/reset đủ A/B/C không cần hướng dẫn theo xác nhận Khánh; kết quả và giới hạn được ghi trong prototype-feedback-note.md.

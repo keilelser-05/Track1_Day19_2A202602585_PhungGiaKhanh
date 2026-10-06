@@ -1,4 +1,4 @@
-> **Kịch bản dự kiến.** Phiên thực tế của Khánh với PN05 chỉ thử C. Dùng [form đã ghi kết quả](test-prompt.md) và [feedback PN05](../prototype-feedback-note.md) cho kết quả thật; không coi lịch trình A/B/C bên dưới là đã thực hiện.
+> **Kịch bản dự kiến.** PN05 đã thử đủ A/B/C và chọn B theo xác nhận bổ sung của Khánh. Dùng [form đã ghi kết quả](test-prompt.md) và [feedback PN05](../prototype-feedback-note.md) cho kết quả thật; không coi lịch trình A/B/C bên dưới là đã thực hiện.
 
 # Note phỏng vấn/test prototype A/B/C
 

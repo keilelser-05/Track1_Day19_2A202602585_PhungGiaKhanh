@@ -1,6 +1,6 @@
 # Prototype A/B/C — H3201 · Case C
 
-> Ba file HTML đã build, mở trực tiếp được. QA tự động trên Chromium đã pass; đã có feedback PN05 ngoài nhóm cho riêng C; chưa có kiểm tra cá nhân đủ A/B/C/reset.
+> Ba file HTML đã build, mở trực tiếp được. QA tự động trên Chromium đã pass; PN05 ngoài nhóm đã tự mở/task/reset đủ A/B/C, không cần hướng dẫn; chọn B.
 
 ## 1. Link và cơ chế
 
@@ -40,22 +40,22 @@ Kiểm tra mở file HTML độc lập bằng Chromium headless, viewport 1440×
 | A/B/C: cùng context/quiz, reset, không tràn ngang desktop, không gọi mạng ngoài | PASS |
 
 Đã xem ảnh render màn đầu của ba option để kiểm tra bố cục và chữ.
-PN05 đã tự dùng C không cần Khánh hướng dẫn. Thiết bị/phiên bản chưa được cung cấp; không suy ra đã hoàn thành task/reset A/B/C.
+Khánh xác nhận PN05 tự mở, làm nhiệm vụ và reset cả A/B/C không cần hướng dẫn. Thiết bị/phiên bản chưa được cung cấp; chưa có số đo học tập hoặc kết quả quiz cụ thể.
 
-## 4. Gate 4 — bước còn cần kiểm tra người thật
+## 4. Gate 4 — đạt tiêu chí test-ready
 
 - [x] Build ba option, nội dung chung và cơ chế khác nhau.
 - [x] Luồng mở/task/reset được kiểm tra tự động.
 - [x] Control/recovery và annotations đã có.
-- [ ] Người không build tự mở và làm cùng task qua A/B/C, reset mà không cần giải thích.
-- [ ] Nhóm ghi người kiểm, lỗi quan sát và kết quả kiểm tra trên máy khác.
+- [x] PN05 ngoài nhóm tự mở, làm nhiệm vụ qua A/B/C và reset mà không cần giải thích — Khánh xác nhận ngày 06/10/2026.
+- [x] Có người kiểm và feedback: A vướng luồng; B vướng giao diện; C vướng cả hai. Thiết bị/máy khác chưa được cung cấp, không ghi thành điều đã kiểm tra.
 
-Sẵn sàng mang đi kiểm tra/test. Chưa coi QA tự động là Gate 4 được coach xác nhận.
+Gate 4 đạt tiêu chí theo kiểm tra người thật do Khánh xác nhận. Không coi QA hoặc xác nhận này là coach đã chấm pass.
 
 
 ## Cập nhật Option C theo VLearn · 05/10/2026
 
-[Chi tiết bản cải tiến](docs/option-c-vlearn.md) · [Nguồn trích đoạn công khai](reference/vlearn/README.md). Màn học mô phỏng dùng nhận diện xanh/đỏ; A/B cùng chrome và fixture. C giữ quyền bật/tắt, căn cứ gợi ý, preview và recovery. Bỏ social proof giả lập để tránh dẫn dắt. QA 8 nhóm pass; Gate 4 mới có ghi nhận PN05 tự thao tác C; task/reset đủ A/B/C chưa được xác nhận.
+[Chi tiết bản cải tiến](docs/option-c-vlearn.md) · [Nguồn trích đoạn công khai](reference/vlearn/README.md). Màn học mô phỏng dùng nhận diện xanh/đỏ; A/B cùng chrome và fixture. C giữ quyền bật/tắt, căn cứ gợi ý, preview và recovery. Bỏ social proof giả lập để tránh dẫn dắt. QA 8 nhóm pass từ lượt build trước; xác nhận bổ sung ngày 06/10 cho thấy PN05 tự mở/task/reset đủ A/B/C, đáp ứng Gate 4.
 
 ## Option C — hoạt động theo ngữ cảnh
 
@@ -74,4 +74,4 @@ Tín hiệu → hỏi user đang đọc kỹ hay cần làm rõ → user chọn 
 
 ## Feedback người thật hiện có
 
-[PN05](prototype-feedback-note.md) đã lướt slide, dùng gợi ý và xem hỏi đáp C, không cần hướng dẫn; phản hồi về khung giao diện/độ linh hoạt chưa tốt. Chưa có dữ liệu mở/reset hoặc quiz. [Tổng hợp nguồn và hướng sửa](group-feedback-synthesis.md). QA 8 nhóm là kết quả lưu từ lần build trước; lượt cập nhật tài liệu này không chạy lại kiểm tra trình duyệt.
+[PN05](prototype-feedback-note.md) đã lướt slide, dùng gợi ý và xem hỏi đáp C, không cần hướng dẫn; phản hồi về khung giao diện/độ linh hoạt chưa tốt. Đã xác nhận tự mở/task/reset cả A/B/C và chọn B; chưa có đáp án quiz cụ thể. [Tổng hợp nguồn và hướng sửa](group-feedback-synthesis.md). QA 8 nhóm là kết quả lưu từ lần build trước; lượt cập nhật tài liệu này không chạy lại kiểm tra trình duyệt.

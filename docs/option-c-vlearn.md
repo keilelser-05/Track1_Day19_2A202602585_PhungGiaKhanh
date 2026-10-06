@@ -12,13 +12,13 @@ Mở [Option C](../options/option-c.html) trực tiếp bằng trình duyệt. G
 2. **Tương tác quan trọng:** sau bật, ở bất kỳ slide mẫu 5–7 khoảng 12 giây đọc hoặc quay lại lần 2 kèm ít nhất 5 giây đọc thì AI hỏi có cần hỗ trợ. Khối gợi ý không che tài liệu; nút căn cứ cho biết tín hiệu, kèm giới hạn “không chứng minh chưa hiểu”. User chọn giải thích, nhờ coach, để sau, bác bỏ hoặc tắt.
 3. **Quyết định/kết quả:** dùng lời giải rồi thử quiz, hoặc sửa/xem trước nội dung gửi coach; tên và tín hiệu mặc định không chia sẻ. Gửi và phản hồi đều mô phỏng. Có hủy, sửa, thu hồi trước mở phản hồi, quay lại và reset.
 
-Ngưỡng 45/5 giây là giá trị dựng cho prototype, không phải kết luận từ phỏng vấn hay ngưỡng đã được chứng minh. Chỉ tính khi trang hiển thị, đang học và không nhập câu hỏi/ghi chú; ngừng tính sau 90 giây không tương tác. Giãn cách gợi ý ít nhất 60 giây, tối đa 2 gợi ý/phiên; bác bỏ sẽ ngừng gợi ý slide đó tới khi tắt/bật lại. không tự gắn cờ hoặc báo coach. Tắt xóa tín hiệu; reset xóa cả nội dung phiên.
+Ngưỡng 12/5 giây là giá trị dựng cho prototype, không phải kết luận từ phỏng vấn hay ngưỡng đã được chứng minh. Chỉ tính khi trang hiển thị, đang học và không nhập câu hỏi/ghi chú; ngừng tính sau 90 giây không tương tác. Giãn cách gợi ý ít nhất 60 giây, tối đa 2 gợi ý/phiên; bác bỏ sẽ ngừng gợi ý slide đó tới khi tắt/bật lại. không tự gắn cờ hoặc báo coach. Tắt xóa tín hiệu; reset xóa cả nội dung phiên.
 
 ## Khi test
 
 Dùng đúng outcome task chung trên màn. Không hướng dẫn bật gợi ý hoặc chỉ cách kích hoạt. Nếu tester không bật, ghi nhận hành vi đó; không coi là lỗi của tester. Annotation/kỳ vọng nằm trong [tài liệu riêng](prototype-annotations.md), không hiện trên frame.
 
-QA tự động và ảnh render chỉ kiểm tra phần mềm; Gate 4 còn cần một người không build tự mở/thao tác/reset. Chưa có feedback hoặc kết luận option tốt nhất.
+QA tự động và ảnh render chỉ kiểm tra phần mềm; PN05 ngoài nhóm đã tự mở/task/reset đủ A/B/C không cần hướng dẫn, đáp ứng Gate 4. PN05 chọn B; chưa kết luận option tốt nhất cho mọi người. Xem [feedback](../prototype-feedback-note.md).
 
 ## Code cần chỉnh khi iteration
 

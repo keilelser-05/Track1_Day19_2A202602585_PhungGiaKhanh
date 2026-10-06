@@ -2,7 +2,7 @@
 
 > Người nộp: Phùng Gia Khánh — 2A202602585.
 > Cập nhật 06/10/2026. Evidence được tóm tắt từ notes hiện có, chưa đối chiếu bản ghi.
-> Chặng 2–3 hoàn thiện nội dung thiết kế; chờ nhóm review. Đã build và QA tự động; PN05 đã thử riêng C, A/B cá nhân chưa test.
+> Chặng 2–3 hoàn thiện nội dung thiết kế; chờ nhóm review. Đã build và QA tự động; PN05 đã thử đủ A/B/C, tự mở/task/reset không cần hướng dẫn và chọn B.
 
 ## 1. Chặng 1 — Evidence Snapshot
 
@@ -188,15 +188,15 @@ Nếu hiển thị “12 bạn khác”, ghi ngay cạnh là **số liệu minh 
 - [x] Có sửa, từ chối và đường tiếp tục task sau khi sai.
 - [x] Có quy định feedback, dữ liệu dùng, chia sẻ và rút quyền.
 
-Chặng 3 hoàn thiện quyết định thiết kế. Chặng 4 đã có prototype và [QA tự động](prototype-link.md). PN05 tự dùng gợi ý/hỏi đáp C nhưng chưa có dữ liệu hiểu bài hoặc reset.
+Chặng 3 hoàn thiện quyết định thiết kế. Chặng 4 đã có prototype và [QA tự động](prototype-link.md). PN05 tự mở/task/reset đủ A/B/C, chọn B; chưa có số đo hiểu bài cụ thể.
 
 ## 4. Gate tự kiểm và trạng thái
 
 - [x] Gate 1 — đủ nội dung evidence, giả thuyết và điều chưa biết.
 - [x] Gate 2 — đủ contract, ba cơ chế và distance check; nội dung mới đồng bộ từ thiết kế chung.
 - [x] Gate 3 — hoàn thiện nội dung quyết định thiết kế; chưa có xác nhận review nhóm/chấm.
-- [ ] Gate 4 — đã build ba HTML và QA tự động pass; chờ người không build kiểm tra độc lập (xem prototype-link.md).
-- [ ] Gate 5 — đã có PN05 và tổng hợp nguồn nhóm; chưa đủ ba feedback độc lập thử đủ A/B/C. Xem [synthesis](group-feedback-synthesis.md).
+- [x] Gate 4 — PN05 ngoài nhóm tự mở, làm nhiệm vụ và reset cả A/B/C không cần hướng dẫn (xem prototype-link.md).
+- [ ] Gate 5 — đủ ba notes T1/T2/PN05 và tổng hợp; chờ nhóm xác nhận quyết định sửa/người phụ trách. Xem [synthesis](group-feedback-synthesis.md).
 
 Checklist nội dung không xác nhận coach đã chấm pass hoặc nhóm đã review.
 Phân công là đề xuất của tài liệu nhóm, chưa phải đóng góp đã thực hiện.
@@ -218,4 +218,4 @@ Tài liệu nhóm ghi giảng viên đã đồng ý nhóm 4 người. Người n
 
 [Prototype và QA](prototype-link.md) → [task/5 mục quan sát](test/test-prompt.md) → [feedback PN05](prototype-feedback-note.md) → [tổng hợp/Next Change/Still Unproven](group-feedback-synthesis.md).
 
-PN05 chỉ thử C, tự thao tác, vướng giao diện và độ linh hoạt. Không ghi đã thử A/B hoặc chọn B theo note khác trong nguồn Thành. Thiết kế giữ cùng context để vòng sau so sánh được; ngưỡng C và phản hồi AI/coach là mô phỏng.
+PN05 đã thử A/B/C và chọn B theo xác nhận trực tiếp của Khánh: A vướng luồng, B vướng giao diện, C vướng cả hai; tự mở/task/reset không cần hướng dẫn. Không nhập chi tiết note T4 nguồn Thành. Ngưỡng C và phản hồi AI/coach là mô phỏng.

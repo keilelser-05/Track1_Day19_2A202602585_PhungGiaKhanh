@@ -20,4 +20,4 @@ A/B cũng dùng shell mới để giữ context, fixture và style chung. Chỉ 
 
 ## Kiểm tra
 
-QA phần mềm bao gồm sidebar, chuyển slide, đóng/mở dock, giữ dữ liệu, reset khi sidebar bị đóng, viewport 1366×1000 và 1866×1000. Xem `../test/prototype-checks.json`. Gate 4 người không build tự thao tác vẫn cần test thật.
+QA phần mềm bao gồm sidebar, chuyển slide, đóng/mở dock, giữ dữ liệu, reset khi sidebar bị đóng, viewport 1366×1000 và 1866×1000. Xem `../test/prototype-checks.json`. Gate 4 đã có xác nhận PN05 ngoài nhóm tự mở/task/reset cả A/B/C không cần hướng dẫn; xem [feedback](../prototype-feedback-note.md).

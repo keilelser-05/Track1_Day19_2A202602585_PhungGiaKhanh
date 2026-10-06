@@ -12,7 +12,7 @@ Repo: https://github.com/thanhpd123/Track1_Day19_2A202602930_PhanDuyThanh/tree/1
 | Ngưỡng C 20 giây, mặc định bật ở một số prototype nguồn | Không thay thiết kế C của Khánh: opt-in, 12/5 giây mô phỏng |
 | Feedback T1 của Thành, T2 của Bùi Hải Nam | Giữ nguyên note nguồn ở `feedback-note/`; ghi là dữ liệu nhóm được cung cấp, chưa xác minh bản ghi |
 | T3 của Chử Trần Phương Nam | Chỉ có dòng tổng hợp nhóm, chưa có note độc lập trong ZIP |
-| Note nguồn gán Khánh test T4 đủ A/B/C, chọn B | Mâu thuẫn với Khánh xác nhận PN05 chỉ thử C, chưa chọn. Không đưa T4 vào evidence/kết quả bài Khánh |
+| Note nguồn gán Khánh test T4 đủ A/B/C, chọn B | Xác nhận ban đầu của Khánh là chỉ C; bổ sung ngày 06/10 xác nhận đủ A/B/C và chọn B. Dùng PN05 theo lời Khánh; không nhập chi tiết T4 hoặc đếm thêm tester |
 | PN04 | Giữ cuộc phỏng vấn Case C hiện có của Khánh; không thay bằng câu chuyện khác |
 | Contribution/reflection cá nhân của Thành | Không sao chép sang Khánh |
 

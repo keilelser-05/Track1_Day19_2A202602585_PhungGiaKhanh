@@ -1,4 +1,4 @@
-> **Trạng thái hiện tại 06/10/2026:** prototype đã build; PN05 ngoài nhóm chỉ test C; có tổng hợp nguồn nhóm, chưa đủ Gate 4/5. Các mục theo ngày phía dưới là lịch sử, không phải trạng thái hiện tại.
+> **Trạng thái hiện tại 06/10/2026:** PN05 ngoài nhóm đã thử đủ A/B/C và chọn B; tự mở/task/reset không cần hướng dẫn, Gate 4 đạt tiêu chí. Gate 5 đủ ba notes và tổng hợp, chờ nhóm xác nhận quyết định sửa/người phụ trách. Các mục theo ngày phía dưới là lịch sử, không phải trạng thái hiện tại.
 
 # AI Support Log — H3201 · Case C
 
@@ -127,3 +127,11 @@ ChatGPT/Codex tạo `test/interview-guide.md` từ task và nguyên tắc đã c
 | Kiểm tra links và tính nhất quán tài liệu; cập nhật GitHub | QA trình duyệt 8 nhóm là kết quả trước đây, không phải test mới |
 
 Không tạo interview evidence, không tính PN-K trong tổng hợp, dùng PN04 cho phỏng vấn Case C. Không khẳng định gate đã được chấm hoặc solution đã xác thực.
+
+## 06/10/2026 — Bổ sung PN05 A/B/C và reflection do Khánh cung cấp
+
+Khánh xác nhận PN05 đã thử A/B/C: A vướng luồng, B vướng giao diện, C vướng cả hai; không cần hướng dẫn, tự mở/làm nhiệm vụ/reset cả ba. PN05 chọn B vì vận hành trơn tru, hoàn thiện dù giao diện còn vướng. AI cập nhật note, form, synthesis và trạng thái đồng bộ; không tạo quote, thời gian, thứ tự chi tiết hoặc kết quả quiz.
+
+Khánh tự cung cấp ý reflection: sự đơn giản, linh hoạt nhưng hoàn thiện là tiêu chí quan trọng; không có điều bất ngờ; sẽ áp dụng nhiều hơn lần sau. AI chỉ chỉnh câu chữ và trình bày trong contribution.md, không bổ sung suy nghĩ cá nhân hoặc gán code AI thành đóng góp tự viết.
+
+Gate 4 được đánh dấu đạt tiêu chí theo xác nhận người thật. Gate 5 bổ sung đủ ba notes T1/T2/PN05; quyết định sửa chung vẫn chờ xác nhận nhóm, không gán là đã chốt hoặc được coach chấm. Lượt này chỉ sửa tài liệu; không chạy lại QA trình duyệt hoặc sửa prototype.

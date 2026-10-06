@@ -1,8 +1,8 @@
 # Chặng 5 — Kịch bản test A/B/C
 
 **Case C — AI Support Radar · Người thực hiện: Phùng Gia Khánh — 2A202602585.**
-**Phạm vi cá nhân:** phụ trách Option C. Kịch bản dự kiến cho một người trải nghiệm A/B/C; phiên thực tế với PN05 chỉ thử C.
-**Trạng thái:** đã ghi nhận feedback PN05, người ngoài nhóm, cho riêng C. A/B chưa test; chưa có lựa chọn so sánh.
+**Phạm vi cá nhân:** phụ trách Option C. Một người ngoài nhóm, PN05, đã trải nghiệm đủ A/B/C.
+**Trạng thái:** PN05 tự mở, làm nhiệm vụ và reset cả ba, không cần hướng dẫn; chọn B vì vận hành trơn tru, hoàn thiện dù còn vướng giao diện.
 Dùng [fixture chung](../shared/content-fixture.md) và [ba prototype](../prototype-link.md). Tài liệu này dành cho facilitator; không mở phần ghi chú nội bộ trước mặt tester.
 
 ## 1. Câu hỏi bối cảnh — tối đa 2 phút
@@ -38,7 +38,7 @@ Trước phiên:
 
 | Phiên cá nhân | Người thực hiện | Người test | Thứ tự thực tế |
 | --- | --- | --- | --- |
-| Một phiên, chỉ thử C | Phùng Gia Khánh | PN05 — ngoài nhóm | C; A/B chưa thử |
+| Một người, thử đủ A/B/C | Phùng Gia Khánh | PN05 — ngoài nhóm | Ban đầu ghi nhận C, sau đó bổ sung A/B; thứ tự đầy đủ chưa cung cấp |
 
 Phần của Khánh không yêu cầu ba người test. Thứ tự ghi theo phiên đã diễn ra, không thay bằng thứ tự dự kiến. Việc đổi thứ tự giữa các phiên là phối hợp của nhóm, không yêu cầu Khánh tổ chức thêm phiên.
 
@@ -100,56 +100,27 @@ Cho phép câu trả lời “chưa chọn” hoặc “không phương án nào
 - [x] Có reset, đổi thứ tự và cách ghi trợ giúp/giới hạn mô phỏng.
 - [x] Tách kịch bản dự kiến khỏi feedback thật.
 
-**Chặng 5 đã hoàn thiện kịch bản A/B/C.** Phiên thực tế mới thử C với PN05. Đã có feedback C; chưa đủ dữ liệu so sánh A/B/C hoặc đánh dấu Gate 5 hoàn tất.
+**Chặng 5 đã hoàn thiện kịch bản A/B/C.** PN05 đã thử đủ ba bản, chọn B và tự mở/làm nhiệm vụ/reset không cần hướng dẫn. Gate 4 đạt; xem trạng thái Gate 5 tại phần tổng hợp nhóm.
 
-## 9. Form ghi lại phiên đã thực hiện
+## 9. Form ghi lại kết quả thực tế
 
-Nguồn: thông tin Khánh cung cấp sau phiên. Nội dung dưới đây là tóm tắt, không phải lời nói nguyên văn.
+Nguồn: Khánh xác nhận và bổ sung ngày 06/10/2026; tóm tắt, không phải quote. PN05 ngoài nhóm đã thử đủ A/B/C. Ngày test, thiết bị, phiên bản, thời lượng và thứ tự đầy đủ chưa cung cấp.
 
-| Thông tin | Nội dung thực tế |
-| --- | --- |
-| Người thực hiện | Phùng Gia Khánh — 2A202602585 |
-| Option phụ trách | C |
-| Người tham gia | PN05 — ngoài nhóm |
-| Số người | 1 |
-| Phương án trải nghiệm | Chỉ C; A/B chưa thử |
-| Thứ tự thực tế | C |
-| Bối cảnh, ngày, thời lượng, thiết bị, phiên bản | Chưa cung cấp |
-| Nhiệm vụ đã giao | Chưa cung cấp; không mặc định đã dùng đúng task dự kiến |
-| Ghi âm/ghi hình | Chưa cung cấp |
-
-### 9.1. Năm mục quan sát
-
-| Mục | A | B | C |
+| Mục quan sát | A | B | C |
 | --- | --- | --- | --- |
-| 1. Hành động đầu tiên | Chưa test | Chưa test | Có lướt slide, sử dụng gợi ý, xem hỏi đáp; chưa ghi nhận thứ tự chi tiết |
-| 2. Do dự, hiểu sai hoặc cần giúp | Chưa test | Chưa test | Vướng giao diện và độ linh hoạt hỗ trợ; không cần Khánh hướng dẫn |
-| 3. Căn cứ và giới hạn đã xem | Chưa test | Chưa test | Chưa ghi nhận việc mở nguồn hoặc xem căn cứ/giới hạn |
-| 4. Kiểm soát, phục hồi và reset | Chưa test | Chưa test | Chưa ghi nhận thao tác từ chối, tắt, sửa, thu hồi hoặc reset |
-| 5. Lựa chọn, lý do và đánh đổi | Chưa test | Chưa test | Chưa chọn vì chưa thử đủ A/B/C |
+| 1. Hành động đầu tiên | Chưa ghi thứ tự thao tác chi tiết | Chưa ghi thứ tự thao tác chi tiết | Có lướt slide, dùng gợi ý, xem hỏi đáp; chưa ghi thao tác đầu tiên |
+| 2. Vướng / cần giúp | Vướng luồng; không cần hướng dẫn | Vướng giao diện; không cần hướng dẫn | Vướng luồng và giao diện, hỗ trợ chưa linh hoạt; không cần hướng dẫn |
+| 3. Căn cứ và giới hạn | Chưa ghi nhận | Chưa ghi nhận | Chưa ghi nhận |
+| 4. Kiểm soát / reset | Tự mở, làm nhiệm vụ, reset | Tự mở, làm nhiệm vụ, reset | Tự mở, làm nhiệm vụ, reset |
+| 5. Lựa chọn / đánh đổi | Không chọn | **Chọn B:** vận hành trơn tru, hoàn thiện; chấp nhận vướng giao diện | Không chọn; từng ghi nhận chút không hài lòng |
 
-**Kết quả nhiệm vụ:** PN05 tự thao tác C mà không cần hướng dẫn. Chưa có thông tin về hoàn thành quiz hoặc đạt mục tiêu làm rõ kiến thức.
+**Kết quả nhiệm vụ:** đã tự thực hiện nhiệm vụ cả ba theo xác nhận Khánh; chưa có đáp án quiz hoặc thước đo hiểu bài cụ thể. Gate 4 đạt yêu cầu tự mở/task/reset của người không build.
 
-**Riêng C:** đã sử dụng tính năng gợi ý và xem hỏi đáp. Chưa ghi nhận cụ thể cách bật quyền, tín hiệu kích hoạt hoặc cách tiếp tục học.
-
-### 9.2. Ý kiến sau phiên — tóm tắt từ Khánh
-
-- PN05 có chút không hài lòng.
-- Điểm vướng: giao diện; khả năng hỗ trợ chưa linh hoạt.
-- Đề nghị: cải thiện khung giao diện và luồng hoạt động.
-- Chưa chọn phương án vì mới thử C.
-- Không có quote nguyên văn được cung cấp.
-
-### 9.3. Phân biệt kết quả và điều chưa biết
-
-- **OBSERVED:** lướt slide, dùng gợi ý, xem hỏi đáp; không cần hướng dẫn. Các nhận xét về giao diện, độ linh hoạt và phản ứng được ghi theo tóm tắt của Khánh.
-- **INTERPRETED:** chưa có diễn giải riêng của Khánh; không tự suy ra nguyên nhân hoặc mức độ ảnh hưởng.
-- **NEXT CHANGE:** đề xuất từ PN05 là cải thiện khung giao diện và luồng hoạt động; chưa chốt thay đổi cụ thể.
-- **STILL UNPROVEN:** chưa biết C tốt hơn A/B; chưa xác nhận mức độ hiểu bài, đạt task, căn cứ gợi ý hoặc khả năng reset. Một phiên C chưa đại diện mọi học viên.
-
-Kịch bản phía trên là kế hoạch; bảng này là những gì thực tế được cung cấp. Chưa đánh dấu hoàn thành thử đủ A/B/C.
-
+- **OBSERVED:** dữ liệu ở bảng trên; không bổ sung quote hoặc thời điểm.
+- **INTERPRETED:** Khánh rút ra sự đơn giản, linh hoạt và hoàn thiện là tiêu chí quan trọng.
+- **NEXT CHANGE:** đề xuất làm rõ khung hỗ trợ và đường tiếp tục của C; chưa chốt với nhóm.
+- **STILL UNPROVEN:** hiệu quả học tập, bước vướng cụ thể, ảnh hưởng thứ tự và khả năng C phát hiện đúng nhu cầu.
 
 ## 10. Nguồn nhóm và tổng hợp
 
-[Group Feedback Synthesis](../group-feedback-synthesis.md) đã đối chiếu notes Thành với PN05. Bản nguồn gán lượt T4 đủ A/B/C cho Khánh không được dùng thay phiên này. Task phía trên giữ để thử đủ ba bản về sau; không khẳng định PN05 đã được giao đúng task đó.
+[Tổng hợp nhóm](../group-feedback-synthesis.md) dùng T1/T2 và PN05 làm ba notes riêng. PN05 được cập nhật bằng xác nhận trực tiếp của Khánh; không nhập quote/hành vi từ note T4 nguồn Thành. [Feedback chi tiết](../prototype-feedback-note.md) · [Reflection](../contribution.md).

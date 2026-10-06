@@ -14,7 +14,7 @@ Bài này so sánh ba cách giúp người học làm rõ nội dung để học
 | 3 — Quyền người học | Bốn nguyên lý Human–AI; Act/Ask/Don’t Act; căn cứ, sửa/hủy và phục hồi | [Design Sheet — phần 3](three-option-design-sheet.md) |
 | 4 — Prototype | Ba HTML; 3 trạng thái; cùng slide RAG 5–7 và quiz, có reset | [Mở bộ mẫu](index.html), [link và QA](prototype-link.md), [annotation](docs/prototype-annotations.md) |
 | 5 — Kịch bản test | Câu hỏi bối cảnh, task chung, đúng 5 mục quan sát; tách kế hoạch khỏi phiên thực tế | [Test prompt](test/test-prompt.md), [note câu hỏi](test/interview-guide.md) |
-| 6 — Feedback và tổng hợp | Cá nhân: PN05 chỉ thử C. Nhóm: T1/T2 có note; T3 có bản tổng hợp thứ cấp | [Feedback cá nhân](prototype-feedback-note.md), [tổng hợp nhóm](group-feedback-synthesis.md) |
+| 6 — Feedback và tổng hợp | Cá nhân: PN05 thử đủ A/B/C, chọn B. Nhóm: ba notes T1/T2/PN05; T3 là nguồn thứ cấp | [Feedback cá nhân](prototype-feedback-note.md), [tổng hợp nhóm](group-feedback-synthesis.md) |
 
 ## Giả thuyết vấn đề
 
@@ -45,15 +45,15 @@ Giao diện theo [design.md](design.md), đối chiếu ảnh VLearn. Màn học
 
 ## Kết quả test và bài học
 
-PN05, người ngoài nhóm, lướt slide, dùng gợi ý và xem hỏi đáp C mà không cần Khánh hướng dẫn. PN05 vướng giao diện và mức độ linh hoạt hỗ trợ; Khánh ghi nhận có chút không hài lòng. Người test đề nghị cải thiện khung giao diện và luồng hoạt động. Chưa chọn phương án vì chưa thử A/B. Chưa có thông tin về quiz, reset hoặc đạt mục tiêu học.
+PN05, người ngoài nhóm, đã thử đủ A/B/C: A vướng luồng; B vướng giao diện; C vướng cả luồng và giao diện. Người test tự mở, thực hiện nhiệm vụ và reset cả ba mà không cần hướng dẫn. PN05 chọn **B** vì tuy hơi vướng giao diện nhưng vận hành rất trơn tru, hoàn thiện. Với C, đã dùng gợi ý/hỏi đáp và đề nghị cải thiện khung hỗ trợ cùng luồng hoạt động.
 
-Bản Thành có một note khác gán cho Khánh lượt test T4 và chọn B. Bài này dùng xác nhận trực tiếp của Khánh về PN05; không tính T4 vào kết quả. [Đối chiếu nguồn](reference/day19-thanh/README.md).
+Khánh rút ra rằng sự đơn giản, linh hoạt nhưng hoàn thiện là những tiêu chí quan trọng; không có điều gì bất ngờ và sẽ áp dụng các tiêu chí này nhiều hơn trong những lần sau. [Reflection](contribution.md).
 
-T1/T2 từ notes Thành cho thấy hai cách phản hồi C khác nhau: T1 chọn C, T2 chọn B và để gợi ý C lại sau. T3 chỉ có tóm tắt nhóm, không dùng như note độc lập. Không gộp PN05 vào mẫu số lựa chọn A/B/C.
+T1 chọn C; T2 và PN05 chọn B. Ba notes này đủ phần feedback; chưa dùng T3 như note độc lập hoặc đếm T4 thành người thứ tư. Khác biệt phiên bản/thứ tự và thiếu số đo học tập giới hạn kết luận về bản tốt nhất. [Đối chiếu nguồn](reference/day19-thanh/README.md).
 
 **Một thay đổi tiếp theo đề xuất:** làm khung hỗ trợ C giữ rõ khái niệm đang hỏi và đường hỏi tiếp/chuyển coach/quay lại học. Đây là đề xuất từ feedback, chưa phải quyết định nhóm đã xác nhận hoặc bản sửa đã test. [Chi tiết](group-feedback-synthesis.md).
 
-**Một điều chưa chứng minh:** PN05 có chọn C và hoàn thành task tốt hơn A/B khi thử đủ ba phương án trong cùng điều kiện không?
+**Một điều chưa chứng minh:** C sau cải tiến có giúp người học tiếp tục thuận lợi và hiểu bài tốt hơn bản hiện tại không?
 
 ## Trạng thái các gate
 
@@ -62,14 +62,14 @@ T1/T2 từ notes Thành cho thấy hai cách phản hồi C khác nhau: T1 chọ
 | 1 | Đủ tài liệu evidence, giả thuyết và điều chưa biết; chưa có xác nhận chấm |
 | 2 | Đủ ba cơ chế, comparison contract và distance check |
 | 3 | Đủ bảng Human–AI, căn cứ, kiểm soát và phục hồi |
-| 4 | Đã build; QA tự động trước đây ghi 8 nhóm pass. PN05 tự dùng C; chưa ghi nhận mở/task/reset đủ A/B/C |
-| 5 | Đã có feedback cá nhân C và tổng hợp nguồn nhóm; chưa đủ xác nhận ba feedback độc lập đạt điều kiện A/B/C |
+| 4 | **Đạt tiêu chí test-ready:** PN05 ngoài nhóm tự mở, làm nhiệm vụ và reset cả A/B/C, không cần hướng dẫn |
+| 5 | Đủ ba notes A/B/C và tổng hợp; **chờ nhóm xác nhận quyết định sửa/người phụ trách** để đánh dấu pass toàn bộ |
 
-Đã hoàn thiện tài liệu theo dữ liệu hiện có. Chưa kết luận phương án tốt nhất, hiệu quả học tập hoặc nhu cầu sản phẩm.
+Đã cập nhật tài liệu theo xác nhận của Khánh. PN05 chọn B; chưa kết luận hiệu quả học tập hoặc nhu cầu sản phẩm đã được xác thực. Gate đạt tiêu chí tài liệu/test không thay cho xác nhận chấm của coach.
 
 ## Nguồn và khai báo
 
 - [AI Support Log](ai-support-log.md): hỗ trợ thiết kế, code, QA, sắp xếp dữ liệu được cung cấp; không tạo evidence mới.
-- [Đóng góp và reflection](contribution.md): thông tin thực tế đã xác nhận và phần cá nhân cần tự viết.
+- [Đóng góp và reflection](contribution.md): thông tin thực tế và reflection theo ý Khánh đã cung cấp.
 - [Nguồn Thành](reference/day19-thanh/README.md): ZIP commit `1db2f38730f6bb95f2fca13c33d570907f74bae0`; phân biệt bản nhóm/bản cá nhân và dữ liệu mâu thuẫn.
 - QA tự động không thay cho test người thật. Bản ghi phỏng vấn chưa được nghe lại; không coi file audio placeholder là evidence.
